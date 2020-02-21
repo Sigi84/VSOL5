@@ -13,7 +13,7 @@ AnchorPane {
 	-fx-background-color: #333333;
 }
 
-VBox {
+VBox, HBox {
 	-fx-background-color: black;
 }
 

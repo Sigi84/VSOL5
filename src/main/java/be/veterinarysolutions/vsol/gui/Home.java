@@ -12,7 +12,6 @@ public class Home extends Controller {
 		System.out.println("ok");
 	}
 
-
 	@FXML public void initialize() {
 
 	}
@@ -23,8 +22,4 @@ public class Home extends Controller {
 
 	}
 
-
-
-	
-	
 }

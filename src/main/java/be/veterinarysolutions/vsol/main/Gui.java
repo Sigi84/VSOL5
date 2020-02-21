@@ -4,6 +4,8 @@ import be.veterinarysolutions.vsol.gui.Controller;
 import be.veterinarysolutions.vsol.gui.Frame;
 import be.veterinarysolutions.vsol.gui.Home;
 import be.veterinarysolutions.vsol.gui.Viewer;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -45,12 +47,16 @@ public class Gui {
 		viewer = loader.getController();
 		viewer.setGui(this);
 
+		showViewer();
+
 		primaryStage.setTitle("VSOL Dental"); // set window title
 		primaryStage.getIcons().add(logo); // set application icon
 
 		primaryStage.setScene(new Scene(rootFrame, 1200, 800));
 		primaryStage.setX(10);
 		primaryStage.setY(10);
+
+		setResizeListeners();
 
 		primaryStage.show();
 	}
@@ -71,9 +77,31 @@ public class Gui {
 		frame.getPane().setCenter(node);
 	}
 
+	private void setResizeListeners() {
+		// width resize
+		primaryStage.widthProperty().addListener(new ChangeListener<Number>() {
+			@Override
+			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+				viewer.resize();
+			}
+		});
+
+		// no height resize necessary for now
+		primaryStage.heightProperty().addListener(new ChangeListener<Number>() {
+			@Override
+			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+				viewer.resize();
+			}
+		});
+	}
+
 	// GETTERS
 
 	public Stage getPrimaryStage() {
 		return primaryStage;
+	}
+
+	public Frame getFrame() {
+		return frame;
 	}
 }
