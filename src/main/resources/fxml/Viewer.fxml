@@ -83,24 +83,6 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="btnUndo" mnemonicParsing="false" onMouseClicked="#btnUndoMouseClicked" onTouchPressed="#btnUndoTouchPressed">
-                           <graphic>
-                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@../ico/undo.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                        <Button fx:id="btnRedo" mnemonicParsing="false" onMouseClicked="#btnRedoMouseClicked" onTouchPressed="#btnRedoTouchPressed">
-                           <graphic>
-                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@../ico/redo.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
                      </children>
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
