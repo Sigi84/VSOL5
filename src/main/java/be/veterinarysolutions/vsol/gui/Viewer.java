@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.gui;
 
+import be.veterinarysolutions.vsol.main.Options;
 import be.veterinarysolutions.vsol.tools.Nr;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -46,6 +47,7 @@ public class Viewer extends Controller {
 	private Stack<File> files = new Stack<>(); // stack of associated file names
 	private int stackIndex = -1;
 	private double brightness = 0.0, contrast = 0.0, rotation = 0.0, zoom = 1.0;
+	private double rotated = 0.0, zoomed = 1.0;
 	private double touchx = 0.0, touchy = 0.0;
 	private double mousex = 0.0, mousey = 0.0;
 
@@ -256,6 +258,16 @@ public class Viewer extends Controller {
 		}
 	}
 
+	private void canvasRotated(double totalAngle) {
+		totalAngle -= rotated;
+
+		if (Math.abs(totalAngle) >= Options.ROTATION_STEP) {
+			double angle = totalAngle - (totalAngle % Options.ROTATION_STEP);
+			rotate(angle);
+			rotated += angle;
+		}
+	}
+
 	private void rotate(double angle) {
 		rotation += angle;
 		rotation = rotation % 360.0;
@@ -263,8 +275,19 @@ public class Viewer extends Controller {
 		drawImage();
 	}
 
-	private void zoom(double level) {
-		zoom += level;
+	private void canvasZoomed(double totalZoom) {
+		totalZoom /= zoomed;
+
+		if (Math.abs(totalZoom - 1.0) > Options.ZOOM_STEP) {
+			zoom(totalZoom);
+			drawImage();
+
+			zoomed *= totalZoom;
+		}
+	}
+
+	private void zoom(double factor) {
+		zoom *= factor;
 
 		drawImage();
 	}
@@ -371,61 +394,63 @@ public class Viewer extends Controller {
 
 	@FXML protected void btnOpenMouseClicked(MouseEvent e) { openTest(e.getButton()); }
 
-	@FXML protected void btnOpenTouchPressed(TouchEvent e) { open(null); }
+	@FXML protected void btnOpenTouchPressed(TouchEvent e) { } // open(null); }
 
-	@FXML protected void btnRotateMouseClicked(MouseEvent e) { rotate(+10.0); }
+	@FXML protected void btnRotateMouseClicked(MouseEvent e) { rotate(+Options.ROTATION_STEP); }
 
-	@FXML protected void btnRotateTouchPressed(TouchEvent e) { rotate(+10.0); }
+	@FXML protected void btnRotateTouchPressed(TouchEvent e) { } //  rotate(+10.0); }
 
-	@FXML protected void btnCounterMouseClicked(MouseEvent e) { rotate(-10.0); }
+	@FXML protected void btnCounterMouseClicked(MouseEvent e) { rotate(-Options.ROTATION_STEP); }
 
-	@FXML protected void btnCounterTouchPressed(TouchEvent e) { rotate(-10.0); }
+	@FXML protected void btnCounterTouchPressed(TouchEvent e) { } //  rotate(-10.0); }
 
-	@FXML protected void btnZoomInMouseClicked(MouseEvent e) { zoom(+0.1); }
+	@FXML protected void btnZoomInMouseClicked(MouseEvent e) { zoom(1.0 + Options.ZOOM_STEP); }
 
-	@FXML protected void btnZoomInTouchPressed(TouchEvent e) { zoom(+0.1); }
+	@FXML protected void btnZoomInTouchPressed(TouchEvent e) { } //  zoom(+0.1); }
 
-	@FXML protected void btnZoomOutMouseClicked(MouseEvent e) { zoom(-0.1); }
+	@FXML protected void btnZoomOutMouseClicked(MouseEvent e) { zoom(1.0 - Options.ZOOM_STEP); }
 
-	@FXML protected void btnZoomOutTouchPressed(TouchEvent e) { zoom(-0.1); }
+	@FXML protected void btnZoomOutTouchPressed(TouchEvent e) { } //  zoom(-0.1); }
 
 	@FXML protected void btnSlidersMouseClicked(MouseEvent e) { sliders(); }
 
-	@FXML protected void btnSlidersTouchPressed(TouchEvent e) { sliders(); }
+	@FXML protected void btnSlidersTouchPressed(TouchEvent e) { } //  sliders(); }
 
 	@FXML protected void btnRefreshMouseClicked(MouseEvent e) { refresh(); }
 
-	@FXML protected void btnRefreshTouchPressed(TouchEvent e) { refresh(); }
+	@FXML protected void btnRefreshTouchPressed(TouchEvent e) { } //  refresh(); }
 
 	@FXML protected void btnUndoMouseClicked(MouseEvent e) { undo(); }
 
-	@FXML protected void btnUndoTouchPressed(TouchEvent e) { undo(); }
+	@FXML protected void btnUndoTouchPressed(TouchEvent e) { } //  undo(); }
 
 	@FXML protected void btnRedoMouseClicked(MouseEvent e) { redo(); }
 
-	@FXML protected void btnRedoTouchPressed(TouchEvent e) { redo(); }
+	@FXML protected void btnRedoTouchPressed(TouchEvent e) { } //  redo(); }
 
 	@FXML protected void canvasMouseDragged(MouseEvent e) { mouseDragged(e.getX(), e.getY());}
 
-	@FXML protected void canvasMousePressed(MouseEvent e) { mousePressed(e.getX(), e.getY(), e.getButton() == MouseButton.PRIMARY); }
+	@FXML protected void canvasMousePressed(MouseEvent e) { mousePressed(e.getX(), e.getY(), e.getButton() == MouseButton.PRIMARY && !e.isSynthesized()); }
 
 	@FXML protected void canvasMouseReleased(MouseEvent e) { mouseReleased(); }
 
 	@FXML protected void canvasTouchMoved(TouchEvent e) { touchMoved(e.getTouchPoint());}
 
-	@FXML protected void canvasTouchPressed(TouchEvent e) { touchPressed(e.getTouchPoint(), e.getTouchCount()); }
+	@FXML protected void canvasTouchPressed(TouchEvent e) {
+		touchPressed(e.getTouchPoint(), e.getTouchCount());
+	}
 
 	@FXML protected void canvasTouchReleased(TouchEvent e) { touchReleased(e.getTouchCount()); }
 
-	@FXML protected void canvasRotate(RotateEvent e) {
-		System.out.println(e.getAngle() + "   /    " + e.getTotalAngle());
-		rotate(e.getAngle());
-	}
+	@FXML protected void canvasRotate(RotateEvent e) { canvasRotated(e.getTotalAngle()); }
+
+	@FXML protected void canvasRotateFinished(RotateEvent e) { rotated = 0.0; }
 
 	@FXML protected void canvasZoom(ZoomEvent e) {
-		System.out.println(e.getZoomFactor() + "    /   " + e.getTotalZoomFactor());
-		zoom(e.getZoomFactor());
+		canvasZoomed(e.getTotalZoomFactor());
 	}
+
+	@FXML protected void canvasZoomFinished(ZoomEvent e) { zoomed = 1.0; }
 
 	// GETTERS
 
