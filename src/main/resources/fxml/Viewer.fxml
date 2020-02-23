@@ -13,7 +13,7 @@
    <children>
       <BorderPane fx:id="bg" prefHeight="393.0" prefWidth="592.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <Canvas fx:id="canvas" height="273.0" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" onRotate="#canvasRotate" onTouchMoved="#canvasTouchMoved" onTouchPressed="#canvasTouchPressed" onTouchReleased="#canvasTouchReleased" onZoom="#canvasZoom" width="251.0" BorderPane.alignment="CENTER" />
+            <Canvas fx:id="canvas" height="273.0" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" onRotate="#canvasRotate" onRotationFinished="#canvasRotateFinished" onTouchMoved="#canvasTouchMoved" onTouchPressed="#canvasTouchPressed" onTouchReleased="#canvasTouchReleased" onZoom="#canvasZoom" onZoomFinished="#canvasZoomFinished" width="251.0" BorderPane.alignment="CENTER" />
          </center>
          <right>
             <BorderPane fx:id="right" BorderPane.alignment="CENTER">
