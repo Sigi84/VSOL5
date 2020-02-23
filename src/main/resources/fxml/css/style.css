@@ -29,7 +29,7 @@ Label.version {
 }
 
 BorderPane {
-	-fx-background-color: white;
+	-fx-background-color: black;
 }
 
 .red {

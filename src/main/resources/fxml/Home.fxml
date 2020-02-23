@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="594.0" prefWidth="1003.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.veterinarysolutions.vsol.gui.Home">
+<AnchorPane prefWidth="1003.0" prefHeight="594.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.veterinarysolutions.vsol.gui.Home">
    <children>
       <ScrollPane focusTraversable="false" layoutX="20.0" layoutY="70.0" pannable="true" prefHeight="200.0" prefWidth="458.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="70.0" />
       <HBox layoutX="14.0" layoutY="10.0" prefHeight="38.0" prefWidth="692.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">

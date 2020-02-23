@@ -2,22 +2,31 @@ package be.veterinarysolutions.vsol.main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.im4java.core.ConvertCmd;
-import org.im4java.core.IM4JavaException;
-import org.im4java.core.IMOperation;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-import java.util.LinkedList;
 
 public class Main extends Application {
 
+	private static final Logger logger = LogManager.getLogger();
+
 	public static void main(String[] args) {
+		logger.info("Starting VSOL5 version " + Ctrl.version);
+
+		Args.load(args);
+
 		launch(args);
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		new Ctrl(primaryStage);
+	}
+
+	@Override
+	public void stop() {
+		logger.info("Closing VSOL5.");
 	}
 
 

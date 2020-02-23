@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <File name="file" fileName="VSOL5.log">
+            <!--
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %c{0} [%t] %m %ex%n</Pattern>
+            </PatternLayout>
+            -->
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="file" level="INFO"/>
+            <AppenderRef ref="STDOUT" level="DEBUG"/>
+        </Root>
+    </Loggers>
+</Configuration>
