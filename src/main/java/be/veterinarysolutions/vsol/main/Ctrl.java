@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Ctrl {
 
-	public static final String version = "0.0.4";
+	public static final String version = "0.0.5";
 	public static final String versionDate = "2020-02-23";
 	public static final String versionTime = "21:28";
 
