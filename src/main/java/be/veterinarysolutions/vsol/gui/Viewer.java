@@ -1,7 +1,10 @@
 package be.veterinarysolutions.vsol.gui;
 
+import be.veterinarysolutions.vsol.interfaces.Pollable;
 import be.veterinarysolutions.vsol.main.Options;
 import be.veterinarysolutions.vsol.tools.Nr;
+import be.veterinarysolutions.vsol.tools.WatchDir;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.value.ChangeListener;
@@ -30,10 +33,15 @@ import org.im4java.core.IMOperation;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.WatchKey;
 import java.text.DecimalFormat;
 import java.util.Stack;
+import java.util.Vector;
 
-public class Viewer extends Controller {
+public class Viewer extends Controller implements Pollable {
 	private Logger logger = LogManager.getLogger();
 
 	@FXML private Canvas canvas;
@@ -43,9 +51,13 @@ public class Viewer extends Controller {
 
 	private boolean multitouch = false;
 	private boolean primaryMouseButtonDown = false; // true when the primary mouse button is down
-	private Stack<Image> imgs = new Stack<>(); // stack of converted images
-	private Stack<File> files = new Stack<>(); // stack of associated file names
-	private int stackIndex = -1;
+
+	private Image basicImg = null;
+	private Vector<Image> convertedImgs = new Vector<>(); // stack of converted images
+	private int imgIndex = -1;
+	private File basicFile = null;
+//	private Vector<File> convertedFiles = new Vector<>();
+
 	private double brightness = 0.0, contrast = 0.0, rotation = 0.0, zoom = 1.0;
 	private double rotated = 0.0, zoomed = 1.0;
 	private double touchx = 0.0, touchy = 0.0;
@@ -53,31 +65,27 @@ public class Viewer extends Controller {
 
 	// PRIVATE
 
-	private void init() {
-
-	}
-
 	private void open(File file) {
 		if (file == null) {
 			FileChooser fileChooser = new FileChooser();
-			fileChooser.setInitialDirectory(new File("C:/Sandbox/"));
+			fileChooser.setInitialDirectory(new File(Options.START_DIR));
 			file = fileChooser.showOpenDialog(gui.getPrimaryStage());
-
-			if (file != null) {
-				files.clear();
-				imgs.clear();
-				stackIndex = -1;
-				reset();
-
-				files.add(file);
-			}
 		}
 
 		if (file != null) {
 			Image img = new Image("file:" + file.getAbsolutePath());
 
-			imgs.add(img);
-			stackIndex++;
+			if (imgIndex == -1) {
+				reset();
+				convertedImgs.clear();
+//				convertedFiles.clear();
+
+				basicImg = img;
+				basicFile = file;
+			} else {
+				convertedImgs.add(img);
+//				convertedFiles.add(file);
+			}
 
 			drawImage();
 		}
@@ -88,8 +96,6 @@ public class Viewer extends Controller {
 			open(null);
 		} else {
 			File newFile = new File("C:/Sandbox/examplepic.jpg");
-			reset();
-			files.add(newFile);
 			open(newFile);
 		}
 	}
@@ -157,9 +163,12 @@ public class Viewer extends Controller {
 
 	private void drawImage() {
 		clearCanvas();
+		fillSliders();
+		Image img = basicImg;
+		if (imgIndex > -1) {
+			img = convertedImgs.elementAt(imgIndex);
+		}
 
-		if (stackIndex == -1 || stackIndex > imgs.size()) return;
-		Image img = imgs.get(stackIndex);
 		if (img == null) return;
 
 		resizeCanvas();
@@ -170,8 +179,6 @@ public class Viewer extends Controller {
 		double cw = canvas.getWidth(), ch = canvas.getHeight();
 		double x = 0.0, y = 0.0;
 		double iw = img.getWidth(), ih = img.getHeight();
-
-
 
 		if (iw > cw) { // rescale on width
 			double ratio = (cw / iw);
@@ -228,10 +235,14 @@ public class Viewer extends Controller {
 		canvas.setHeight(height);
 	}
 
-	private void rotateMagick(double angle) {
-		if (stackIndex == -1) return;
+	private void fillSliders() {
+		gui.getSliders().getBtnUndo().setDisable(imgIndex == -1);
+		gui.getSliders().getBtnRedo().setDisable(imgIndex >= convertedImgs.size() - 1);
+	}
 
-		File file = files.get(stackIndex);
+	private void rotateMagick(double angle) {
+		logger.debug("rotate magick: " + angle);
+		File file = basicFile;
 		if (file == null) return;
 
 		ConvertCmd cmd = new ConvertCmd(true);
@@ -239,21 +250,12 @@ public class Viewer extends Controller {
 		IMOperation operation = new IMOperation();
 		operation.rotate(angle);
 
-		String newFilename = getNewFilename();
-
-		operation.addImage(file.getAbsolutePath(), newFilename); // eg C:/image.jpg_2
+		imgIndex++;
+		operation.addImage(file.getAbsolutePath(), Options.START_DIR + file.getName() + "_" + imgIndex + ".tmp");
 
 		try {
 			cmd.run(operation);
-			File newFile = new File(newFilename);
-			files.add(newFile);
-			open(newFile);
-
-		} catch (IOException e) {
-			logger.error(e);
-		} catch (InterruptedException e) {
-			logger.error(e);
-		} catch (IM4JavaException e) {
+		} catch (IOException | InterruptedException | IM4JavaException e) {
 			logger.error(e);
 		}
 	}
@@ -292,11 +294,7 @@ public class Viewer extends Controller {
 		drawImage();
 	}
 
-	private String getNewFilename() {
-		return files.get(0).getAbsolutePath() + "_" + (stackIndex + 1);
-	}
-
-	private void clearCanvas() {
+	public void clearCanvas() {
 		GraphicsContext gg = canvas.getGraphicsContext2D();
 
 		ColorAdjust ca = new ColorAdjust();
@@ -332,8 +330,20 @@ public class Viewer extends Controller {
 		rotation = 0.0;
 		zoom = 1.0;
 
+		gui.getSliders().getSliderHistogram().setValue(0.0);
+		deleteTempFiles();
+
 //		logBrightness();
-		drawImage();
+//		drawImage();
+	}
+
+	private void deleteTempFiles() {
+		File dir = new File(Options.START_DIR);
+		for (File file : dir.listFiles()) {
+			if (file.getName().endsWith(".tmp")) {
+				file.delete();
+			}
+		}
 	}
 
 	private void logBrightness() {
@@ -345,19 +355,15 @@ public class Viewer extends Controller {
 	}
 
 	private void refresh() {
-		if (imgs.size() > 1) { // revert back to the original
-			while (imgs.size() > 1) {
-				imgs.pop();
-				files.pop();
-			}
-			stackIndex = 0;
-			drawImage();
-		} else if (imgs.size() == 1) { // clear
-			imgs.clear();
-			files.clear();
-			stackIndex = -1;
-			drawImage();
+		imgIndex = -1;
+
+		if (convertedImgs.size() > 0) {
+			convertedImgs.clear();
+		} else {
+			basicImg = null;
 		}
+
+		drawImage();
 	}
 
 	private void sliders() {
@@ -374,23 +380,47 @@ public class Viewer extends Controller {
 		drawImage();
 	}
 
-	private void undo() {
-
-	}
-
-	private void redo() {
-
-	}
-
 	// PUBLIC
 
 	public void resize() {
 		drawImage();
 	}
 
+	public void histogramOptimization(double value) {
+		rotateMagick(value);
+	}
+
+	@Override
+	public void fileModified(Path path) {
+		File file = new File(path.toString());
+		open(file);
+	}
+
+	public void undo() {
+		if (imgIndex >= -1) {
+			imgIndex--;
+			drawImage();
+		}
+	}
+
+	public void redo() {
+		if (imgIndex < convertedImgs.size() - 1) {
+			imgIndex++;
+			drawImage();
+		}
+	}
+
 	// EVENT
 
-	@FXML public void initialize() { init(); }
+	@FXML public void initialize() {
+		Path dir = Paths.get(Options.START_DIR);
+
+		try {
+			new WatchDir(dir, false, this).processEvents();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	@FXML protected void btnOpenMouseClicked(MouseEvent e) { openTest(e.getButton()); }
 
@@ -420,14 +450,6 @@ public class Viewer extends Controller {
 
 	@FXML protected void btnRefreshTouchPressed(TouchEvent e) { } //  refresh(); }
 
-	@FXML protected void btnUndoMouseClicked(MouseEvent e) { undo(); }
-
-	@FXML protected void btnUndoTouchPressed(TouchEvent e) { } //  undo(); }
-
-	@FXML protected void btnRedoMouseClicked(MouseEvent e) { redo(); }
-
-	@FXML protected void btnRedoTouchPressed(TouchEvent e) { } //  redo(); }
-
 	@FXML protected void canvasMouseDragged(MouseEvent e) { mouseDragged(e.getX(), e.getY());}
 
 	@FXML protected void canvasMousePressed(MouseEvent e) { mousePressed(e.getX(), e.getY(), e.getButton() == MouseButton.PRIMARY && !e.isSynthesized()); }
@@ -436,21 +458,23 @@ public class Viewer extends Controller {
 
 	@FXML protected void canvasTouchMoved(TouchEvent e) { touchMoved(e.getTouchPoint());}
 
-	@FXML protected void canvasTouchPressed(TouchEvent e) {
-		touchPressed(e.getTouchPoint(), e.getTouchCount());
-	}
+	@FXML protected void canvasTouchPressed(TouchEvent e) { touchPressed(e.getTouchPoint(), e.getTouchCount()); }
 
 	@FXML protected void canvasTouchReleased(TouchEvent e) { touchReleased(e.getTouchCount()); }
 
 	@FXML protected void canvasRotate(RotateEvent e) { canvasRotated(e.getTotalAngle()); }
 
-	@FXML protected void canvasRotateFinished(RotateEvent e) { rotated = 0.0; }
+	@FXML protected void canvasRotateFinished(RotateEvent e) {
+		rotated = 0.0;
+	}
 
 	@FXML protected void canvasZoom(ZoomEvent e) {
 		canvasZoomed(e.getTotalZoomFactor());
 	}
 
-	@FXML protected void canvasZoomFinished(ZoomEvent e) { zoomed = 1.0; }
+	@FXML protected void canvasZoomFinished(ZoomEvent e) {
+		zoomed = 1.0;
+	}
 
 	// GETTERS
 
@@ -461,4 +485,5 @@ public class Viewer extends Controller {
 	public double getMenuWidth() {
 		return menu.widthProperty().doubleValue();
 	}
+
 }

@@ -1,6 +1,10 @@
 package be.veterinarysolutions.vsol.gui;
 
+import be.veterinarysolutions.vsol.dlls.Imagen;
 import be.veterinarysolutions.vsol.main.Ctrl;
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.Pointer;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -13,10 +17,12 @@ import javafx.scene.input.TouchEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import jdk.internal.org.objectweb.asm.Handle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.im4java.core.*;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Frame extends Controller {
@@ -25,32 +31,31 @@ public class Frame extends Controller {
     @FXML private Label lblVersion;
     @FXML private BorderPane bg;
     @FXML private VBox menu;
+    @FXML private Button btnCamera;
 
     // PRIVATE
 
     private void init() {
         lblVersion.setText(Ctrl.version);
 
-        bg.widthProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                resize();
-            }
-        });
+        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
+        bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
 
-        bg.heightProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                resize();
-            }
-        });
+        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> imagen());
     }
 
     private void resize() {
         gui.getViewer().resize();
     }
 
-    private void exit() {
+    private void imagen() {
+        if (ctrl.getImagen().isOpen())
+            btnCamera.setStyle("-fx-background-color: green");
+        else
+            btnCamera.setStyle("-fx-background-color: red");
+    }
+
+    public void exit() {
         gui.getCtrl().exit();
     }
 
@@ -70,20 +75,15 @@ public class Frame extends Controller {
 
     @FXML public void initialize() { init(); }
 
-    @FXML public void exitApplication(ActionEvent e) { exit(); }
-
     @FXML protected void btnBackMouseClicked(MouseEvent e) { back(); }
-
-    @FXML protected void btnBackTouchPressed(TouchEvent e) { back(); }
 
     @FXML protected void btnHomeMouseClicked(MouseEvent e) { home(); }
 
-    @FXML protected void btnHomeTouchPressed(TouchEvent e) { home(); }
-
     @FXML protected void btnViewerMouseClicked(MouseEvent e) { viewer(); }
 
-    @FXML protected void btnViewerTouchPressed(TouchEvent e) { viewer(); }
-
+    @FXML protected void btnCameraMouseClicked(MouseEvent e) {
+        Imagen imagen = ctrl.getImagen();
+    }
 
     // PUBLIC
 

@@ -15,7 +15,7 @@
          <right>
             <VBox fx:id="menu" alignment="TOP_CENTER" spacing="10.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btnBack" mnemonicParsing="false" onMouseClicked="#btnBackMouseClicked" onTouchPressed="#btnBackTouchPressed">
+                  <Button fx:id="btnBack" mnemonicParsing="false" onMouseClicked="#btnBackMouseClicked">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
@@ -24,7 +24,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#btnHomeMouseClicked" onTouchPressed="#btnHomeTouchPressed">
+                  <Button fx:id="btnHome" mnemonicParsing="false" onMouseClicked="#btnHomeMouseClicked">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
@@ -51,11 +51,20 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnViewer" mnemonicParsing="false" onMouseClicked="#btnViewerMouseClicked" onTouchPressed="#btnViewerTouchPressed">
+                  <Button fx:id="btnViewer" mnemonicParsing="false" onMouseClicked="#btnViewerMouseClicked">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
                               <Image url="@../ico/images-solid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCamera" mnemonicParsing="false" onMouseClicked="#btnCameraMouseClicked">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../ico/camera-solid.png" />
                            </image>
                         </ImageView>
                      </graphic>

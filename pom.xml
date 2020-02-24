@@ -44,9 +44,6 @@
             <version>1.4.0</version>
         </dependency>
 
-
-
-
         <!-- Logger -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -65,6 +62,14 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+
 
 
     </dependencies>

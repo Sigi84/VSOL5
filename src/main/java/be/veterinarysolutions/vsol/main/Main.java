@@ -1,5 +1,8 @@
 package be.veterinarysolutions.vsol.main;
 
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.Pointer;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.Level;
@@ -10,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 public class Main extends Application {
 
 	private static final Logger logger = LogManager.getLogger();
+	private Ctrl ctrl;
 
 	public static void main(String[] args) {
 		logger.info("Starting VSOL5 version " + Ctrl.version);
@@ -21,13 +25,13 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		new Ctrl(primaryStage);
+		ctrl = new Ctrl(primaryStage);
 	}
 
 	@Override
 	public void stop() {
 		logger.info("Closing VSOL5.");
+		ctrl.exit();
 	}
-
 
 }

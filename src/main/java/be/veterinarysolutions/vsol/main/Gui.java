@@ -40,22 +40,22 @@ public class Gui {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Frame.fxml"));
 		rootFrame = loader.load();
 		frame = loader.getController();
-		frame.setGui(this);
+		frame.init(ctrl, this);
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/Home.fxml"));
 		nodeHome = loader.load();
 		home = loader.getController();
-		home.setGui(this);
+		home.init(ctrl, this);
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/Viewer.fxml"));
 		nodeViewer = loader.load();
 		viewer = loader.getController();
-		viewer.setGui(this);
+		viewer.init(ctrl, this);
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/Sliders.fxml"));
 		nodeSliders = loader.load();
 		sliders = loader.getController();
-		sliders.setGui(this);
+		sliders.init(ctrl, this);
 
 //		frame.viewer();
 
