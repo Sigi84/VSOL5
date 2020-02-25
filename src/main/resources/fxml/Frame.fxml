@@ -19,7 +19,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/arrow-left-solid.png" />
+                              <Image url="@../ico/back.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -28,7 +28,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/home-solid.png" />
+                              <Image url="@../ico/home.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -37,7 +37,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/envelope-regular.png" />
+                              <Image url="@../ico/mail.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -46,7 +46,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/cog-solid.png" />
+                              <Image url="@../ico/gear.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -55,7 +55,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/images-solid.png" />
+                              <Image url="@../ico/viewer.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -64,7 +64,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../ico/camera-solid.png" />
+                              <Image url="@../ico/camera.png" />
                            </image>
                         </ImageView>
                      </graphic>

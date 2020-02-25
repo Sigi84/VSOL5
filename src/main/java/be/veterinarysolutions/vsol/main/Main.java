@@ -19,7 +19,6 @@ public class Main extends Application {
 		logger.info("Starting VSOL5 version " + Ctrl.version);
 
 		Args.load(args);
-
 		launch(args);
 	}
 

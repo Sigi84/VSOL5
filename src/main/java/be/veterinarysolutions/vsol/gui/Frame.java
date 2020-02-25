@@ -41,14 +41,14 @@ public class Frame extends Controller {
         bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
         bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
 
-        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> imagen());
+        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> fillImagen());
     }
 
     private void resize() {
         gui.getViewer().resize();
     }
 
-    private void imagen() {
+    private void fillImagen() {
         if (ctrl.getImagen().isOpen())
             btnCamera.setStyle("-fx-background-color: green");
         else
@@ -65,6 +65,7 @@ public class Frame extends Controller {
 
     private void home() {
 //        bg.setCenter(gui.getNodeHome());
+        ctrl.getImagen().suspend();
     }
 
     public void viewer() {
@@ -83,6 +84,7 @@ public class Frame extends Controller {
 
     @FXML protected void btnCameraMouseClicked(MouseEvent e) {
         Imagen imagen = ctrl.getImagen();
+        ctrl.getImagen().xray();
     }
 
     // PUBLIC

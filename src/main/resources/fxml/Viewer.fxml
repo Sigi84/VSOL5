@@ -24,7 +24,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../ico/folder-open-regular.png" />
+                                    <Image url="@../ico/folder.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -33,7 +33,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../ico/redo-alt-solid.png" />
+                                    <Image url="@../ico/rotate-right.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -42,7 +42,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../ico/counter.png" />
+                                    <Image url="@../ico/rotate-left.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -69,7 +69,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../ico/sliders-h-solid.png" />
+                                    <Image url="@../ico/slider.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -78,7 +78,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../ico/sync-alt-solid.png" />
+                                    <Image url="@../ico/refresh.png" />
                                  </image>
                               </ImageView>
                            </graphic>
