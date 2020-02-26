@@ -65,7 +65,7 @@ public class Frame extends Controller {
 
     private void home() {
 //        bg.setCenter(gui.getNodeHome());
-        ctrl.getImagen().suspend();
+        ctrl.getImagen().mockCapture();
     }
 
     public void viewer() {
@@ -84,7 +84,7 @@ public class Frame extends Controller {
 
     @FXML protected void btnCameraMouseClicked(MouseEvent e) {
         Imagen imagen = ctrl.getImagen();
-        ctrl.getImagen().xray();
+        ctrl.getImagen().capture();
     }
 
     // PUBLIC

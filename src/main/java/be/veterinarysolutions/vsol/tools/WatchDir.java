@@ -151,7 +151,6 @@ public class WatchDir {
 
                     // print out event
                     System.out.format("%s: %s\n", event.kind().name(), child);
-                    System.out.println((new File(child.toString())).getTotalSpace());
                     if (event.kind() == ENTRY_MODIFY) {
                         pollable.fileModified(child);
                     }
