@@ -55,7 +55,7 @@ public class Viewer extends Controller implements Pollable {
 	private boolean mousePrimaryDown = false; // true when the primary mouse button is down
 	private boolean mouseSecundaryDown = false; // secondary mouse button is down
 
-	private Image basicImg = null, basicImg2 = null;
+	private Image basicImg = null;
 	private Vector<Image> convertedImgs = new Vector<>(); // stack of converted images
 	private int imgIndex = -1;
 	private File basicFile = null;
@@ -73,7 +73,7 @@ public class Viewer extends Controller implements Pollable {
 
 	// PRIVATE
 
-	private void open(File file, File file2) {
+	private void open(File file) {
 		if (file == null) {
 			FileChooser fileChooser = new FileChooser();
 			fileChooser.setInitialDirectory(new File(Options.START_DIR));
@@ -82,17 +82,14 @@ public class Viewer extends Controller implements Pollable {
 
 		if (file != null) {
 			Image img = new Image("file:" + file.getAbsolutePath());
-			Image img2 = new Image("file:" + file2.getAbsolutePath());
 
 			if (imgIndex == -1) {
 				reset();
 				convertedImgs.clear();
 
 				basicImg = img;
-				basicImg2 = img2;
 				basicFile = file;
 				lblInfo1.setText(file.getName());
-				lblInfo2.setText(file2.getName());
 			} else {
 				convertedImgs.add(img);
 			}
@@ -103,101 +100,101 @@ public class Viewer extends Controller implements Pollable {
 
 	private void openTest(MouseButton button) {
 		if (button == MouseButton.PRIMARY) {
-			open(null, null);
+			open(null);
 		} else {
 			File newFile = new File("C:/Sandbox/examplepic.jpg");
 			File newFile2 = new File("C:/Sandbox/dog.jpg");
 
-			open(newFile, newFile2);
+			open(newFile);
 		}
 	}
 
 	private void drawImage() {
-//		clearCanvas();
-//		fillSliders();
-//		Image img = basicImg;
-//		if (imgIndex > -1) {
-//			img = convertedImgs.elementAt(imgIndex);
-//		}
-//
-//		if (img == null) return;
-//
-//		resizeCanvas();
-//		clearCanvas();
-//
-//		double cw = canvas.getWidth(), ch = canvas.getHeight();
-//		double x = 0.0, y = 0.0;
-//		double iw = img.getWidth(), ih = img.getHeight();
-//
-//		if (iw > cw) { // rescale on width
-//			double ratio = (cw / iw);
-//			iw *= ratio;
-//			ih *= ratio;
-//
-//			if (ih > ch) { // after that ALSO rescale on height
-//				ratio = (ch / ih);
-//				iw *= ratio;
-//				ih *= ratio;
-//			}
-//		} else  if (ih > ch) { // rescale on height
-//			double ratio = (ch / ih);
-//			iw *= ratio;
-//			ih *= ratio;
-//		}
-//
-//		if (iw < cw) { // translate right
-//			x += (cw / 2.0) - (iw / 2.0);
-//		}
-//		if (ih < ch) { // translate down
-//			y += (ch / 2.0) - (ih / 2.0);
-//		}
-//
-//		GraphicsContext gg = canvas.getGraphicsContext2D();
-//		gg.save();
-//
-//		// effect
-//		ColorAdjust ca = new ColorAdjust();
-//		ca.setBrightness(brightness);
-//		ca.setContrast(contrast);
-//		gg.setEffect(ca);
-//
-//		// translation
-//		gg.translate(transx, transy);
-//
-//		// mirror (x-axis) and flip (y-axis) if needed
-//		gg.translate(cw/2, ch/2);
-//		gg.scale(mirror, flip);
-//		gg.translate(-cw/2, -ch/2);
-//
-//		// rotation
-//		gg.translate(cw/2, ch/2);
-//		gg.rotate(rotation * mirror * flip);
-//		gg.translate(-cw/2, -ch/2);
-//
-//		// zoom
-//		gg.translate(cw/2, ch/2);
-//		gg.scale(zoom, zoom);
-//		gg.translate(-cw/2, -ch/2);
-//
-//		gg.drawImage(img, x, y, iw, ih);
-//
-//		gg.restore();
+		clearCanvas();
+		fillSliders();
+		Image img = basicImg;
+		if (imgIndex > -1) {
+			img = convertedImgs.elementAt(imgIndex);
+		}
 
-		// first
-		Canvas one = new Canvas(300, 300);
-		GraphicsContext g1 = one.getGraphicsContext2D();
-		g1.setFill(new Color(0, 0, 1.0, 0.5));
-		g1.fillRect(0, 0, 300, 300);
-		one.setLayoutX(50);
-		one.setLayoutY(50);
-		pane.getChildren().add(one);
+		if (img == null) return;
 
-		// second
-		Canvas sub = new Canvas(500, 500);
-		GraphicsContext g2 = sub.getGraphicsContext2D();
-		g2.setFill(new Color(1.0, 0, 0, 0.5));
-		g2.fillRect(0, 0, 500, 500);
-		pane.getChildren().add(sub);
+		resizeCanvas();
+		clearCanvas();
+
+		double cw = canvas.getWidth(), ch = canvas.getHeight();
+		double x = 0.0, y = 0.0;
+		double iw = img.getWidth(), ih = img.getHeight();
+
+		if (iw > cw) { // rescale on width
+			double ratio = (cw / iw);
+			iw *= ratio;
+			ih *= ratio;
+
+			if (ih > ch) { // after that ALSO rescale on height
+				ratio = (ch / ih);
+				iw *= ratio;
+				ih *= ratio;
+			}
+		} else  if (ih > ch) { // rescale on height
+			double ratio = (ch / ih);
+			iw *= ratio;
+			ih *= ratio;
+		}
+
+		if (iw < cw) { // translate right
+			x += (cw / 2.0) - (iw / 2.0);
+		}
+		if (ih < ch) { // translate down
+			y += (ch / 2.0) - (ih / 2.0);
+		}
+
+		GraphicsContext gg = canvas.getGraphicsContext2D();
+		gg.save();
+
+		// effect
+		ColorAdjust ca = new ColorAdjust();
+		ca.setBrightness(brightness);
+		ca.setContrast(contrast);
+		gg.setEffect(ca);
+
+		// translation
+		gg.translate(transx, transy);
+
+		// mirror (x-axis) and flip (y-axis) if needed
+		gg.translate(cw/2, ch/2);
+		gg.scale(mirror, flip);
+		gg.translate(-cw/2, -ch/2);
+
+		// rotation
+		gg.translate(cw/2, ch/2);
+		gg.rotate(rotation * mirror * flip);
+		gg.translate(-cw/2, -ch/2);
+
+		// zoom
+		gg.translate(cw/2, ch/2);
+		gg.scale(zoom, zoom);
+		gg.translate(-cw/2, -ch/2);
+
+		gg.drawImage(img, x, y, iw, ih);
+
+		gg.restore();
+
+//		// first
+//		Canvas one = new Canvas(300, 300);
+//		GraphicsContext g1 = one.getGraphicsContext2D();
+//		g1.setFill(new Color(0, 0, 1.0, 0.5));
+//		g1.fillRect(0, 0, 300, 300);
+//		one.setLayoutX(50);
+//		one.setLayoutY(50);
+//		pane.getChildren().add(one);
+//
+//		// second
+//		Canvas sub = new Canvas(500, 500);
+//		GraphicsContext g2 = sub.getGraphicsContext2D();
+//		g2.setFill(new Color(1.0, 0, 0, 0.5));
+//		g2.fillRect(0, 0, 500, 500);
+//		pane.getChildren().add(sub);
 
 	}
 
@@ -346,7 +343,7 @@ public class Viewer extends Controller implements Pollable {
 	@Override
 	public void fileModified(Path path) {
 		File file = new File(path.toString());
-		open(file, null);
+		open(file);
 	}
 
 	public void undo() {
@@ -558,12 +555,12 @@ public class Viewer extends Controller implements Pollable {
 
 
 	@FXML protected void btnBrightnessMouseClicked(MouseEvent e) {
-		drawMode = (drawMode == DrawMode.BRIGHTNESS ? drawMode.NONE : DrawMode.BRIGHTNESS);
+		drawMode = (drawMode == DrawMode.BRIGHTNESS ? DrawMode.NONE : DrawMode.BRIGHTNESS);
 		fill();
 	}
 
 	@FXML protected void btnVertebraMouseClicked(MouseEvent e) {
-		drawMode = (drawMode == DrawMode.VERTEBRA ? drawMode.NONE : DrawMode.VERTEBRA);
+		drawMode = (drawMode == DrawMode.VERTEBRA ? DrawMode.NONE : DrawMode.VERTEBRA);
 		fill();
 	}
 
@@ -583,7 +580,7 @@ public class Viewer extends Controller implements Pollable {
 		mousey = currenty;
 
 		if (mousePrimaryDown) {
-			if (drawMode == DrawMode.BRIGHTNESS.BRIGHTNESS) {
+			if (drawMode == DrawMode.BRIGHTNESS) {
 				changeContrast(offsetx / 1000.0);
 				changeBrightness(offsety / 1000.0);
 			}
@@ -698,7 +695,7 @@ public class Viewer extends Controller implements Pollable {
 		Dragboard db = e.getDragboard();
 		if (db.hasFiles()) {
 			String path = db.getFiles().get(0).getAbsolutePath();
-			open(new File(path), null);
+			open(new File(path));
 		}
 		e.setDropCompleted(true);
 		e.consume();

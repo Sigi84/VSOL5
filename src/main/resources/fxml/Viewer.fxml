@@ -149,7 +149,7 @@
          <center>
             <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Canvas fx:id="canvas" height="400.0" layoutX="10.0" layoutY="10.0" onDragDropped="#canvasDragDropped" onDragOver="#canvasDragOver" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" onRotate="#canvasRotate" onRotationFinished="#canvasRotateFinished" onScroll="#canvasScroll" onTouchMoved="#canvasTouchMoved" onTouchPressed="#canvasTouchPressed" onTouchReleased="#canvasTouchReleased" onZoom="#canvasZoom" onZoomFinished="#canvasZoomFinished" width="500.0" />
+                  <Canvas fx:id="canvas" height="400.0" onDragDropped="#canvasDragDropped" onDragOver="#canvasDragOver" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" onRotate="#canvasRotate" onRotationFinished="#canvasRotateFinished" onScroll="#canvasScroll" onTouchMoved="#canvasTouchMoved" onTouchPressed="#canvasTouchPressed" onTouchReleased="#canvasTouchReleased" onZoom="#canvasZoom" onZoomFinished="#canvasZoomFinished" width="500.0" />
                </children>
             </Pane>
          </center>

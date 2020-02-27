@@ -1797,3 +1797,8 @@ Entered Ctrl.
 Imagen device opened.
 Closing VSOL5.
 VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.9
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
