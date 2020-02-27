@@ -9,8 +9,8 @@ import java.io.IOException;
 
 public class Ctrl {
 
-	public static final String version = "0.0.8";
-	public static final String versionDate = "2020-02-26";
+	public static final String version = "0.0.9";
+	public static final String versionDate = "2020-02-27";
 	public static final String versionTime = "17:19";
 
 	private static final Logger logger = LogManager.getLogger();
@@ -39,6 +39,7 @@ public class Ctrl {
 
 	public void exit() {
 		imagen.close();
+		gui.getViewer().deleteTempFiles();
 
 		logger.info("VSOL5 exited succesfully.");
 

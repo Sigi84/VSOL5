@@ -111,10 +111,10 @@ public class Imagen {
     }
 
     public void mockCapture() {
-        byte[] bytes = Bmp.read(Options.START_DIR + "ActualTest2.mock");
+        byte[] bytes = Bmp.read(Options.START_DIR + "TEST.mock");
 
 
-        Bmp.createBmp(Options.START_DIR + "6.bmp", 1300, 1706, bytes);
+        Bmp.createBmp(Options.START_DIR + "7.bmp", 1300, 1706, bytes);
     }
 
     private void process() {
@@ -122,7 +122,7 @@ public class Imagen {
 
         byte[] bytes = buffer.getByteArray(14, 4_435_600);
 
-        Bmp.createBmp("C:/Sandbox/ActualTest2.bmp", 1300, 1706, bytes);
+        Bmp.createBmp("C:/Sandbox/ActualTest3.bmp", 1300, 1706, bytes);
     }
 
     public void suspend() {

@@ -13,6 +13,10 @@ AnchorPane {
 	-fx-background-color: #333333;
 }
 
+ScrollPane {
+	-fx-background-color: black;
+}
+
 VBox, HBox {
 	-fx-background-color: black;
 }
@@ -24,8 +28,20 @@ Label {
 	-fx-text-fill: #CCCCCC;
 }
 
+.selected {
+	-fx-background-color: #66aaff;
+}
+
+.unselected {
+	-fx-background-color: #aaaaaa;
+}
+
 Label.version {
 	-fx-padding: 0 10 10 0;
+}
+
+Label.status {
+	-fx-padding: 10 10 10 10;
 }
 
 BorderPane {

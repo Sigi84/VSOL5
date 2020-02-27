@@ -9,35 +9,29 @@ public class Bmp {
     public static void createBmp(String filename, int width, int height, byte[] pixels) {
         File file = new File(filename);
 
-//        System.out.println(pixels.length);
+        double min = Bytes.MAX_16;
+        double max = 0.0;
 
-        System.out.println(1);
-        short min = (short) 0;
-        short max = (short) (256 * 256);
+//        short[] shorts = new short[pixels.length / 2];
+//        ByteBuffer.wrap(pixels).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shorts);
 
-        short[] shorts = new short[pixels.length / 2];
-        ByteBuffer.wrap(pixels).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shorts);
-
-        for (short s : shorts) {
-            if (s < min) min = s;
-            if (s > max) max = s;
-
-
+        int[] values = Bytes.get16BitBuffer(pixels, Bytes.LITTLE_ENDIAN);
+        for (int value : values) {
+            if (value < min) min = value;
+            if (value > max) max = value;
         }
 
+        System.out.println("MIN = " + min);
+        System.out.println("MAX = " + max);
 
-        byte[] reduced = new byte[pixels.length / 2];
-        for (int i = 0; i < reduced.length; i++) {
-            byte temp = pixels[i*2+1];
-            reduced[i] = temp;
-            if (temp < min) min = temp;
-            if (temp > max) max = temp;
-        }
+        byte[] rgb = new byte[values.length * 3];
+        for (int i = 0; i < values.length; i++) {
+            double fraction = (values[i] - min) / (max - min);
+            byte current = (byte) ( fraction * 255 );
 
-        System.out.println(2);
-        byte[] rgb = new byte[reduced.length * 3];
-        for (int i = 0; i < rgb.length; i++) {
-            rgb[i] = reduced[i / 3];
+            rgb[(i * 3) + 0] = current;
+            rgb[(i * 3) + 1] = current;
+            rgb[(i * 3) + 2] = current;
         }
 
         // BITMAPFILEHEADER
@@ -59,8 +53,6 @@ public class Bmp {
         byte[] TotalColors = getByteArray(0);
         byte[] ImportantColors = getByteArray(0);
 
-        System.out.println(3);
-
         try {
             FileOutputStream out = new FileOutputStream(file);
 
@@ -81,22 +73,16 @@ public class Bmp {
             out.write(TotalColors);
             out.write(ImportantColors);
 
-            System.out.println(4);
-
             out.write(rgb);
-
-            System.out.println(5);
 
             out.close();
 
-            FileOutputStream log = new FileOutputStream(filename + "_log.txt");
-            log.write(pixels);
+//            FileOutputStream log = new FileOutputStream(filename + "_log.txt");
+//            log.write(pixels);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println(4);
     }
 
     public static byte[] read(String filename) {
