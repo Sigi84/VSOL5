@@ -2,6 +2,7 @@ package be.veterinarysolutions.vsol.gui;
 
 import be.veterinarysolutions.vsol.dlls.Imagen;
 import be.veterinarysolutions.vsol.main.Ctrl;
+import be.veterinarysolutions.vsol.main.Options;
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
@@ -12,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TouchEvent;
 import javafx.scene.layout.AnchorPane;
@@ -22,6 +24,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.im4java.core.*;
 
+import javax.swing.text.html.Option;
 import java.io.File;
 import java.io.IOException;
 
@@ -65,7 +68,7 @@ public class Frame extends Controller {
 
     private void home() {
 //        bg.setCenter(gui.getNodeHome());
-        ctrl.getImagen().mockCapture();
+//        ctrl.getImagen().mockCapture();
     }
 
     public void viewer() {
@@ -84,7 +87,15 @@ public class Frame extends Controller {
 
     @FXML protected void btnCameraMouseClicked(MouseEvent e) {
         Imagen imagen = ctrl.getImagen();
-        ctrl.getImagen().capture();
+        if (Options.IMAGEN_MOCK_CAPTURE) {
+            ctrl.getImagen().mockCapture();
+        } else {
+            ctrl.getImagen().capture();
+        }
+    }
+
+    @FXML protected void bgKeyPressed(KeyEvent e) {
+        System.out.println("ok");
     }
 
     // PUBLIC

@@ -1,9 +1,6 @@
 package be.veterinarysolutions.vsol.main;
 
-import be.veterinarysolutions.vsol.gui.Frame;
-import be.veterinarysolutions.vsol.gui.Home;
-import be.veterinarysolutions.vsol.gui.Sliders;
-import be.veterinarysolutions.vsol.gui.Viewer;
+import be.veterinarysolutions.vsol.gui.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -57,17 +54,22 @@ public class Gui {
 		sliders = loader.getController();
 		sliders.init(ctrl, this);
 
-//		frame.viewer();
+		frame.viewer();
 
 		primaryStage.setTitle("VSOL Dental"); // set window title
 		primaryStage.getIcons().add(logo); // set application icon
 
-		primaryStage.setScene(new Scene(rootFrame, 1200, 800));
+		Scene scene = new Scene(rootFrame, 1200, 800);
+		scene.setOnKeyPressed(new KeyHandler(this));
+
+		primaryStage.setScene(scene);
 
 		if (Args.x != null)
 			primaryStage.setX(Args.x);
 		if (Args.y != null)
 			primaryStage.setY(Args.y);
+
+
 
 		primaryStage.show();
 	}

@@ -11,8 +11,9 @@ public class Options {
     public static final double TRANSLATION_STEP = 10.0;
 
     // Imagen Settings
+    public static boolean IMAGEN_MOCK_CAPTURE = false;
     public static long IMAGEN_PRODUCT_ID = 0x4400;
-    public static long IMAGEN_MODE = 0x3;
+    public static long IMAGEN_MODE = 0x1;
     public static int IMAGEN_START_TRESHOLD = 440;
     public static int IMAGEN_STOP_TRESHOLD = 437;
     public static double IMAGEN_INTEGRATION_TIME = 100.0;

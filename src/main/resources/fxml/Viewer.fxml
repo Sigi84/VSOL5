@@ -112,7 +112,7 @@
                               <Insets top="10.0" />
                            </padding>
                         </Region>
-                        <Button fx:id="btnBrightness" mnemonicParsing="false" onMouseClicked="#btnBrightnessMouseClicked" styleClass="selected">
+                        <Button fx:id="btnBrightness" mnemonicParsing="false" onMouseClicked="#btnBrightnessMouseClicked">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
                                  <image>
@@ -147,9 +147,9 @@
             </HBox>
          </bottom>
          <center>
-            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane fx:id="pane" onDragDropped="#paneDragDropped" onDragOver="#paneDragOver" onMouseClicked="#paneMouseClicked" onMouseDragged="#paneMouseDragged" onMousePressed="#paneMousePressed" onMouseReleased="#paneMouseReleased" onRotate="#paneRotate" onRotationFinished="#paneRotateFinished" onScroll="#paneScroll" onTouchMoved="#paneTouchMoved" onTouchPressed="#paneTouchPressed" onTouchReleased="#paneTouchReleased" onZoom="#paneZoom" onZoomFinished="#paneZoomFinished" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Canvas fx:id="canvas" height="400.0" onDragDropped="#canvasDragDropped" onDragOver="#canvasDragOver" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" onRotate="#canvasRotate" onRotationFinished="#canvasRotateFinished" onScroll="#canvasScroll" onTouchMoved="#canvasTouchMoved" onTouchPressed="#canvasTouchPressed" onTouchReleased="#canvasTouchReleased" onZoom="#canvasZoom" onZoomFinished="#canvasZoomFinished" width="500.0" />
+                  <Canvas fx:id="canvas" height="400.0" width="500.0" />
                </children>
             </Pane>
          </center>
