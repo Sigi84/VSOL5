@@ -8,8 +8,9 @@ public class Args {
     private static final Logger logger = LogManager.getLogger();
 
     public static Integer
-            x = null,
-            y = null;
+            x = null,  y = null,
+            width = null, height = null;
+
 
     public static void load(String[] commandlineArgs) {
         for (String commandlineArg : commandlineArgs) {
@@ -26,6 +27,10 @@ public class Args {
                     x = getInt(value);
                 } else if (key.equals("y")) {
                     y = getInt(value);
+                } else if (key.equals("width")) {
+                    width = getInt(value);
+                } else if (key.equals("height")) {
+                    height = getInt(value);
                 }
             }
         }

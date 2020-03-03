@@ -11,7 +11,7 @@ public class Options {
     public static final double TRANSLATION_STEP = 10.0;
 
     // Imagen Settings
-    public static boolean IMAGEN_MOCK_CAPTURE = false;
+    public static boolean IMAGEN_MOCK_CAPTURE = true;
     public static long IMAGEN_PRODUCT_ID = 0x4400;
     public static long IMAGEN_MODE = 0x1;
     public static int IMAGEN_START_TRESHOLD = 440;

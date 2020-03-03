@@ -4008,3 +4008,1534 @@ Caused by: java.lang.UnsupportedOperationException: null
 2020-03-02 19:54:00,759 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
 2020-03-02 19:54:01,637 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,977.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#98471903]
 2020-03-02 19:54:01,837 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 88 userid: 2092652929
+2020-03-03 11:29:28,134 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-03 11:29:28,759 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 11:29:28,759 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 11:29:28,759 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 11:29:28,772 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 11:29:28,772 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 11:29:28,772 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 11:29:28,798 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 11:29:28,798 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 11:29:28,830 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 11:29:29,504 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 11:29:29,508 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 11:29:29,559 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 11:29:29,861 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 11:29:29 CET 2020
+2020-03-03 11:29:30,157 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 11:29:30,866 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 11:29:32,511 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - application requested: 0!default
+2020-03-03 11:29:32,576 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - Creating Application: 0!default
+2020-03-03 11:29:32,583 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:29:32,584 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - host          localhost:8080
+2020-03-03 11:29:32,585 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - uri           /app/0!default
+2020-03-03 11:29:35,313 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-2145596834]
+2020-03-03 11:29:35,896 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 975939814
+2020-03-03 11:33:18,113 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 0!default
+2020-03-03 11:33:18,115 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 0!default
+2020-03-03 11:33:18,115 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 127.0.0.1
+2020-03-03 11:33:18,115 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          127.0.0.1:8080
+2020-03-03 11:33:18,115 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/0!default
+2020-03-03 11:33:18,530 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://127.0.0.1:8080/,http://127.0.0.1:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-21-2-actorRefSource#-99587832]
+2020-03-03 11:33:18,784 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 270919709
+2020-03-03 11:33:19,881 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:33:19,881 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 11:33:19,882 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 11:33:19 CET 2020      
+2020-03-03 11:33:19,882 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.006 
+2020-03-03 11:33:19,899 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.011  
+2020-03-03 11:33:19,899 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 11:33:19,900 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 11:33:19,900 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 49546
+2020-03-03 11:33:19,900 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 5925
+2020-03-03 11:33:19,900 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:33:25,380 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-03 11:33:25,496 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-03 11:37:19,693 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-03 11:37:20,010 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 11:37:20,010 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 11:37:20,010 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 11:37:20,027 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 11:37:20,027 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 11:37:20,027 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 11:37:20,044 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 11:37:20,044 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 11:37:20,077 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 11:37:20,911 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 11:37:20,913 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 11:37:20,972 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 11:37:21,386 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 11:37:20 CET 2020
+2020-03-03 11:37:21,721 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 11:37:22,588 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 11:37:27,051 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 0!default
+2020-03-03 11:37:27,076 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 0!default
+2020-03-03 11:37:27,083 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:37:27,083 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          localhost:8080
+2020-03-03 11:37:27,083 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/0!default
+2020-03-03 11:37:31,805 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
+2020-03-03 11:37:31,806 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
+2020-03-03 11:37:31,807 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:37:31,808 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          localhost:8080
+2020-03-03 11:37:31,808 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/0!default
+2020-03-03 11:37:33,706 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#1048193998]
+2020-03-03 11:37:34,221 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1095.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#1705573120]
+2020-03-03 11:37:35,851 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 265669123
+2020-03-03 11:37:36,653 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 2114120595
+2020-03-03 11:39:25,727 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
+2020-03-03 11:39:25,728 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
+2020-03-03 11:39:25,728 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 192.168.1.181
+2020-03-03 11:39:25,728 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          192.168.1.173:8080
+2020-03-03 11:39:25,728 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/0!default
+2020-03-03 11:39:26,098 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,1057.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-22-2-actorRefSource#-59120857]
+2020-03-03 11:39:26,242 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1549415773
+2020-03-03 11:39:34,388 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1820.0,41.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 70 common frames omitted
+2020-03-03 11:39:36,841 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
+2020-03-03 11:39:36,842 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
+2020-03-03 11:39:36,842 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 192.168.1.175
+2020-03-03 11:39:36,843 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          192.168.1.173:8080
+2020-03-03 11:39:36,843 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/0!default
+2020-03-03 11:39:37,456 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,958.0,927.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-37-2-actorRefSource#-53556664]
+2020-03-03 11:39:37,553 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1795.0,40.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 70 common frames omitted
+2020-03-03 11:39:37,637 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 323360473
+2020-03-03 11:40:10,673 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1788.0,35.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:40:12,753 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-03 11:40:12,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-03 11:40:12,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.197
+2020-03-03 11:40:12,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.173:8080
+2020-03-03 11:40:12,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-03 11:40:13,264 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,958.0,1057.0,false,en-US,List(en-US, nl-NL, nl, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-49-2-actorRefSource#774763161]
+2020-03-03 11:40:13,419 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 727614584
+2020-03-03 11:40:14,813 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:40:14,813 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 11:40:14,814 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 11:40:14 CET 2020      
+2020-03-03 11:40:14,814 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:04.690 
+2020-03-03 11:40:14,814 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-03 11:40:14,815 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 11:40:14,816 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 11:40:14,816 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 115114
+2020-03-03 11:40:14,816 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 29797
+2020-03-03 11:40:14,816 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:40:14,868 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-03 11:40:14,869 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-03 11:40:14,870 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.175
+2020-03-03 11:40:14,870 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.173:8080
+2020-03-03 11:40:14,870 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-03 11:40:15,155 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-58-2-actorRefSource#392646523]
+2020-03-03 11:40:15,248 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 338100554
+2020-03-03 11:40:26,129 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-03 11:40:26,129 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-03 11:40:26,130 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 192.168.1.187
+2020-03-03 11:40:26,130 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          192.168.1.173:8080
+2020-03-03 11:40:26,130 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-03 11:40:26,497 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1470.0,732.0,false,en-US,List(en-US, en, fr),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-68-2-actorRefSource#-147884742]
+2020-03-03 11:40:26,627 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 470808284
+2020-03-03 11:40:32,276 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-03 11:40:32,391 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 11:40:50 CET 2020      
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:04.690 
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 454769
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 118065
+2020-03-03 11:40:50,452 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:40:50,516 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2020-03-03 11:40:50,516 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2020-03-03 11:40:50,517 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 192.168.1.175
+2020-03-03 11:40:50,517 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          192.168.1.173:8080
+2020-03-03 11:40:50,517 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2020-03-03 11:40:50,783 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-77-2-actorRefSource#79451065]
+2020-03-03 11:40:50,914 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 611254250
+2020-03-03 11:41:02,831 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1360.0,30.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:41:04,072 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1797.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:41:07,170 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-03 11:41:07,285 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-03 11:41:09,273 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1807.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:41:09,763 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1807.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:41:09,995 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1807.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 69 common frames omitted
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 11:41:43 CET 2020      
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:03.848 
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 899393
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 259655
+2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:41:50,447 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1360.0,40.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 68 common frames omitted
+2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
+2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
+2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 192.168.1.166
+2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          192.168.1.173:8080
+2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/0!default
+2020-03-03 11:42:14,113 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-88-2-actorRefSource#-1263992914]
+2020-03-03 11:42:14,359 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 310142581
+2020-03-03 11:42:19,319 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,755.1427772242357,46.00000116767448,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 68 common frames omitted
+2020-03-03 11:42:34,100 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-03 11:42:34,216 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 11:42:35 CET 2020      
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:06.046 
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.004  
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 100778
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 22738
+2020-03-03 11:42:35,866 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 11:42:48,076 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-03 11:42:48,192 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-03 11:46:47,760 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-03 11:46:48,453 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 11:46:48,453 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 11:46:48,454 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 11:46:48,467 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 11:46:48,467 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 11:46:48,467 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 11:46:48,492 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 11:46:48,492 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 11:46:48,510 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 11:46:49,293 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 11:46:49,295 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 11:46:49,338 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 11:46:49,735 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 11:46:49 CET 2020
+2020-03-03 11:46:50,056 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 11:46:50,790 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 11:46:51,030 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 2126239346!default
+2020-03-03 11:46:51,051 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 2126239346!default
+2020-03-03 11:46:51,055 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.197
+2020-03-03 11:46:51,057 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.173:8080
+2020-03-03 11:46:51,057 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/2126239346!default
+2020-03-03 11:46:52,295 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-03 11:46:52,296 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-03 11:46:52,296 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:46:52,297 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2020-03-03 11:46:52,297 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-03 11:46:52,655 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - application requested: 188322746!default
+2020-03-03 11:46:52,655 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - Creating Application: 188322746!default
+2020-03-03 11:46:52,656 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - remoteAddress 192.168.1.175
+2020-03-03 11:46:52,656 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - host          192.168.1.173:8080
+2020-03-03 11:46:52,656 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - uri           /app/188322746!default
+2020-03-03 11:46:52,679 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 1847671339!default
+2020-03-03 11:46:52,680 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 1847671339!default
+2020-03-03 11:46:52,680 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 192.168.1.187
+2020-03-03 11:46:52,680 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          192.168.1.173:8080
+2020-03-03 11:46:52,680 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/1847671339!default
+2020-03-03 11:46:54,570 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(2126239346,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,1067.0,false,en-US,List(en-US, nl-NL, nl, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-5-2-actorRefSource#-263774048]
+2020-03-03 11:46:54,852 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-11-2-actorRefSource#-1981882783]
+2020-03-03 11:46:55,149 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(1847671339,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1470.0,732.0,false,en-US,List(en-US, en, fr),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-17-2-actorRefSource#1128516462]
+2020-03-03 11:46:55,548 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(188322746,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-14-2-actorRefSource#1153182313]
+2020-03-03 11:46:56,519 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1978850788
+2020-03-03 11:46:56,521 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 2006133412
+2020-03-03 11:46:56,536 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 745161512
+2020-03-03 11:46:56,620 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 859047434
+2020-03-03 11:48:39,874 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2020-03-03 11:48:40,676 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 11:48:40,677 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 11:48:40,677 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 11:48:40,711 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 11:48:40,711 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 11:48:40,711 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 11:48:40,768 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 11:48:40,769 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 11:48:40,845 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 11:48:42,729 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 11:48:42,732 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 11:48:42,926 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 11:48:43,625 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 11:48:42 CET 2020
+2020-03-03 11:48:44,156 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 11:48:45,433 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 11:48:47,502 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2020-03-03 11:48:47,525 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2020-03-03 11:48:47,533 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:48:47,533 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2020-03-03 11:48:47,533 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2020-03-03 11:48:50,306 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#645007833]
+2020-03-03 11:48:51,000 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 155323299
+2020-03-03 11:48:55,298 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 36151924!default
+2020-03-03 11:48:55,299 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 36151924!default
+2020-03-03 11:48:55,304 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 192.168.1.175
+2020-03-03 11:48:55,304 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          192.168.1.173:8080
+2020-03-03 11:48:55,304 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/36151924!default
+2020-03-03 11:48:55,307 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 921259224!default
+2020-03-03 11:48:55,308 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 921259224!default
+2020-03-03 11:48:55,309 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 192.168.1.187
+2020-03-03 11:48:55,310 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          192.168.1.173:8080
+2020-03-03 11:48:55,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/921259224!default
+2020-03-03 11:48:55,345 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 1792627019!default
+2020-03-03 11:48:55,354 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 1792627019!default
+2020-03-03 11:48:55,354 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 192.168.1.197
+2020-03-03 11:48:55,355 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          192.168.1.173:8080
+2020-03-03 11:48:55,355 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/1792627019!default
+2020-03-03 11:48:56,217 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(921259224,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1470.0,732.0,false,en-US,List(en-US, en, fr),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-17-2-actorRefSource#-87384361]
+2020-03-03 11:48:56,663 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(36151924,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-16-2-actorRefSource#1973385935]
+2020-03-03 11:48:57,019 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(1792627019,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,1067.0,false,en-US,List(en-US, nl-NL, nl, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-21-2-actorRefSource#716097223]
+2020-03-03 11:48:57,304 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 782387923
+2020-03-03 11:48:57,321 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 440143885
+2020-03-03 11:48:57,321 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 2089547229
+2020-03-03 11:58:01,627 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2020-03-03 11:58:02,260 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 11:58:02,260 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 11:58:02,260 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 11:58:02,277 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 11:58:02,277 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 11:58:02,277 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 11:58:02,294 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 11:58:02,294 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 11:58:02,327 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 11:58:03,041 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 11:58:03,043 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 11:58:03,089 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 11:58:03,586 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 11:58:02 CET 2020
+2020-03-03 11:58:03,884 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 11:58:04,583 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 11:58:05,871 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2020-03-03 11:58:05,890 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2020-03-03 11:58:05,899 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 11:58:05,900 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2020-03-03 11:58:05,900 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2020-03-03 11:58:06,346 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 970219922!default
+2020-03-03 11:58:06,346 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 970219922!default
+2020-03-03 11:58:06,346 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 192.168.1.175
+2020-03-03 11:58:06,347 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          192.168.1.173:8080
+2020-03-03 11:58:06,347 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/970219922!default
+2020-03-03 11:58:08,831 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-423701000]
+2020-03-03 11:58:09,166 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(970219922,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#110535111]
+2020-03-03 11:58:09,942 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1651695428
+2020-03-03 11:58:10,041 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1496678123
+2020-03-03 11:58:12,751 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @7f338p21m - Internal server error, for (GET) [/app/default/resourcesencoded/file:C:/Sandbox/8.bmp] ->
+ 
+play.api.UnexpectedException: Unexpected exception[AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:276)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:203)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:433)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:431)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:417)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!
+	at scala.Predef$.assert(Predef.scala:223)
+	at controllers.jpro.$anonfun$genURL$1(jpro.scala:323)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:508)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:505)
+	at play.api.mvc.ActionBuilder$$anon$10.apply(Action.scala:425)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:97)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:183)
+	at scala.util.Try$.apply(Try.scala:213)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:183)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:218)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:426)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	... 12 common frames omitted
+2020-03-03 11:58:48,167 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:58:48,205 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:58:49,410 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:58:49,459 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:58:50,291 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1817.0,31.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 70 common frames omitted
+2020-03-03 11:58:50,584 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1817.0,27.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
+	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	... 70 common frames omitted
+2020-03-03 11:58:50,799 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:58:50,848 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 11:59:50,303 [ERROR] from application in application-akka.actor.default-dispatcher-2 - 
+
+! @7f3394gac - Internal server error, for (GET) [/app/default/resourcesencoded/file:C:/Sandbox/8.bmp] ->
+ 
+play.api.UnexpectedException: Unexpected exception[AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:276)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:203)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:433)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:431)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:417)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!
+	at scala.Predef$.assert(Predef.scala:223)
+	at controllers.jpro.$anonfun$genURL$1(jpro.scala:323)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:508)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:505)
+	at play.api.mvc.ActionBuilder$$anon$10.apply(Action.scala:425)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:97)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:183)
+	at scala.util.Try$.apply(Try.scala:213)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:183)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:218)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:426)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	... 12 common frames omitted
+2020-03-03 11:59:50,352 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 12:15:14,934 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 0!default
+2020-03-03 12:15:14,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 0!default
+2020-03-03 12:15:14,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 192.168.1.187
+2020-03-03 12:15:14,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          192.168.1.173:8080
+2020-03-03 12:15:14,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/0!default
+2020-03-03 12:15:15,272 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1470.0,732.0,false,en-US,List(en-US, en, fr),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-48-2-actorRefSource#-1243143570]
+2020-03-03 12:15:15,427 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1554200230
+2020-03-03 12:19:50,385 [ERROR] from application in application-akka.actor.default-dispatcher-2 - 
+
+! @7f33bknhb - Internal server error, for (GET) [/app/default/resourcesencoded/file:C:/Sandbox/8.bmp] ->
+ 
+play.api.UnexpectedException: Unexpected exception[AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:276)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:203)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:433)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:431)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:417)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.AssertionError: assertion failed: Access to file:C:/Sandbox/8.bmp is forbidden!
+	at scala.Predef$.assert(Predef.scala:223)
+	at controllers.jpro.$anonfun$genURL$1(jpro.scala:323)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:508)
+	at play.api.mvc.Action$.invokeBlock(Action.scala:505)
+	at play.api.mvc.ActionBuilder$$anon$10.apply(Action.scala:425)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:97)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:183)
+	at scala.util.Try$.apply(Try.scala:213)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:183)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:57)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:218)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:426)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	... 12 common frames omitted
+2020-03-03 12:19:50,413 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-03 12:19:52,537 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 12:19:52,537 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 12:19:52,538 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 12:19:52 CET 2020      
+2020-03-03 12:19:52,538 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.017 
+2020-03-03 12:19:52,538 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.001  
+2020-03-03 12:19:52,541 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 12:19:52,541 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 12:19:52,541 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 832026
+2020-03-03 12:19:52,541 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 291219
+2020-03-03 12:19:52,541 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 12:24:37,651 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-03 12:24:38,292 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-03 12:24:38,292 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-03 12:24:38,292 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-03 12:24:38,310 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-03 12:24:38,310 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-03 12:24:38,310 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-03 12:24:38,332 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-03 12:24:38,332 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-03 12:24:38,376 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-03 12:24:39,298 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-03 12:24:39,300 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-03 12:24:39,366 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-03 12:24:39,970 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Tue Mar 03 12:24:39 CET 2020
+2020-03-03 12:24:40,426 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-03 12:24:41,551 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-03 12:24:43,858 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - application requested: 0!default
+2020-03-03 12:24:43,880 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - Creating Application: 0!default
+2020-03-03 12:24:43,883 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-03 12:24:43,884 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - host          localhost:8080
+2020-03-03 12:24:43,884 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-5 - uri           /app/0!default
+2020-03-03 12:24:46,389 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1071.0,737.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-350347761]
+2020-03-03 12:24:46,449 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 505586648!default
+2020-03-03 12:24:46,450 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 505586648!default
+2020-03-03 12:24:46,450 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 192.168.1.175
+2020-03-03 12:24:46,450 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          192.168.1.173:8080
+2020-03-03 12:24:46,450 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/505586648!default
+2020-03-03 12:24:46,481 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: 376361566!default
+2020-03-03 12:24:46,482 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: 376361566!default
+2020-03-03 12:24:46,511 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 192.168.1.187
+2020-03-03 12:24:46,511 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          192.168.1.173:8080
+2020-03-03 12:24:46,511 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/376361566!default
+2020-03-03 12:24:47,147 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(505586648,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#714616279]
+2020-03-03 12:24:47,443 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(376361566,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.173:8080/,http://192.168.1.173:8080/app/default,1470.0,732.0,false,en-US,List(en-US, en, fr),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-12-2-actorRefSource#257718650]
+2020-03-03 12:24:47,776 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1039011040
+2020-03-03 12:24:47,777 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 538435195
+2020-03-03 12:24:47,873 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 1415466248
+2020-03-03 14:10:53,920 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-03 14:10:53,920 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-03 14:10:53,924 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Tue Mar 03 14:10:53 CET 2020      
+2020-03-03 14:10:53,924 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.018 
+2020-03-03 14:10:53,925 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.001  
+2020-03-03 14:10:53,930 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-03 14:10:53,932 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-03 14:10:53,932 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 1657738
+2020-03-03 14:10:53,932 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 284781
+2020-03-03 14:10:53,932 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 

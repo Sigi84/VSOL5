@@ -79,13 +79,13 @@ public class Gui {
 		test = loader.getController();
 		test.init(ctrl, this);
 
-//		frame.viewer();
+		frame.viewer();
 
 		primaryStage.setTitle("VSOL Dental"); // set window title
 		primaryStage.getIcons().add(logo); // set application icon
 
-//		Scene scene = new Scene(rootFrame, 1200, 800);
-		Scene scene = new Scene(rootTest, 1200, 800);
+		Scene scene = new Scene(rootFrame, 1200, 800);
+//		Scene scene = new Scene(rootTest, 1200, 800);
 		scene.setOnKeyPressed(new KeyHandler(this));
 
 		primaryStage.setScene(scene);
@@ -94,6 +94,10 @@ public class Gui {
 			primaryStage.setX(Args.x);
 		if (Args.y != null)
 			primaryStage.setY(Args.y);
+		if (Args.width != null)
+			primaryStage.setWidth(Args.width);
+		if (Args.height != null)
+			primaryStage.setHeight(Args.height);
 
 
 

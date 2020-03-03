@@ -115,11 +115,14 @@ public class Imagen {
         }
     }
 
-    public void mockCapture() {
+    public String mockCapture() {
         byte[] bytes = Bmp.read(Options.START_DIR + "TEST.mock");
 
+        String filename = Options.START_DIR + "8.bmp";
 
-        Bmp.createBmp(Options.START_DIR + "7.bmp", 1300, 1706, bytes);
+        Bmp.createBmp(filename, 1300, 1706, bytes);
+
+        return filename;
     }
 
     private void process() {

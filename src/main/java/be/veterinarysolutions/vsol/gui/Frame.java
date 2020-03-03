@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.gui;
 
+import be.veterinarysolutions.vsol.data.Picture;
 import be.veterinarysolutions.vsol.dlls.Imagen;
 import be.veterinarysolutions.vsol.main.Ctrl;
 import be.veterinarysolutions.vsol.main.Options;
@@ -76,7 +77,11 @@ public class Frame extends Controller {
     @FXML protected void btnCameraMouseClicked(MouseEvent e) {
         Imagen imagen = ctrl.getImagen();
         if (Options.IMAGEN_MOCK_CAPTURE) {
-            ctrl.getImagen().mockCapture();
+            String filename = ctrl.getImagen().mockCapture();
+            if (filename != null) {
+                Picture pic = new Picture(filename);
+                gui.getViewer().addPic(pic);
+            }
         } else {
             ctrl.getImagen().capture();
         }

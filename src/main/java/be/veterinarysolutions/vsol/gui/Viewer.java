@@ -54,7 +54,7 @@ public class Viewer extends Controller implements Pollable {
 
 	// PRIVATE
 
-	private void addPic(Picture pic) {
+	public void addPic(Picture pic) {
 		selectAll(false);
 		pic.setSelected(true);
 		pics.add(pic);
@@ -62,92 +62,92 @@ public class Viewer extends Controller implements Pollable {
 	}
 
 	private void drawImages() {
-//		if (pics.isEmpty()) {
-//			clearCanvas();
-//			return;
-//		}
-//		fillSliders();
-//
-//		GraphicsContext gg = canvas.getGraphicsContext2D();
-//		clearCanvas();
-//		resizeCanvas();
-//
-//		for (Picture pic : pics) {
-//			Image img = pic.getImg();
-//			if (img == null) return;
-//
-//			double cw = canvas.getWidth(), ch = canvas.getHeight();
-//			double x = 0.0, y = 0.0;
-//			double iw = img.getWidth(), ih = img.getHeight();
-//
-//			if (iw > cw) { // rescale on width
-//				double ratio = (cw / iw);
-//				iw *= ratio;
-//				ih *= ratio;
-//
-//				if (ih > ch) { // after that ALSO rescale on height
-//					ratio = (ch / ih);
-//					iw *= ratio;
-//					ih *= ratio;
-//				}
-//			} else  if (ih > ch) { // rescale on height
-//				double ratio = (ch / ih);
-//				iw *= ratio;
-//				ih *= ratio;
-//			}
-//
-//			if (iw < cw) { // translate right
-//				x += (cw / 2.0) - (iw / 2.0);
-//			}
-//			if (ih < ch) { // translate down
-//				y += (ch / 2.0) - (ih / 2.0);
-//			}
-//
-//			pic.setRect(x, y, iw, ih);
-//
-//			gg.save();
-//
-//			// effect
-//			ColorAdjust ca = new ColorAdjust();
-//			ca.setBrightness(pic.getBrightness());
-//			ca.setContrast(pic.getContrast());
-//
-//			gg.setEffect(ca);
-//
-//			// translation
-//			gg.translate(pic.getTransx(), pic.getTransy());
-//
-//			// mirror (x-axis) and flip (y-axis) if needed
-//			gg.translate(cw/2, ch/2);
-//			gg.scale(pic.getMirror(), pic.getFlip());
-//			gg.translate(-cw/2, -ch/2);
-//
-//			// rotation
-//			gg.translate(cw/2, ch/2);
-//			gg.rotate(pic.getRotation() * pic.getMirror() * pic.getFlip());
-//			gg.translate(-cw/2, -ch/2);
-//
-//			// zoom
-//			gg.translate(cw/2, ch/2);
-//			gg.scale(pic.getZoom(), pic.getZoom());
-//			gg.translate(-cw/2, -ch/2);
-//
-//			if (pic.isSelected()) {
-//				gg.setGlobalAlpha(1.0);
-//			} else {
-//				gg.setGlobalAlpha(0.3);
-//			}
-//
-//			gg.drawImage(img, x, y, iw, ih);
-//
-//			if (pic.isSelected()) {
-//				gg.setLineWidth(5.0);
-//				gg.setStroke(Color.RED);
-//				gg.strokeRect(x, y, iw, ih);
-//			}
-//
-//			gg.restore();
-//		}
+		if (pics.isEmpty()) {
+			clearCanvas();
+			return;
+		}
+		fillSliders();
+
+		GraphicsContext gg = canvas.getGraphicsContext2D();
+		clearCanvas();
+		resizeCanvas();
+
+		for (Picture pic : pics) {
+			Image img = pic.getImg();
+			if (img == null) return;
+
+			double cw = canvas.getWidth(), ch = canvas.getHeight();
+			double x = 0.0, y = 0.0;
+			double iw = img.getWidth(), ih = img.getHeight();
+
+			if (iw > cw) { // rescale on width
+				double ratio = (cw / iw);
+				iw *= ratio;
+				ih *= ratio;
+
+				if (ih > ch) { // after that ALSO rescale on height
+					ratio = (ch / ih);
+					iw *= ratio;
+					ih *= ratio;
+				}
+			} else  if (ih > ch) { // rescale on height
+				double ratio = (ch / ih);
+				iw *= ratio;
+				ih *= ratio;
+			}
+
+			if (iw < cw) { // translate right
+				x += (cw / 2.0) - (iw / 2.0);
+			}
+			if (ih < ch) { // translate down
+				y += (ch / 2.0) - (ih / 2.0);
+			}
+
+			pic.setRect(x, y, iw, ih);
+
+			gg.save();
+
+			// effect
+			ColorAdjust ca = new ColorAdjust();
+			ca.setBrightness(pic.getBrightness());
+			ca.setContrast(pic.getContrast());
+
+			gg.setEffect(ca);
+
+			// translation
+			gg.translate(pic.getTransx(), pic.getTransy());
+
+			// mirror (x-axis) and flip (y-axis) if needed
+			gg.translate(cw/2, ch/2);
+			gg.scale(pic.getMirror(), pic.getFlip());
+			gg.translate(-cw/2, -ch/2);
+
+			// rotation
+			gg.translate(cw/2, ch/2);
+			gg.rotate(pic.getRotation() * pic.getMirror() * pic.getFlip());
+			gg.translate(-cw/2, -ch/2);
+
+			// zoom
+			gg.translate(cw/2, ch/2);
+			gg.scale(pic.getZoom(), pic.getZoom());
+			gg.translate(-cw/2, -ch/2);
+
+			if (pic.isSelected()) {
+				gg.setGlobalAlpha(1.0);
+			} else {
+				gg.setGlobalAlpha(0.3);
+			}
+
+			gg.drawImage(img, x, y, iw, ih);
+
+			if (pic.isSelected()) {
+				gg.setLineWidth(5.0);
+				gg.setStroke(Color.RED);
+				gg.strokeRect(x, y, iw, ih);
+			}
+
+			gg.restore();
+		}
 	}
 
 	private void drawImage() {
@@ -428,16 +428,18 @@ public class Viewer extends Controller implements Pollable {
 	// EVENT
 
 	@FXML public void initialize() {
+		canvas = new Canvas();
+		stackPane.getChildren().add(canvas);
 		lblInfo1.setText("");
 		lblInfo2.setText("");
 
 		Path dir = Paths.get(Options.START_DIR);
 
-		try {
-			new WatchDir(dir, false, this).processEvents();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			new WatchDir(dir, false, this).processEvents();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	// BUTTONS
@@ -627,7 +629,7 @@ public class Viewer extends Controller implements Pollable {
 
 	// PANE
 
-	@FXML protected void paneMouseDragged(MouseEvent e) {
+	@FXML protected void stackPaneMouseDragged(MouseEvent e) {
 		if (e.isSynthesized()) return; // ignore Touch
 
 		double currentx = e.getX();
@@ -649,7 +651,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void paneMousePressed(MouseEvent e) {
+	@FXML protected void stackPaneMousePressed(MouseEvent e) {
 		if (e.isSynthesized()) return; // ignore Touch
 
 		mousex = e.getX();
@@ -662,11 +664,11 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void paneMouseClicked(MouseEvent e) {
+	@FXML protected void stackPaneMouseClicked(MouseEvent e) {
 
 	}
 
-	@FXML protected void paneMouseReleased(MouseEvent e) {
+	@FXML protected void stackPaneMouseReleased(MouseEvent e) {
 		if (e.isSynthesized()) return; // ignore Touch
 
 		mousex = 0.0;
@@ -676,7 +678,7 @@ public class Viewer extends Controller implements Pollable {
 		mouseSecondaryDown = false;
 	}
 
-	@FXML protected void paneTouchMoved(TouchEvent e) {
+	@FXML protected void stackpaneTouchMoved(TouchEvent e) {
 		TouchPoint p = getFirstTouchPoint(e); // get the first touched point
 		if (p == null) return;
 
@@ -698,7 +700,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void paneTouchPressed(TouchEvent e) {
+	@FXML protected void stackpaneTouchPressed(TouchEvent e) {
 		if (e.getTouchCount() == 1) { // only do this on press of the first point
 			TouchPoint p = e.getTouchPoint();
 			touchx = p.getX();
@@ -708,7 +710,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void paneTouchReleased(TouchEvent e) {
+	@FXML protected void stackpaneTouchReleased(TouchEvent e) {
 		if (e.getTouchCount() == 1) { // only do this on release of the last touch point
 			touchx = 0.0;
 			touchy = 0.0;
@@ -717,7 +719,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void paneRotate(RotateEvent e) {
+	@FXML protected void stackpaneRotate(RotateEvent e) {
 		double angle = e.getTotalAngle() - rotated;
 		double step = Options.ROTATION_STEP_SMALL;
 		double totalAngle = angle - (angle % step) ;
@@ -725,11 +727,11 @@ public class Viewer extends Controller implements Pollable {
 		addRotation(totalAngle);
 	}
 
-	@FXML protected void paneRotateFinished(RotateEvent e) {
+	@FXML protected void stackpaneRotateFinished(RotateEvent e) {
 		rotated = 0.0;
 	}
 
-	@FXML protected void paneZoom(ZoomEvent e) {
+	@FXML protected void stackpaneZoom(ZoomEvent e) {
 		double zoom = e.getTotalZoomFactor() - 1.0 - zoomed;
 		double step = Options.ZOOM_STEP_SMALL;
 		double totalZoom = zoom - (zoom % step);
@@ -737,18 +739,18 @@ public class Viewer extends Controller implements Pollable {
 		addZoom(totalZoom);
 	}
 
-	@FXML protected void paneZoomFinished(ZoomEvent e) {
+	@FXML protected void stackpaneZoomFinished(ZoomEvent e) {
 		zoomed = 0.0;
 	}
 
-	@FXML protected void paneDragOver(DragEvent e) {
+	@FXML protected void stackpaneDragOver(DragEvent e) {
 		if (e.getDragboard().hasFiles()) {
 			e.acceptTransferModes(TransferMode.MOVE);
 		}
 		e.consume();
 	}
 
-	@FXML protected void paneDragDropped(DragEvent e) {
+	@FXML protected void stackpaneDragDropped(DragEvent e) {
 		Dragboard db = e.getDragboard();
 		for (File file : db.getFiles()) {
 			addPic(new Picture(file));
@@ -758,7 +760,7 @@ public class Viewer extends Controller implements Pollable {
 		e.consume();
 	}
 
-	@FXML protected void paneScroll(ScrollEvent e) {
+	@FXML protected void stackpaneScroll(ScrollEvent e) {
 		if (e.getTouchCount() != 0) return;
 
 		double delta = e.getDeltaY();
