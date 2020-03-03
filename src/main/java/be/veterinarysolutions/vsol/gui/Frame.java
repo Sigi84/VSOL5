@@ -3,30 +3,20 @@ package be.veterinarysolutions.vsol.gui;
 import be.veterinarysolutions.vsol.dlls.Imagen;
 import be.veterinarysolutions.vsol.main.Ctrl;
 import be.veterinarysolutions.vsol.main.Options;
-import com.sun.jna.Library;
-import com.sun.jna.Native;
-import com.sun.jna.Pointer;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
+import com.jpro.webapi.WebAPI;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.input.TouchEvent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import jdk.internal.org.objectweb.asm.Handle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.im4java.core.*;
 
-import javax.swing.text.html.Option;
-import java.io.File;
-import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class Frame extends Controller {
     private Logger logger = LogManager.getLogger();
@@ -37,15 +27,6 @@ public class Frame extends Controller {
     @FXML private Button btnCamera;
 
     // PRIVATE
-
-    private void init() {
-        lblVersion.setText(Ctrl.version);
-
-        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
-        bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
-
-        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> fillImagen());
-    }
 
     private void resize() {
         gui.getViewer().resize();
@@ -77,7 +58,14 @@ public class Frame extends Controller {
 
     // EVENTS
 
-    @FXML public void initialize() { init(); }
+    @FXML public void initialize() {
+        lblVersion.setText(Ctrl.version);
+
+        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
+        bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
+
+        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> fillImagen());
+    }
 
     @FXML protected void btnBackMouseClicked(MouseEvent e) { back(); }
 
@@ -92,10 +80,6 @@ public class Frame extends Controller {
         } else {
             ctrl.getImagen().capture();
         }
-    }
-
-    @FXML protected void bgKeyPressed(KeyEvent e) {
-        System.out.println("ok");
     }
 
     // PUBLIC
@@ -113,4 +97,5 @@ public class Frame extends Controller {
     public double getMenuWidth() {
         return menu.widthProperty().doubleValue();
     }
+
 }

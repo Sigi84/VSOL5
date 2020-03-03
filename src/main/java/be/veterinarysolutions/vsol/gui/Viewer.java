@@ -37,7 +37,7 @@ public class Viewer extends Controller implements Pollable {
 	@FXML private HBox hbox;
 	@FXML private Button btnSliders, btnBrightness, btnVertebra;
 	@FXML private Label lblInfo1, lblInfo2;
-	@FXML private Pane pane;
+	@FXML private StackPane stackPane;
 
 	private boolean multitouch = false;
 	private boolean mousePrimaryDown = false; // true when the primary mouse button is down
@@ -62,92 +62,100 @@ public class Viewer extends Controller implements Pollable {
 	}
 
 	private void drawImages() {
-		if (pics.isEmpty()) {
-			clearCanvas();
-			return;
-		}
-		fillSliders();
+//		if (pics.isEmpty()) {
+//			clearCanvas();
+//			return;
+//		}
+//		fillSliders();
+//
+//		GraphicsContext gg = canvas.getGraphicsContext2D();
+//		clearCanvas();
+//		resizeCanvas();
+//
+//		for (Picture pic : pics) {
+//			Image img = pic.getImg();
+//			if (img == null) return;
+//
+//			double cw = canvas.getWidth(), ch = canvas.getHeight();
+//			double x = 0.0, y = 0.0;
+//			double iw = img.getWidth(), ih = img.getHeight();
+//
+//			if (iw > cw) { // rescale on width
+//				double ratio = (cw / iw);
+//				iw *= ratio;
+//				ih *= ratio;
+//
+//				if (ih > ch) { // after that ALSO rescale on height
+//					ratio = (ch / ih);
+//					iw *= ratio;
+//					ih *= ratio;
+//				}
+//			} else  if (ih > ch) { // rescale on height
+//				double ratio = (ch / ih);
+//				iw *= ratio;
+//				ih *= ratio;
+//			}
+//
+//			if (iw < cw) { // translate right
+//				x += (cw / 2.0) - (iw / 2.0);
+//			}
+//			if (ih < ch) { // translate down
+//				y += (ch / 2.0) - (ih / 2.0);
+//			}
+//
+//			pic.setRect(x, y, iw, ih);
+//
+//			gg.save();
+//
+//			// effect
+//			ColorAdjust ca = new ColorAdjust();
+//			ca.setBrightness(pic.getBrightness());
+//			ca.setContrast(pic.getContrast());
+//
+//			gg.setEffect(ca);
+//
+//			// translation
+//			gg.translate(pic.getTransx(), pic.getTransy());
+//
+//			// mirror (x-axis) and flip (y-axis) if needed
+//			gg.translate(cw/2, ch/2);
+//			gg.scale(pic.getMirror(), pic.getFlip());
+//			gg.translate(-cw/2, -ch/2);
+//
+//			// rotation
+//			gg.translate(cw/2, ch/2);
+//			gg.rotate(pic.getRotation() * pic.getMirror() * pic.getFlip());
+//			gg.translate(-cw/2, -ch/2);
+//
+//			// zoom
+//			gg.translate(cw/2, ch/2);
+//			gg.scale(pic.getZoom(), pic.getZoom());
+//			gg.translate(-cw/2, -ch/2);
+//
+//			if (pic.isSelected()) {
+//				gg.setGlobalAlpha(1.0);
+//			} else {
+//				gg.setGlobalAlpha(0.3);
+//			}
+//
+//			gg.drawImage(img, x, y, iw, ih);
+//
+//			if (pic.isSelected()) {
+//				gg.setLineWidth(5.0);
+//				gg.setStroke(Color.RED);
+//				gg.strokeRect(x, y, iw, ih);
+//			}
+//
+//			gg.restore();
+//		}
+	}
 
-		GraphicsContext gg = canvas.getGraphicsContext2D();
-		clearCanvas();
-		resizeCanvas();
+	private void drawImage() {
 
-		for (Picture pic : pics) {
-			Image img = pic.getImg();
-			if (img == null) return;
+	}
 
-			double cw = canvas.getWidth(), ch = canvas.getHeight();
-			double x = 0.0, y = 0.0;
-			double iw = img.getWidth(), ih = img.getHeight();
+	private void drawDrawing() {
 
-			if (iw > cw) { // rescale on width
-				double ratio = (cw / iw);
-				iw *= ratio;
-				ih *= ratio;
-
-				if (ih > ch) { // after that ALSO rescale on height
-					ratio = (ch / ih);
-					iw *= ratio;
-					ih *= ratio;
-				}
-			} else  if (ih > ch) { // rescale on height
-				double ratio = (ch / ih);
-				iw *= ratio;
-				ih *= ratio;
-			}
-
-			if (iw < cw) { // translate right
-				x += (cw / 2.0) - (iw / 2.0);
-			}
-			if (ih < ch) { // translate down
-				y += (ch / 2.0) - (ih / 2.0);
-			}
-
-			pic.setRect(x, y, iw, ih);
-
-			gg.save();
-
-			// effect
-			ColorAdjust ca = new ColorAdjust();
-			ca.setBrightness(pic.getBrightness());
-			ca.setContrast(pic.getContrast());
-
-			gg.setEffect(ca);
-
-			// translation
-			gg.translate(pic.getTransx(), pic.getTransy());
-
-			// mirror (x-axis) and flip (y-axis) if needed
-			gg.translate(cw/2, ch/2);
-			gg.scale(pic.getMirror(), pic.getFlip());
-			gg.translate(-cw/2, -ch/2);
-
-			// rotation
-			gg.translate(cw/2, ch/2);
-			gg.rotate(pic.getRotation() * pic.getMirror() * pic.getFlip());
-			gg.translate(-cw/2, -ch/2);
-
-			// zoom
-			gg.translate(cw/2, ch/2);
-			gg.scale(pic.getZoom(), pic.getZoom());
-			gg.translate(-cw/2, -ch/2);
-
-			if (pic.isSelected()) {
-				gg.setGlobalAlpha(1.0);
-			} else {
-				gg.setGlobalAlpha(0.3);
-			}
-
-			gg.drawImage(img, x, y, iw, ih);
-
-			if (pic.isSelected()) {
-				gg.setLineWidth(5.0);
-				gg.setStroke(Color.RED);
-				gg.strokeRect(x, y, iw, ih);
-			}
-
-			gg.restore();
-		}
 	}
 
 	private void resizeCanvas() {
@@ -307,7 +315,7 @@ public class Viewer extends Controller implements Pollable {
 	// PUBLIC
 
 	public void resize() {
-		drawImages();
+//		drawImages();
 	}
 
 	public void histogramOptimization(double value) {
@@ -437,10 +445,11 @@ public class Viewer extends Controller implements Pollable {
 	@FXML protected void btnOpenMouseClicked(MouseEvent e) {
 		if (e.getButton() == MouseButton.PRIMARY) {
 			Picture pic = Picture.chooseFile(gui);
+//			Picture pic = Picture.jpro();
 			if (pic == null) return;
 			addPic(pic);
 		} else {
-			Picture pic = new Picture(Options.START_DIR + "dog.jpg");
+			Picture pic = new Picture(Options.START_DIR + "1.jpg");
 			addPic(pic);
 		}
 	}
@@ -753,9 +762,9 @@ public class Viewer extends Controller implements Pollable {
 		if (e.getTouchCount() != 0) return;
 
 		double delta = e.getDeltaY();
-		if (delta == -40.0) {
+		if (delta == -40.0 || delta == -100.0) {
 			addZoom(-Options.ZOOM_STEP_BIG);
-		} else if (delta == +40.0) {
+		} else if (delta == +40.0 || delta == +100.0) {
 			addZoom(+Options.ZOOM_STEP_BIG);
 		}
 	}

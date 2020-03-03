@@ -7,12 +7,14 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.FileChooser;
 
 import java.io.File;
+import java.util.Vector;
 
 public class Picture extends Layer {
 
     private Image img;
     private File file;
     private Rectangle rect;
+    private Vector<Drawing> drawings;
 
     // CONSTRUCTOR
 
@@ -21,6 +23,7 @@ public class Picture extends Layer {
         img = new Image("file:" + file.getAbsolutePath());
         reset();
         rect = new Rectangle(0, 0, img.getWidth(), img.getHeight());
+        drawings = new Vector<>();
     }
 
     public Picture(String filename) {
@@ -48,6 +51,10 @@ public class Picture extends Layer {
 
     public Rectangle getRect() {
         return rect;
+    }
+
+    public Vector<Drawing> getDrawings() {
+        return drawings;
     }
 
     // SETTERS

@@ -1,16 +1,15 @@
 package be.veterinarysolutions.vsol.main;
 
-import com.sun.jna.Library;
-import com.sun.jna.Native;
-import com.sun.jna.Pointer;
+import com.jpro.webapi.JProApplication;
+import com.jpro.webapi.WebAPI;
+import com.jpro.webapi.WebCallback;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-public class Main extends Application {
+public class Main extends JProApplication {
 
 	private static final Logger logger = LogManager.getLogger();
 	private Ctrl ctrl;
@@ -24,7 +23,8 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		ctrl = new Ctrl(primaryStage);
+		primaryStage.setTitle("VSOL");
+		ctrl = new Ctrl(primaryStage, this);
 	}
 
 	@Override

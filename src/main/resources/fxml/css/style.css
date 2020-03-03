@@ -13,6 +13,10 @@ AnchorPane {
 	-fx-background-color: #333333;
 }
 
+StackPane {
+	-fx-background-color: #111111;
+}
+
 ScrollPane {
 	-fx-background-color: black;
 }

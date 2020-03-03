@@ -64,7 +64,12 @@ public class Imagen {
     }
 
     public Imagen() {
-        dll = CMOS_USB.INSTANCE;
+        try {
+            dll = CMOS_USB.INSTANCE;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         init();
     }
 

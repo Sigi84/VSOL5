@@ -11,17 +11,22 @@ public class Args {
             x = null,
             y = null;
 
-    public static void load(String[] args) {
-        for (String arg : args) {
-            String[] subs = arg.split("=", -1);
-            if (subs.length != 2) break;
-            String key = subs[0];
-            String value = subs[1];
+    public static void load(String[] commandlineArgs) {
+        for (String commandlineArg : commandlineArgs) {
+            String[] args = commandlineArg.split(" ");
+            for (String arg : args) {
+                String[] multi = arg.split(" ");
 
-            if (key.equals("x")) {
-                x = getInt(value);
-            } else if (key.equals("y")) {
-                y = getInt(value);
+                String[] subs = arg.split("=", -1);
+                if (subs.length != 2) break;
+                String key = subs[0];
+                String value = subs[1];
+
+                if (key.equals("x")) {
+                    x = getInt(value);
+                } else if (key.equals("y")) {
+                    y = getInt(value);
+                }
             }
         }
     }
