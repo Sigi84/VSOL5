@@ -146,7 +146,7 @@
             </HBox>
          </bottom>
          <center>
-            <StackPane fx:id="stackPane" BorderPane.alignment="CENTER" />
+            <StackPane fx:id="stackPane" onDragDropped="#stackPaneDragDropped" onMouseClicked="#stackPaneMouseClicked" onMouseDragOver="#stackPaneDragOver" onMouseDragged="#stackPaneMouseDragged" onMousePressed="#stackPaneMousePressed" onMouseReleased="#stackPaneMouseReleased" onRotate="#stackPaneRotate" onRotationFinished="#stackPaneRotationFinished" onScroll="#stackPaneScroll" onTouchMoved="#stackPaneTouchMoved" onTouchPressed="#stackPaneTouchPressed" onTouchReleased="#stackPaneTouchReleased" onZoom="#stackPaneZoom" onZoomFinished="#stackPaneZoomFinished" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </children>

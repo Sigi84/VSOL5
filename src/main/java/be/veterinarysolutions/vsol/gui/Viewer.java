@@ -678,7 +678,7 @@ public class Viewer extends Controller implements Pollable {
 		mouseSecondaryDown = false;
 	}
 
-	@FXML protected void stackpaneTouchMoved(TouchEvent e) {
+	@FXML protected void stackPaneTouchMoved(TouchEvent e) {
 		TouchPoint p = getFirstTouchPoint(e); // get the first touched point
 		if (p == null) return;
 
@@ -700,7 +700,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void stackpaneTouchPressed(TouchEvent e) {
+	@FXML protected void stackPaneTouchPressed(TouchEvent e) {
 		if (e.getTouchCount() == 1) { // only do this on press of the first point
 			TouchPoint p = e.getTouchPoint();
 			touchx = p.getX();
@@ -710,7 +710,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void stackpaneTouchReleased(TouchEvent e) {
+	@FXML protected void stackPaneTouchReleased(TouchEvent e) {
 		if (e.getTouchCount() == 1) { // only do this on release of the last touch point
 			touchx = 0.0;
 			touchy = 0.0;
@@ -719,7 +719,7 @@ public class Viewer extends Controller implements Pollable {
 		}
 	}
 
-	@FXML protected void stackpaneRotate(RotateEvent e) {
+	@FXML protected void stackPaneRotate(RotateEvent e) {
 		double angle = e.getTotalAngle() - rotated;
 		double step = Options.ROTATION_STEP_SMALL;
 		double totalAngle = angle - (angle % step) ;
@@ -727,11 +727,11 @@ public class Viewer extends Controller implements Pollable {
 		addRotation(totalAngle);
 	}
 
-	@FXML protected void stackpaneRotateFinished(RotateEvent e) {
+	@FXML protected void stackPaneRotationFinished(RotateEvent e) {
 		rotated = 0.0;
 	}
 
-	@FXML protected void stackpaneZoom(ZoomEvent e) {
+	@FXML protected void stackPaneZoom(ZoomEvent e) {
 		double zoom = e.getTotalZoomFactor() - 1.0 - zoomed;
 		double step = Options.ZOOM_STEP_SMALL;
 		double totalZoom = zoom - (zoom % step);
@@ -739,18 +739,18 @@ public class Viewer extends Controller implements Pollable {
 		addZoom(totalZoom);
 	}
 
-	@FXML protected void stackpaneZoomFinished(ZoomEvent e) {
+	@FXML protected void stackPaneZoomFinished(ZoomEvent e) {
 		zoomed = 0.0;
 	}
 
-	@FXML protected void stackpaneDragOver(DragEvent e) {
+	@FXML protected void stackPaneDragOver(DragEvent e) {
 		if (e.getDragboard().hasFiles()) {
 			e.acceptTransferModes(TransferMode.MOVE);
 		}
 		e.consume();
 	}
 
-	@FXML protected void stackpaneDragDropped(DragEvent e) {
+	@FXML protected void stackPaneDragDropped(DragEvent e) {
 		Dragboard db = e.getDragboard();
 		for (File file : db.getFiles()) {
 			addPic(new Picture(file));
@@ -760,7 +760,7 @@ public class Viewer extends Controller implements Pollable {
 		e.consume();
 	}
 
-	@FXML protected void stackpaneScroll(ScrollEvent e) {
+	@FXML protected void stackPaneScroll(ScrollEvent e) {
 		if (e.getTouchCount() != 0) return;
 
 		double delta = e.getDeltaY();
