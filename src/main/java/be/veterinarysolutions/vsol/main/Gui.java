@@ -1,13 +1,15 @@
 package be.veterinarysolutions.vsol.main;
 
 import be.veterinarysolutions.vsol.gui.*;
+import be.veterinarysolutions.vsol.gui.scenes.Home;
+import be.veterinarysolutions.vsol.gui.scenes.Settings;
+import be.veterinarysolutions.vsol.gui.scenes.Study;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,89 +21,100 @@ public class Gui {
 	private Ctrl ctrl;
 
 	private Stage primaryStage;
-//	private FXMLLoader loader;
-	private Parent rootFrame, rootTest;
-	private Node nodeHome, nodeViewer, nodeSliders;
-	private Image logo;
+
+	private Parent frameRoot;
+//	private Node homeScene, settingsScene, studyScene;
 
 	private Frame frame;
 	private Home home;
+	private Settings settings;
+	private Study study;
+
+	private Node nodeViewer, nodeSliders;
+
 	private Viewer viewer;
 	private Sliders sliders;
 	private Test test;
 
 	public Gui(Ctrl ctrl, Stage primaryStage) throws IOException {
-
-
-//		primaryStage.setTitle("Hello World!");
-//		Button btn = new Button();
-//		btn.setText("Say 'Hello World'");
-//		btn.setOnAction(new EventHandler<ActionEvent>() {
-//
-//			@Override
-//			public void handle(ActionEvent event) {
-//				System.out.println("Hello World!");
-//			}
-//		});
-//
-//		StackPane root = new StackPane();
-//		root.getChildren().add(btn);
-//		primaryStage.setScene(new Scene(root, 300, 250));
-//		primaryStage.show();
-
-
 		this.ctrl = ctrl;
 		this.primaryStage = primaryStage;
-		logo = new Image(getClass().getResourceAsStream("/logo.png"));
 
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Frame.fxml"));
-		rootFrame = loader.load();
+		frameRoot = loader.load();
 		frame = loader.getController();
-		frame.init(ctrl, this);
+		frame.init(ctrl, this, frameRoot);
 
-		loader = new FXMLLoader(getClass().getResource("/fxml/Home.fxml"));
-		nodeHome = loader.load();
+
+		loader = new FXMLLoader(getClass().getResource("/fxml/HomeScene.fxml"));
+		Node node = loader.load();
 		home = loader.getController();
-		home.init(ctrl, this);
+		home.init(ctrl, this, node);
 
-		loader = new FXMLLoader(getClass().getResource("/fxml/Viewer.fxml"));
-		nodeViewer = loader.load();
-		viewer = loader.getController();
-		viewer.init(ctrl, this);
+		loader = new FXMLLoader(getClass().getResource("/fxml/SettingsScene.fxml"));
+		node = loader.load();
+		settings = loader.getController();
+		settings.init(ctrl, this, node);
 
-		loader = new FXMLLoader(getClass().getResource("/fxml/Sliders.fxml"));
-		nodeSliders = loader.load();
-		sliders = loader.getController();
-		sliders.init(ctrl, this);
+		loader = new FXMLLoader(getClass().getResource("/fxml/StudyScene.fxml"));
+		node = loader.load();
+		study = loader.getController();
+		study.init(ctrl, this, node);
 
-		loader = new FXMLLoader(getClass().getResource("/fxml/Test.fxml"));
-		rootTest = loader.load();
-		test = loader.getController();
-		test.init(ctrl, this);
 
-		frame.viewer();
 
-		primaryStage.setTitle("VSOL Dental"); // set window title
-		primaryStage.getIcons().add(logo); // set application icon
 
-		Scene scene = new Scene(rootFrame, 1200, 800);
-//		Scene scene = new Scene(rootTest, 1200, 800);
+
+		Scene scene = new Scene(frameRoot, 1200, 800);
 		scene.setOnKeyPressed(new KeyHandler(this));
-
 		primaryStage.setScene(scene);
+
+		showHome();
 
 		if (Args.x != null)
 			primaryStage.setX(Args.x);
 		if (Args.y != null)
 			primaryStage.setY(Args.y);
-		if (Args.width != null)
-			primaryStage.setWidth(Args.width);
-		if (Args.height != null)
-			primaryStage.setHeight(Args.height);
 
+		primaryStage.setWidth(Args.width);
+		primaryStage.setHeight(Args.height);
 
+		primaryStage.setTitle("VSOL Dental"); // set window title
+
+		Image logo = new Image(getClass().getResourceAsStream("/logo.png"));
+		primaryStage.getIcons().add(logo); // set application icon
 
 		primaryStage.show();
+	}
+
+	public void showHome() {
+		show(home);
+	}
+
+	public void showSettings() {
+		show(settings);
+	}
+
+	public void showStudy() {
+		show(study);
+	}
+
+	private void show(Controller controller) {
+		frame.getBorderPane().setCenter(controller.getNode());
+		controller.getBorderPane().prefWidthProperty().bind(frame.getBorderPane().widthProperty());
+		controller.getBorderPane().prefHeightProperty().bind(frame.getBorderPane().heightProperty());
+	}
+
+	private void load(Controller controller, String fxml) {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/" + fxml + ".fxml"));
+			Node node = loader.load();
+			controller = loader.getController();
+			controller.init(ctrl, this, node);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	// GETTERS
@@ -130,16 +143,11 @@ public class Gui {
 		return test;
 	}
 
-
-	public Node getNodeHome() {
-		return nodeHome;
-	}
-
 	public Node getNodeViewer() {
 		return nodeViewer;
 	}
 
-	public Window getPrimaryStage() {
+	public Stage getPrimaryStage() {
 		return primaryStage;
 	}
 

@@ -1,0 +1,87 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+Button {
+	-fx-graphic-text-gap: 10;
+	-fx-padding: 10 15 10 15;
+	-fx-background-color: #AAAAAA;
+	-fx-focus-traversable: false;
+	-fx-font-family: "Verdana";
+	-fx-font-size: 14;
+}
+
+Button.mainmenu {
+	-fx-padding: 15 20 15 20;
+}
+
+Button:hover {
+	-fx-background-color: #029ddf;
+	-fx-cursor: "hand";
+}
+
+Button.exit:hover {
+	-fx-background-color: #be0000;
+}
+
+AnchorPane {
+	-fx-background-color: #333333;
+}
+
+StackPane {
+	-fx-background-color: #000000;
+}
+
+BorderPane {
+	-fx-background-color: black;
+}
+
+ScrollPane {
+	-fx-background-color: black;
+}
+
+VBox, HBox {
+	-fx-background-color: black;
+}
+
+Label {
+	-fx-font-family: "Verdana";
+	-fx-background-color: black;
+	-fx-text-fill: #CCCCCC;
+	-fx-font-size: 14;
+}
+
+Label.version {
+	-fx-padding: 0 10 10 0;
+}
+
+Label.status {
+	-fx-padding: 10 10 10 10;
+}
+
+ImageView.logo {
+	-fx-padding: 50 50 50 50;
+}
+
+TextField {
+	-fx-font-family: "Verdana";
+	-fx-font-size: 14;
+	-fx-background-color: #eee;
+	-fx-padding: 10 10 10 10;
+	-fx-border-color: gray;
+}
+
+.selected {
+	-fx-background-color: #66aaff;
+}
+
+.unselected {
+	-fx-background-color: #aaaaaa;
+}
+
+.red {
+	-fx-background-color: red;
+}
+
+.studytitlearea {
+	-fx-background-color: #215a78;
+	-fx-background-color: #5e5e5e;
+}

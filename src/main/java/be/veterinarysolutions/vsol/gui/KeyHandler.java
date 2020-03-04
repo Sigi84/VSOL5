@@ -15,6 +15,7 @@ public class KeyHandler implements EventHandler<KeyEvent> {
 
     @Override
     public void handle(KeyEvent e) {
+        System.out.println("Key Press: " + e.getCharacter());
         Viewer viewer = gui.getViewer();
 
         if (e.getCode() == KeyCode.A) {

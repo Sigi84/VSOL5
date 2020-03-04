@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -38,5 +39,10 @@ public class Test extends Controller implements Initializable {
         System.out.println(canvas.getRect().contains(e.getX(), e.getY()));
         System.out.println(canvas.getCircle().contains(e.getX(), e.getY()));
 
+    }
+
+    @Override
+    public BorderPane getBorderPane() {
+        return null;
     }
 }

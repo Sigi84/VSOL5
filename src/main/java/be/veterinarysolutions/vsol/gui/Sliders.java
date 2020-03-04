@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Slider;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 public class Sliders extends Controller {
 
@@ -88,5 +89,10 @@ public class Sliders extends Controller {
 
     public Slider getSliderNoise() {
         return sliderNoise;
+    }
+
+    @Override
+    public BorderPane getBorderPane() {
+        return null;
     }
 }

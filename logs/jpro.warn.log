@@ -3277,3 +3277,4 @@ Caused by: java.lang.AssertionError: assertion failed: Access to file:C:/Sandbox
 	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
 	... 12 common frames omitted
 2020-03-03 12:19:50,413 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
+2020-03-04 12:11:06,906 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-6 - jpro.plainFile - Couldn't get resource for: 'jpro/html/favicon.ico'

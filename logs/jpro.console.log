@@ -1871,3 +1871,630 @@
 2020-03-03 14:10:53,941 [INFO] in scala-execution-context-global-48 - [info] c.j.i.s.ViewInfo$ - raw            : 1657738
 2020-03-03 14:10:53,941 [INFO] in scala-execution-context-global-48 - [info] c.j.i.s.ViewInfo$ - zipped         : 284781
 2020-03-03 14:10:53,949 [INFO] in scala-execution-context-global-33 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-04 12:08:44,507 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-04 12:08:44,528 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-04 12:08:44,720 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Wed Mar 04 12:08:44 CET 2020
+2020-03-04 12:08:44,878 [INFO] in scala-execution-context-global-41 - [info] play.api.Play - Application started (Prod)
+2020-03-04 12:08:45,297 [INFO] in scala-execution-context-global-41 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-04 12:08:46,308 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-04 12:08:46,317 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-04 12:08:46,318 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-04 12:08:46,318 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          localhost:8080
+2020-03-04 12:08:46,318 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-04 12:08:46,871 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-04 12:08:47,140 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: 0
+2020-03-04 12:08:47,141 [INFO] in scala-execution-context-global-41 - Imagen device opened.
+2020-03-04 12:08:47,593 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-608501689]
+2020-03-04 12:08:47,937 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 1528 userid: 50558397
+2020-03-04 12:10:13,570 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4347a178
+2020-03-04 12:10:13,571 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3edc4462
+2020-03-04 12:10:13,571 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@f477309
+2020-03-04 12:10:14,713 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7eb1e53c
+2020-03-04 12:10:14,713 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4332204e
+2020-03-04 12:10:14,713 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4a94faff
+2020-03-04 12:10:14,778 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1803916b
+2020-03-04 12:10:14,778 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@75adc396
+2020-03-04 12:10:14,778 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@dce3cb8
+2020-03-04 12:10:15,155 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4a98f674
+2020-03-04 12:10:15,155 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6b3eafcf
+2020-03-04 12:10:15,155 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@495bc438
+2020-03-04 12:10:15,167 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4aefea68
+2020-03-04 12:10:15,168 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5d829d09
+2020-03-04 12:10:15,168 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3c7b2f7e
+2020-03-04 12:10:15,184 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1f00ceff
+2020-03-04 12:10:15,185 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ae502be
+2020-03-04 12:10:15,185 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4af54c53
+2020-03-04 12:10:15,201 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4c082a01
+2020-03-04 12:10:15,202 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2cff7007
+2020-03-04 12:10:15,202 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@84a4693
+2020-03-04 12:10:15,219 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1d0e862f
+2020-03-04 12:10:15,219 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@47aa35c3
+2020-03-04 12:10:15,219 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1e570bdd
+2020-03-04 12:10:15,236 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2648b1d1
+2020-03-04 12:10:15,236 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@67c2cce9
+2020-03-04 12:10:15,236 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@211a3c5d
+2020-03-04 12:10:15,253 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2c0af72d
+2020-03-04 12:10:15,253 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5c02ce25
+2020-03-04 12:10:15,253 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3bb0453c
+2020-03-04 12:10:15,268 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21dbd03c
+2020-03-04 12:10:15,269 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@18fbe89e
+2020-03-04 12:10:15,269 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5b23b6f3
+2020-03-04 12:10:15,285 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1aa1993a
+2020-03-04 12:10:15,286 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5c7330b3
+2020-03-04 12:10:15,286 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1c15e612
+2020-03-04 12:10:15,303 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5b3d64ad
+2020-03-04 12:10:15,303 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@68ab2cae
+2020-03-04 12:10:15,303 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@601bc078
+2020-03-04 12:10:15,319 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@ee6885b
+2020-03-04 12:10:15,320 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@30c091ff
+2020-03-04 12:10:15,320 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3736868a
+2020-03-04 12:10:15,336 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4ed7fba5
+2020-03-04 12:10:15,337 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4dd62623
+2020-03-04 12:10:15,337 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1c461884
+2020-03-04 12:10:15,353 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@d85c8dc
+2020-03-04 12:10:15,354 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21ab63d0
+2020-03-04 12:10:15,354 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@fd420fb
+2020-03-04 12:10:15,371 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@579b76d7
+2020-03-04 12:10:15,371 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@79664727
+2020-03-04 12:10:15,371 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5101a848
+2020-03-04 12:10:15,387 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1a46dba6
+2020-03-04 12:10:15,388 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4659634e
+2020-03-04 12:10:15,388 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3a442e7
+2020-03-04 12:10:15,405 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@76a48ac6
+2020-03-04 12:10:15,405 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@52b271b9
+2020-03-04 12:10:15,405 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@97e9685
+2020-03-04 12:10:15,422 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@76e16990
+2020-03-04 12:10:15,422 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@bd61377
+2020-03-04 12:10:15,422 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@131cbdd8
+2020-03-04 12:10:15,439 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1d26b7b6
+2020-03-04 12:10:15,439 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6ba22bb7
+2020-03-04 12:10:15,439 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@302c3138
+2020-03-04 12:10:15,455 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4643ea4b
+2020-03-04 12:10:15,456 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@17b7b64a
+2020-03-04 12:10:15,456 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2b0070ab
+2020-03-04 12:10:15,473 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@50a64ef9
+2020-03-04 12:10:15,473 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@788bf96e
+2020-03-04 12:10:15,473 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@53cdb6d7
+2020-03-04 12:10:15,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21b72566
+2020-03-04 12:10:15,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1ff24489
+2020-03-04 12:10:15,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6655eea8
+2020-03-04 12:10:15,507 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7239b4fb
+2020-03-04 12:10:15,507 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3b5024ba
+2020-03-04 12:10:15,507 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6bc679c1
+2020-03-04 12:10:15,541 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2aa0f77
+2020-03-04 12:10:15,541 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5afa6692
+2020-03-04 12:10:15,541 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ec0483c
+2020-03-04 12:10:15,558 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@31bc9e94
+2020-03-04 12:10:15,558 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4d41b137
+2020-03-04 12:10:15,558 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@61c649b5
+2020-03-04 12:10:15,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1142c50c
+2020-03-04 12:10:15,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@429aad70
+2020-03-04 12:10:15,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7db38338
+2020-03-04 12:10:15,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6c0373ca
+2020-03-04 12:10:15,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@d488731
+2020-03-04 12:10:15,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@327970b3
+2020-03-04 12:10:15,609 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5a1fb245
+2020-03-04 12:10:15,609 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@231abd5d
+2020-03-04 12:10:15,609 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2c3b03d5
+2020-03-04 12:10:15,626 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@50ed4149
+2020-03-04 12:10:15,626 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@243cc52a
+2020-03-04 12:10:15,626 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2a488469
+2020-03-04 12:10:15,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2b549708
+2020-03-04 12:10:15,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@455125c7
+2020-03-04 12:10:15,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@615e885f
+2020-03-04 12:10:15,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@532829a8
+2020-03-04 12:10:15,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@46214fe2
+2020-03-04 12:10:15,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1580cc8e
+2020-03-04 12:10:15,675 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@e7f4e5d
+2020-03-04 12:10:15,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1d0817a0
+2020-03-04 12:10:15,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1f9b2c57
+2020-03-04 12:10:15,692 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1e7247f5
+2020-03-04 12:10:15,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@584d29f8
+2020-03-04 12:10:15,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@750230b7
+2020-03-04 12:10:15,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5c977050
+2020-03-04 12:10:15,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@38f464fd
+2020-03-04 12:10:15,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@709ff010
+2020-03-04 12:10:15,726 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@457f7567
+2020-03-04 12:10:15,727 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4a6f12a8
+2020-03-04 12:10:15,727 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5da747be
+2020-03-04 12:10:15,743 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@36db7276
+2020-03-04 12:10:15,744 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@51a659a4
+2020-03-04 12:10:15,744 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@210c95f7
+2020-03-04 12:10:15,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@35786daf
+2020-03-04 12:10:15,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@701ee5da
+2020-03-04 12:10:15,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@649c95d3
+2020-03-04 12:10:15,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@40c05a60
+2020-03-04 12:10:15,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@40727da6
+2020-03-04 12:10:15,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@53fa6748
+2020-03-04 12:10:15,795 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3fd6fd02
+2020-03-04 12:10:15,795 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3f160d97
+2020-03-04 12:10:15,795 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4a5c93ca
+2020-03-04 12:10:15,811 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@702bfcc2
+2020-03-04 12:10:15,812 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5e47e3ce
+2020-03-04 12:10:15,812 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6e9721a6
+2020-03-04 12:10:15,829 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2efd8894
+2020-03-04 12:10:15,829 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@793006fc
+2020-03-04 12:10:15,829 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@22fc30ff
+2020-03-04 12:10:15,845 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7c8013bb
+2020-03-04 12:10:15,846 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3fb8bf1c
+2020-03-04 12:10:15,846 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@538b9c52
+2020-03-04 12:10:15,862 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@274c2c00
+2020-03-04 12:10:15,863 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@282a4db7
+2020-03-04 12:10:15,863 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3676889f
+2020-03-04 12:10:15,880 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@667cd54f
+2020-03-04 12:10:15,880 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@64cc8b6f
+2020-03-04 12:10:15,880 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6519dc15
+2020-03-04 12:10:15,896 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@722a660b
+2020-03-04 12:10:15,896 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@59f8e52f
+2020-03-04 12:10:15,896 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@70714f7e
+2020-03-04 12:10:15,914 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5544fa1c
+2020-03-04 12:10:15,914 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2fb44575
+2020-03-04 12:10:15,914 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@415fa349
+2020-03-04 12:10:15,930 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@28c8ebb8
+2020-03-04 12:10:15,930 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@14b14003
+2020-03-04 12:10:15,930 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2371fc26
+2020-03-04 12:10:15,947 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@23e3c131
+2020-03-04 12:10:15,947 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@f5f89a7
+2020-03-04 12:10:15,947 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6957dde1
+2020-03-04 12:10:16,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@570f0cb0
+2020-03-04 12:10:16,643 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2c990b41
+2020-03-04 12:10:16,643 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@29800823
+2020-03-04 12:10:16,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4b2a8f7b
+2020-03-04 12:10:16,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6242472d
+2020-03-04 12:10:16,660 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@27a830cc
+2020-03-04 12:10:16,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@d73b4bc
+2020-03-04 12:10:16,677 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6bbbcb8e
+2020-03-04 12:10:16,677 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3ef3663f
+2020-03-04 12:10:16,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21ddda42
+2020-03-04 12:10:16,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@43a92d8
+2020-03-04 12:10:16,694 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@488bd166
+2020-03-04 12:10:16,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3f77764f
+2020-03-04 12:10:16,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@29e19026
+2020-03-04 12:10:16,710 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@537507d3
+2020-03-04 12:10:16,728 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@416081e3
+2020-03-04 12:10:16,728 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3a504d83
+2020-03-04 12:10:16,728 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ea5919f
+2020-03-04 12:10:16,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4d8f1666
+2020-03-04 12:10:16,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1ff44f21
+2020-03-04 12:10:16,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@23629fc9
+2020-03-04 12:10:16,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@576a75a
+2020-03-04 12:10:16,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@325dfcea
+2020-03-04 12:10:16,760 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@446ab265
+2020-03-04 12:10:16,777 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@22eddcf2
+2020-03-04 12:10:16,777 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3305bb50
+2020-03-04 12:10:16,777 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4b37b0e1
+2020-03-04 12:10:16,794 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3039cf62
+2020-03-04 12:10:16,794 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@467fd13c
+2020-03-04 12:10:16,794 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@57f1da50
+2020-03-04 12:10:16,811 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ee20581
+2020-03-04 12:10:16,811 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@27186357
+2020-03-04 12:10:16,811 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1db590a2
+2020-03-04 12:10:16,828 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@37ad788b
+2020-03-04 12:10:16,828 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6acde5c
+2020-03-04 12:10:16,828 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@60db58c1
+2020-03-04 12:10:16,845 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@52cead30
+2020-03-04 12:10:16,845 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6869eaf8
+2020-03-04 12:10:16,846 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2a152e7d
+2020-03-04 12:10:16,862 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1e903227
+2020-03-04 12:10:16,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1df5914e
+2020-03-04 12:10:16,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4eef3380
+2020-03-04 12:10:16,879 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@10c8ba69
+2020-03-04 12:10:16,880 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@270cf8c3
+2020-03-04 12:10:16,880 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@588b68c6
+2020-03-04 12:10:16,896 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5dde2b20
+2020-03-04 12:10:16,896 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5e10b505
+2020-03-04 12:10:16,896 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@41845f9c
+2020-03-04 12:10:16,913 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@bb050d9
+2020-03-04 12:10:16,914 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@68ab968c
+2020-03-04 12:10:16,914 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@528fb1e2
+2020-03-04 12:10:16,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@24f9e353
+2020-03-04 12:10:16,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@b56468f
+2020-03-04 12:10:16,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7f65ddf7
+2020-03-04 12:10:16,947 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2d250840
+2020-03-04 12:10:16,947 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7cfee276
+2020-03-04 12:10:16,947 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@354c0740
+2020-03-04 12:10:16,964 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5d63baf1
+2020-03-04 12:10:16,965 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@840c01a
+2020-03-04 12:10:16,965 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@609e15c1
+2020-03-04 12:10:16,981 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@50279da7
+2020-03-04 12:10:16,981 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4007ba7f
+2020-03-04 12:10:16,981 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3475f7cc
+2020-03-04 12:10:16,998 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3530894f
+2020-03-04 12:10:16,998 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2ee0c3b2
+2020-03-04 12:10:16,998 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@716f5bd7
+2020-03-04 12:10:17,015 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@68dbc2e3
+2020-03-04 12:10:17,015 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@63e19dcc
+2020-03-04 12:10:17,015 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3df6016c
+2020-03-04 12:10:17,032 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@57f136ea
+2020-03-04 12:10:17,032 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5a81b019
+2020-03-04 12:10:17,032 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@a1b5dc8
+2020-03-04 12:10:17,049 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@35ec1a77
+2020-03-04 12:10:17,049 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6549f41f
+2020-03-04 12:10:17,049 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4b87986f
+2020-03-04 12:10:17,066 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@55f4452
+2020-03-04 12:10:17,066 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@726cf076
+2020-03-04 12:10:17,066 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@396057fc
+2020-03-04 12:10:17,083 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@196b5416
+2020-03-04 12:10:17,083 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@220f3f70
+2020-03-04 12:10:17,083 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4b9fbf1a
+2020-03-04 12:10:17,100 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@507f747d
+2020-03-04 12:10:17,100 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@662e7607
+2020-03-04 12:10:17,100 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6e3ff363
+2020-03-04 12:10:17,118 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5aefb354
+2020-03-04 12:10:17,118 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4bdae781
+2020-03-04 12:10:17,118 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3680efce
+2020-03-04 12:10:17,134 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6177c3ce
+2020-03-04 12:10:17,134 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5038aeb1
+2020-03-04 12:10:17,134 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7780fbfb
+2020-03-04 12:10:17,150 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2e5827cb
+2020-03-04 12:10:17,150 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5e775ed8
+2020-03-04 12:10:17,151 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@effb8f4
+2020-03-04 12:10:17,167 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3c7350bf
+2020-03-04 12:10:17,167 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4fb877dd
+2020-03-04 12:10:17,168 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2b7073d
+2020-03-04 12:10:17,184 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4236e983
+2020-03-04 12:10:17,184 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@78029017
+2020-03-04 12:10:17,184 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@71b7f9d1
+2020-03-04 12:10:17,201 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@450ff554
+2020-03-04 12:10:17,201 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@bb8f555
+2020-03-04 12:10:17,201 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21a9c580
+2020-03-04 12:10:17,219 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7478b85a
+2020-03-04 12:10:17,219 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1b12e690
+2020-03-04 12:10:17,219 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@51e15cf2
+2020-03-04 12:10:17,236 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@636bb63d
+2020-03-04 12:10:17,236 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3836706e
+2020-03-04 12:10:17,236 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@37e549c2
+2020-03-04 12:10:17,252 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@624782af
+2020-03-04 12:10:17,253 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7f716c7c
+2020-03-04 12:10:17,253 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@45f519a8
+2020-03-04 12:10:17,270 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f91c8c6
+2020-03-04 12:10:17,270 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@22c4a0c5
+2020-03-04 12:10:17,270 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@18a8075a
+2020-03-04 12:10:17,287 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5f0795c7
+2020-03-04 12:10:17,287 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@74ddbaa
+2020-03-04 12:10:17,287 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@39e3038d
+2020-03-04 12:10:17,304 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7d782555
+2020-03-04 12:10:17,304 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5c26be1c
+2020-03-04 12:10:17,304 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@72f0d3f1
+2020-03-04 12:10:17,320 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3ada77d0
+2020-03-04 12:10:17,320 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4e415421
+2020-03-04 12:10:17,320 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@784267b1
+2020-03-04 12:10:17,337 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@29dd95a9
+2020-03-04 12:10:17,338 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@424910cc
+2020-03-04 12:10:17,338 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@63a2f570
+2020-03-04 12:10:17,354 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@8acd5fd
+2020-03-04 12:10:17,354 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7cd1a8ed
+2020-03-04 12:10:17,354 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5d50d0b3
+2020-03-04 12:10:17,371 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@b2a9d3f
+2020-03-04 12:10:17,371 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@50a401a1
+2020-03-04 12:10:17,371 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@43d7ebaa
+2020-03-04 12:10:17,388 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@78e91d86
+2020-03-04 12:10:17,388 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@41f238a
+2020-03-04 12:10:17,388 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@330023a6
+2020-03-04 12:10:17,423 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@73975646
+2020-03-04 12:10:17,423 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@41b85681
+2020-03-04 12:10:17,423 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1ffada3c
+2020-03-04 12:10:17,439 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@128ca4d4
+2020-03-04 12:10:17,439 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5b6ea783
+2020-03-04 12:10:17,439 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7e443fe4
+2020-03-04 12:10:17,457 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@29c973ac
+2020-03-04 12:10:17,457 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@76add26e
+2020-03-04 12:10:17,457 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@47812766
+2020-03-04 12:10:17,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@16fc106b
+2020-03-04 12:10:17,491 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5808bfc5
+2020-03-04 12:10:17,491 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@52d4d5ad
+2020-03-04 12:10:17,506 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@635dcbc6
+2020-03-04 12:10:17,506 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@175003bd
+2020-03-04 12:10:17,507 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@63009682
+2020-03-04 12:10:17,523 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3203fccf
+2020-03-04 12:10:17,523 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@55d0d88b
+2020-03-04 12:10:17,523 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@400a163f
+2020-03-04 12:10:17,608 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@51c288bb
+2020-03-04 12:10:17,608 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@41e9c752
+2020-03-04 12:10:17,608 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@522b8c5
+2020-03-04 12:10:17,625 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@65f41dcb
+2020-03-04 12:10:17,625 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@75006520
+2020-03-04 12:10:17,625 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@8238b33
+2020-03-04 12:10:17,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1501d100
+2020-03-04 12:10:17,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1efba80
+2020-03-04 12:10:17,642 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2915a297
+2020-03-04 12:10:17,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@59004be3
+2020-03-04 12:10:17,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5d855b4e
+2020-03-04 12:10:17,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f49dfc5
+2020-03-04 12:10:17,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@784a572e
+2020-03-04 12:10:17,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@797c0815
+2020-03-04 12:10:17,676 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1cdb395d
+2020-03-04 12:10:17,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@31ce0a1c
+2020-03-04 12:10:17,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@741acca9
+2020-03-04 12:10:17,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@640750ce
+2020-03-04 12:10:17,710 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@73070ea9
+2020-03-04 12:10:17,710 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2dd8b127
+2020-03-04 12:10:17,710 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@11abaa14
+2020-03-04 12:10:17,727 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@340aed2f
+2020-03-04 12:10:17,727 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@78bd0ab0
+2020-03-04 12:10:17,727 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3fb08f6e
+2020-03-04 12:10:17,745 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@9ce4579
+2020-03-04 12:10:17,745 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@323e70d1
+2020-03-04 12:10:17,745 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ea8299a
+2020-03-04 12:10:17,761 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6cf21888
+2020-03-04 12:10:17,762 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@53290875
+2020-03-04 12:10:17,762 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2cbae139
+2020-03-04 12:10:17,778 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3c1571ef
+2020-03-04 12:10:17,778 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@475dec7d
+2020-03-04 12:10:17,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6a0d5bb7
+2020-03-04 12:10:17,795 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@578e7851
+2020-03-04 12:10:17,795 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@575e51f4
+2020-03-04 12:10:17,795 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@11147c8b
+2020-03-04 12:10:17,813 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2d4305ce
+2020-03-04 12:10:17,813 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1f01c4c9
+2020-03-04 12:10:17,813 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4fe1c2eb
+2020-03-04 12:10:17,829 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5a2fb353
+2020-03-04 12:10:17,829 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1b18d467
+2020-03-04 12:10:17,829 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6d9f10b4
+2020-03-04 12:10:17,847 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@14fafbca
+2020-03-04 12:10:17,847 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1754351
+2020-03-04 12:10:17,847 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1ed215da
+2020-03-04 12:10:17,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5aea3750
+2020-03-04 12:10:17,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@54988512
+2020-03-04 12:10:17,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2e8d4c6a
+2020-03-04 12:10:17,879 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3032ae2a
+2020-03-04 12:10:17,880 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@74184a5a
+2020-03-04 12:10:17,880 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1058859d
+2020-03-04 12:10:18,135 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3319f276
+2020-03-04 12:10:18,135 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@67b9ede5
+2020-03-04 12:10:18,135 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5b584737
+2020-03-04 12:10:18,151 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@23099fae
+2020-03-04 12:10:18,152 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3af10507
+2020-03-04 12:10:18,152 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4754b196
+2020-03-04 12:10:18,168 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2d0bde09
+2020-03-04 12:10:18,168 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f31123f
+2020-03-04 12:10:18,168 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6607207c
+2020-03-04 12:10:18,185 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4c58ea09
+2020-03-04 12:10:18,186 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1303373e
+2020-03-04 12:10:18,186 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@55eb48bf
+2020-03-04 12:10:18,202 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@221ccff2
+2020-03-04 12:10:18,202 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2d3dc5be
+2020-03-04 12:10:18,202 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@768738c0
+2020-03-04 12:10:18,219 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3caa747b
+2020-03-04 12:10:18,219 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@73a41a16
+2020-03-04 12:10:18,219 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3b1cd916
+2020-03-04 12:10:18,236 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3261975b
+2020-03-04 12:10:18,237 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6f683c68
+2020-03-04 12:10:18,237 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@664f0ed8
+2020-03-04 12:10:18,252 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@253433bf
+2020-03-04 12:10:18,252 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3b93c00f
+2020-03-04 12:10:18,252 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2c4bc7d1
+2020-03-04 12:10:18,269 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@8ea39ca
+2020-03-04 12:10:18,269 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7a6d1249
+2020-03-04 12:10:18,269 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@58ba6888
+2020-03-04 12:10:18,440 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5e855571
+2020-03-04 12:10:18,440 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@55708801
+2020-03-04 12:10:18,440 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6dea7607
+2020-03-04 12:10:18,457 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@43fd1072
+2020-03-04 12:10:18,457 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7d991c44
+2020-03-04 12:10:18,457 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@296556de
+2020-03-04 12:10:18,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4080d480
+2020-03-04 12:10:18,490 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@43d0a9e8
+2020-03-04 12:10:18,490 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@468d019a
+2020-03-04 12:10:18,507 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@47133606
+2020-03-04 12:10:18,507 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@69bc6eaf
+2020-03-04 12:10:18,507 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6bd24f47
+2020-03-04 12:10:18,524 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6c7458c5
+2020-03-04 12:10:18,524 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@15258a7b
+2020-03-04 12:10:18,524 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ccbbecd
+2020-03-04 12:10:18,541 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@51c8fff6
+2020-03-04 12:10:18,541 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@70540ed4
+2020-03-04 12:10:18,541 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@e545653
+2020-03-04 12:10:18,559 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1ee02e7f
+2020-03-04 12:10:18,559 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@32aa053e
+2020-03-04 12:10:18,559 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@749c6b8b
+2020-03-04 12:10:18,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@52e61acf
+2020-03-04 12:10:18,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@45b1f32b
+2020-03-04 12:10:18,575 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@339e680b
+2020-03-04 12:10:18,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1072bed1
+2020-03-04 12:10:18,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@506c52e4
+2020-03-04 12:10:18,592 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7b98d40c
+2020-03-04 12:10:18,609 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@172b7e93
+2020-03-04 12:10:18,609 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2a2ee0ce
+2020-03-04 12:10:18,609 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@105d798c
+2020-03-04 12:10:18,625 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3376a73c
+2020-03-04 12:10:18,626 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@481c29c7
+2020-03-04 12:10:18,626 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6bd3cbc6
+2020-03-04 12:10:18,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@320199e8
+2020-03-04 12:10:18,659 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4779e995
+2020-03-04 12:10:18,659 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@44dd74c4
+2020-03-04 12:10:18,676 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3f6de964
+2020-03-04 12:10:18,676 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1039c119
+2020-03-04 12:10:18,676 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1dfe7c34
+2020-03-04 12:10:18,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@205e6329
+2020-03-04 12:10:18,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4eafa4ca
+2020-03-04 12:10:18,693 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5d0fe0eb
+2020-03-04 12:10:18,710 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@49434ad7
+2020-03-04 12:10:18,710 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6b69f3ac
+2020-03-04 12:10:18,710 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@28cb96d1
+2020-03-04 12:10:18,727 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6c523d04
+2020-03-04 12:10:18,727 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@185b5341
+2020-03-04 12:10:18,727 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@261a283b
+2020-03-04 12:10:18,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@431f1e73
+2020-03-04 12:10:18,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@34b3bddb
+2020-03-04 12:10:18,744 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@11abea69
+2020-03-04 12:10:18,761 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6653d7f3
+2020-03-04 12:10:18,761 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@28e591f2
+2020-03-04 12:10:18,761 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@58f3603e
+2020-03-04 12:10:18,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@54eb806a
+2020-03-04 12:10:18,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@17dae859
+2020-03-04 12:10:18,778 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3550ad6a
+2020-03-04 12:10:18,795 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@21e8abf
+2020-03-04 12:10:18,795 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@32154c6b
+2020-03-04 12:10:18,795 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@48123c42
+2020-03-04 12:10:18,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5520a871
+2020-03-04 12:10:18,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@c097ebb
+2020-03-04 12:10:18,863 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@28b63963
+2020-03-04 12:10:18,881 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@45617e3
+2020-03-04 12:10:18,881 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1db24b2b
+2020-03-04 12:10:18,881 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7eaa6f78
+2020-03-04 12:10:18,897 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6c7b74ac
+2020-03-04 12:10:18,897 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@410717f4
+2020-03-04 12:10:18,897 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@566dec3
+2020-03-04 12:10:18,915 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5449ad26
+2020-03-04 12:10:18,915 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@67eaf1aa
+2020-03-04 12:10:18,915 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@76eb8319
+2020-03-04 12:10:18,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@375b4480
+2020-03-04 12:10:18,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1d82fa39
+2020-03-04 12:10:18,931 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2ae0a81a
+2020-03-04 12:10:18,948 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2e573783
+2020-03-04 12:10:18,948 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@158ea2b
+2020-03-04 12:10:18,948 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2b69617e
+2020-03-04 12:10:18,966 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2c929dda
+2020-03-04 12:10:18,966 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4c106ba7
+2020-03-04 12:10:18,966 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3ec3a3d5
+2020-03-04 12:10:18,982 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4a03f285
+2020-03-04 12:10:18,982 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@69fd2d1b
+2020-03-04 12:10:18,982 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7afc88e0
+2020-03-04 12:10:18,998 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2546b303
+2020-03-04 12:10:18,999 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3be384c3
+2020-03-04 12:10:18,999 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@47ae7671
+2020-03-04 12:10:19,015 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4bd0c6d2
+2020-03-04 12:10:19,015 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ff92c27
+2020-03-04 12:10:19,015 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@64df96ec
+2020-03-04 12:10:19,032 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6780c7a4
+2020-03-04 12:10:19,033 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ff0554e
+2020-03-04 12:10:19,033 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4c539854
+2020-03-04 12:10:19,049 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@73a8da2e
+2020-03-04 12:10:19,049 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@23e97d37
+2020-03-04 12:10:19,049 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@53d3386c
+2020-03-04 12:10:19,135 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7d2f0dd9
+2020-03-04 12:10:19,135 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@37755a48
+2020-03-04 12:10:19,135 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f6e028d
+2020-03-04 12:10:19,152 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ca8f357
+2020-03-04 12:10:19,152 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@436dec25
+2020-03-04 12:10:19,152 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@113c253b
+2020-03-04 12:10:19,169 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7565f8dd
+2020-03-04 12:10:19,169 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5000eb7
+2020-03-04 12:10:19,169 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5bee610
+2020-03-04 12:10:19,185 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2a5a9b3b
+2020-03-04 12:10:19,185 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@58a66606
+2020-03-04 12:10:19,185 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@329a1b9a
+2020-03-04 12:10:19,203 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5a2363d4
+2020-03-04 12:10:19,203 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3807e5c1
+2020-03-04 12:10:19,203 [INFO] in scala-execution-context-global-83 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6c115496
+2020-03-04 12:10:23,000 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@82709ce
+2020-03-04 12:10:23,000 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@13a1c27b
+2020-03-04 12:10:23,000 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2ea5cd4e
+2020-03-04 12:10:23,017 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f40ec60
+2020-03-04 12:10:23,017 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4f8f877b
+2020-03-04 12:10:23,017 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1f7c970d
+2020-03-04 12:10:23,033 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4c250ab5
+2020-03-04 12:10:23,034 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@371a28c3
+2020-03-04 12:10:23,034 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@49956817
+2020-03-04 12:10:23,050 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2382c460
+2020-03-04 12:10:23,051 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4135d5d7
+2020-03-04 12:10:23,051 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@36b8731
+2020-03-04 12:10:23,084 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@59323bd4
+2020-03-04 12:10:23,084 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@63f6dcc
+2020-03-04 12:10:23,084 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1008b29d
+2020-03-04 12:10:23,118 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@251b62db
+2020-03-04 12:10:23,118 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@70d2a0bf
+2020-03-04 12:10:23,118 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7a49672c
+2020-03-04 12:10:23,152 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@768574
+2020-03-04 12:10:23,152 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@31b7e251
+2020-03-04 12:10:23,152 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@17378089
+2020-03-04 12:10:23,169 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6845986d
+2020-03-04 12:10:23,169 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@43dd7e24
+2020-03-04 12:10:23,169 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@28fd44ac
+2020-03-04 12:10:23,187 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@509d6cc4
+2020-03-04 12:10:23,187 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@12879a5f
+2020-03-04 12:10:23,187 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@75be7e8c
+2020-03-04 12:10:23,203 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@50211ab2
+2020-03-04 12:10:23,203 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@56ed4424
+2020-03-04 12:10:23,203 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@478d5a63
+2020-03-04 12:10:23,220 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@c365539
+2020-03-04 12:10:23,220 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2145589e
+2020-03-04 12:10:23,221 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1dd1ccca
+2020-03-04 12:10:23,237 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2fe01d34
+2020-03-04 12:10:23,237 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@3c44339e
+2020-03-04 12:10:23,237 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7f4755c5
+2020-03-04 12:10:23,254 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@38bfd65a
+2020-03-04 12:10:23,254 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7d9345f5
+2020-03-04 12:10:23,254 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@14c5c901
+2020-03-04 12:10:23,271 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@46113725
+2020-03-04 12:10:23,271 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7ca67327
+2020-03-04 12:10:23,271 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@10e665be
+2020-03-04 12:10:23,288 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@6259355e
+2020-03-04 12:10:23,288 [INFO] in scala-execution-context-global-82 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@4131673e
+2020-03-04 12:10:23,288 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@54958133
+2020-03-04 12:10:23,305 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@52e5c693
+2020-03-04 12:10:23,305 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@2a8159e5
+2020-03-04 12:10:23,305 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@62605f55
+2020-03-04 12:10:23,321 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@1c7720d1
+2020-03-04 12:10:23,321 [INFO] in scala-execution-context-global-55 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7c0d5efd
+2020-03-04 12:10:23,321 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@18a5fa96
+2020-03-04 12:10:23,356 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@5f361fe4
+2020-03-04 12:10:23,356 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@68f03fde
+2020-03-04 12:10:23,356 [INFO] in scala-execution-context-global-41 - Unsupported Object: com.sun.scenario.effect.ColorAdjust@7095a1d2
+2020-03-04 12:11:06,906 [INFO] in scala-execution-context-global-41 - [warn] c.jpro - jpro.plainFile - Couldn't get resource for: 'jpro/html/favicon.ico'
+2020-03-04 15:52:43,693 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-04 15:52:43,693 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-04 15:52:43,694 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-04 15:52:43,694 [INFO] in scala-execution-context-global-42 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-04 15:52:43,694 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-04 15:52:43,694 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-04 15:52:43,711 [INFO] in scala-execution-context-global-42 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-04 15:52:43,847 [INFO] in scala-execution-context-global-42 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Wed Mar 04 15:52:43 CET 2020
+2020-03-04 15:52:44,005 [INFO] in scala-execution-context-global-42 - [info] play.api.Play - Application started (Prod)
+2020-03-04 15:52:44,416 [INFO] in scala-execution-context-global-42 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-04 15:52:45,291 [INFO] in scala-execution-context-global-42 - [info] c.jpro - application requested: 0!default
+2020-03-04 15:52:45,300 [INFO] in scala-execution-context-global-42 - [info] c.jpro - Creating Application: 0!default
+2020-03-04 15:52:45,302 [INFO] in scala-execution-context-global-42 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-04 15:52:45,302 [INFO] in scala-execution-context-global-42 - [info] c.jpro - host          localhost:8080
+2020-03-04 15:52:45,302 [INFO] in scala-execution-context-global-42 - [info] c.jpro - uri           /app/0!default
+2020-03-04 15:52:45,916 [INFO] in scala-execution-context-global-42 - Entered Ctrl.
+2020-03-04 15:52:46,117 [INFO] in scala-execution-context-global-42 - Imagen Device Handle: 0
+2020-03-04 15:52:46,117 [INFO] in scala-execution-context-global-42 - Imagen device opened.
+2020-03-04 15:52:46,475 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#121876693]
+2020-03-04 15:52:46,751 [INFO] in scala-execution-context-global-42 - [info] com.jpro.JS - received msg: new MainID: 646 userid: 863468646
+2020-03-04 15:53:03,943 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-04 15:53:03,944 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-03-04 15:53:03,944 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - startTime      : Wed Mar 04 15:53:03 CET 2020      
+2020-03-04 15:53:03,944 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.018 
+2020-03-04 15:53:03,944 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-03-04 15:53:03,944 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-03-04 15:53:03,945 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-03-04 15:53:03,945 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - raw            : 93486
+2020-03-04 15:53:03,945 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - zipped         : 31545
+2020-03-04 15:53:03,945 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-04 15:53:11,181 [INFO] in scala-execution-context-global-42 - [info] c.jpro - application requested: 0!default
+2020-03-04 15:53:11,181 [INFO] in scala-execution-context-global-42 - [info] c.jpro - Creating Application: 0!default
+2020-03-04 15:53:11,181 [INFO] in scala-execution-context-global-42 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-04 15:53:11,181 [INFO] in scala-execution-context-global-42 - [info] c.jpro - host          localhost:8080
+2020-03-04 15:53:11,181 [INFO] in scala-execution-context-global-42 - [info] c.jpro - uri           /app/0!default
+2020-03-04 15:53:11,231 [INFO] in scala-execution-context-global-42 - Entered Ctrl.
+2020-03-04 15:53:11,238 [INFO] in scala-execution-context-global-42 - Imagen Device Handle: -1
+2020-03-04 15:53:11,239 [INFO] in scala-execution-context-global-42 - Couldn't open Imagen device.
+2020-03-04 15:53:11,298 [INFO] in scala-execution-context-global-42 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-14-2-actorRefSource#-98347222]
+2020-03-04 15:53:11,365 [INFO] in scala-execution-context-global-42 - [info] com.jpro.JS - received msg: new MainID: 646 userid: 576329111
+2020-03-04 15:58:28,019 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-04 15:58:28,019 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-04 15:58:28,020 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-04 15:58:28,020 [INFO] in scala-execution-context-global-41 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-04 15:58:28,020 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-04 15:58:28,020 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-04 15:58:28,039 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-04 15:58:28,179 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Wed Mar 04 15:58:27 CET 2020
+2020-03-04 15:58:28,337 [INFO] in scala-execution-context-global-41 - [info] play.api.Play - Application started (Prod)
+2020-03-04 15:58:28,738 [INFO] in scala-execution-context-global-41 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-04 15:58:29,678 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-04 15:58:29,686 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-04 15:58:29,688 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-04 15:58:29,688 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          localhost:8080
+2020-03-04 15:58:29,688 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-04 15:58:30,268 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-04 15:58:30,467 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: 0
+2020-03-04 15:58:30,468 [INFO] in scala-execution-context-global-41 - Imagen device opened.
+2020-03-04 15:58:30,829 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-285899155]
+2020-03-04 15:58:31,110 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 582 userid: 102636487

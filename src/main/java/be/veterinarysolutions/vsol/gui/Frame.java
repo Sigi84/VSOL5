@@ -60,12 +60,12 @@ public class Frame extends Controller {
     // EVENTS
 
     @FXML public void initialize() {
-        lblVersion.setText(Ctrl.version);
-
-        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
-        bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
-
-        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> fillImagen());
+//        lblVersion.setText(Ctrl.version);
+//
+//        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
+//        bg.heightProperty().addListener((observable, oldValue, newValue) -> resize());
+//
+//        btnCamera.widthProperty().addListener((observable, oldValue, newValue) -> fillImagen());
     }
 
     @FXML protected void btnBackMouseClicked(MouseEvent e) { back(); }

@@ -785,4 +785,8 @@ public class Viewer extends Controller implements Pollable {
 		return hbox.heightProperty().doubleValue();
 	}
 
+	@Override
+	public BorderPane getBorderPane() {
+		return null;
+	}
 }
