@@ -10,17 +10,19 @@ import javafx.scene.layout.BorderPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Settings extends Controller implements Initializable {
+public class Settings extends Controller {
 	@FXML private Button btnBack;
 
 	@Override
-	public void initialize(URL url, ResourceBundle resourceBundle) {
+	public void init() {
 
 	}
 
 	@FXML protected void btnBackMouseClicked(MouseEvent e) {
 		gui.showHome();
 	}
+
+
 
 
 }

@@ -1,4 +1,4 @@
-package be.veterinarysolutions.vsol.gui;
+package be.veterinarysolutions.vsol.gui.tobedeleted;
 
 import be.veterinarysolutions.vsol.data.Picture;
 import javafx.scene.canvas.Canvas;
@@ -10,13 +10,13 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Translate;
 
-public class ResizableCanvas extends Canvas {
+public class ResizableCanvasOld extends Canvas {
 
     private Picture pic;
     private Circle circle;
     private Rectangle rect;
 
-    public ResizableCanvas(Picture pic) {
+    public ResizableCanvasOld(Picture pic) {
         this.pic = pic;
         widthProperty().addListener(e -> draw());
         heightProperty().addListener(e -> draw());

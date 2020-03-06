@@ -9,7 +9,7 @@ public class Args {
 
     public static Integer
             x = null,  y = null,
-            width = 800, height = 800;
+            width = 1200, height = 800;
 
 
     public static void load(String[] commandlineArgs) {

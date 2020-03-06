@@ -29,8 +29,10 @@ public class Main extends JProApplication {
 
 	@Override
 	public void stop() {
-		logger.info("Closing VSOL5.");
-		ctrl.exit();
+		if (!WebAPI.isBrowser()) {
+			logger.info("Closing VSOL5.");
+			ctrl.exit();
+		}
 	}
 
 }

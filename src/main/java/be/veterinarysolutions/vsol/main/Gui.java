@@ -1,9 +1,7 @@
 package be.veterinarysolutions.vsol.main;
 
 import be.veterinarysolutions.vsol.gui.*;
-import be.veterinarysolutions.vsol.gui.scenes.Home;
-import be.veterinarysolutions.vsol.gui.scenes.Settings;
-import be.veterinarysolutions.vsol.gui.scenes.Study;
+import be.veterinarysolutions.vsol.gui.scenes.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -17,56 +15,50 @@ import java.io.IOException;
 
 public class Gui {
 	private Logger logger = LogManager.getLogger();
-
 	private Ctrl ctrl;
-
 	private Stage primaryStage;
 
-	private Parent frameRoot;
-//	private Node homeScene, settingsScene, studyScene;
-
 	private Frame frame;
+
 	private Home home;
 	private Settings settings;
 	private Study study;
-
-	private Node nodeViewer, nodeSliders;
-
-	private Viewer viewer;
-	private Sliders sliders;
-	private Test test;
+	private Controller activeScene;
 
 	public Gui(Ctrl ctrl, Stage primaryStage) throws IOException {
 		this.ctrl = ctrl;
 		this.primaryStage = primaryStage;
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Frame.fxml"));
-		frameRoot = loader.load();
-		frame = loader.getController();
-		frame.init(ctrl, this, frameRoot);
+		// ROOT
 
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Frame.fxml"));
+		Parent frameRoot = loader.load();
+		frame = loader.getController();
+		frame.set(ctrl, this, frameRoot);
+
+		// SCENES
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/HomeScene.fxml"));
 		Node node = loader.load();
 		home = loader.getController();
-		home.init(ctrl, this, node);
+		home.set(ctrl, this, node);
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/SettingsScene.fxml"));
 		node = loader.load();
 		settings = loader.getController();
-		settings.init(ctrl, this, node);
+		settings.set(ctrl, this, node);
 
 		loader = new FXMLLoader(getClass().getResource("/fxml/StudyScene.fxml"));
 		node = loader.load();
 		study = loader.getController();
-		study.init(ctrl, this, node);
+		study.set(ctrl, this, node);
 
 
 
-
-
-		Scene scene = new Scene(frameRoot, 1200, 800);
-		scene.setOnKeyPressed(new KeyHandler(this));
+		Scene scene = new Scene(frameRoot);
+		scene.setOnKeyPressed(new KeyPressedHandler(this));
+//		frame.getBorderPane().widthProperty().addListener((observableValue, oldValue, newValue) -> activeScene.resizeWidth(newValue.doubleValue()));
+//		frame.getBorderPane().heightProperty().addListener((observableValue, oldValue, newValue) -> activeScene.resizeHeight(newValue.doubleValue()));
 		primaryStage.setScene(scene);
 
 		showHome();
@@ -103,55 +95,32 @@ public class Gui {
 		frame.getBorderPane().setCenter(controller.getNode());
 		controller.getBorderPane().prefWidthProperty().bind(frame.getBorderPane().widthProperty());
 		controller.getBorderPane().prefHeightProperty().bind(frame.getBorderPane().heightProperty());
-	}
 
-	private void load(Controller controller, String fxml) {
-		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/" + fxml + ".fxml"));
-			Node node = loader.load();
-			controller = loader.getController();
-			controller.init(ctrl, this, node);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		activeScene = controller;
+//		activeScene.resizeWidth(frame.getBorderPane().widthProperty().doubleValue());
+//		activeScene.resizeHeight(frame.getBorderPane().heightProperty().doubleValue());
 	}
 
 	// GETTERS
 
-	public Ctrl getCtrl() {
-		return ctrl;
+	public Stage getPrimaryStage() {
+		return primaryStage;
 	}
 
 	public Frame getFrame() {
 		return frame;
 	}
 
-	public Viewer getViewer() {
-		return viewer;
-	}
-
 	public Home getHome() {
 		return home;
 	}
 
-	public Sliders getSliders() {
-		return sliders;
+	public Settings getSettings() {
+		return settings;
 	}
 
-	public Test getTest() {
-		return test;
+	public Study getStudy() {
+		return study;
 	}
 
-	public Node getNodeViewer() {
-		return nodeViewer;
-	}
-
-	public Stage getPrimaryStage() {
-		return primaryStage;
-	}
-
-	public Node getNodeSliders() {
-		return nodeSliders;
-	}
 }

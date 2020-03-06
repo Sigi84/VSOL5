@@ -13,12 +13,12 @@ import javafx.scene.layout.BorderPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Home extends Controller implements Initializable {
+public class Home extends Controller {
 	@FXML private Button btnNew, btnImport, btnSettings, btnExit;
 	@FXML private Label lblVersion;
 
 	@Override
-	public void initialize(URL url, ResourceBundle resourceBundle) {
+	public void init() {
 		btnExit.setVisible(!WebAPI.isBrowser()); // the exit button is not relevant in a browser window
 		lblVersion.setText("© 2020 - Veterinary Solutions - version " + Ctrl.version);
 	}
@@ -38,5 +38,7 @@ public class Home extends Controller implements Initializable {
 	@FXML protected void btnExitMouseClicked(MouseEvent e) {
 		gui.getPrimaryStage().close();
 	}
+
+
 
 }

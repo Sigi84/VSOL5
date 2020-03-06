@@ -14,10 +14,11 @@ public abstract class Controller {
     @FXML
     protected BorderPane borderPane;
 
-    public void init(Ctrl ctrl, Gui gui, Node node) {
+    public void set(Ctrl ctrl, Gui gui, Node node) {
         this.ctrl = ctrl;
         this.gui = gui;
         this.node = node;
+        init();
     }
 
     public Node getNode() { return node; }
@@ -25,5 +26,11 @@ public abstract class Controller {
     public BorderPane getBorderPane() {
         return borderPane;
     }
+
+    public abstract void init();
+
+//    public abstract void resizeWidth(double value);
+
+//    public abstract void resizeHeight(double value);
 
 }

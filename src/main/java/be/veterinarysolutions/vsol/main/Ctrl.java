@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class Ctrl {
 
-	public static final String version = "0.0.15";
-	public static final String versionDate = "2020-03-04";
-	public static final String versionTime = "17:14";
+	public static final String version = "0.0.16";
+	public static final String versionDate = "2020-03-06";
+	public static final String versionTime = "20:20";
 
 	private static final Logger logger = LogManager.getLogger();
 	private Database db;

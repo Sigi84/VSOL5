@@ -1,7 +1,8 @@
-package be.veterinarysolutions.vsol.gui;
+package be.veterinarysolutions.vsol.gui.scenes;
 
 import be.veterinarysolutions.vsol.data.Picture;
 import be.veterinarysolutions.vsol.dlls.Imagen;
+import be.veterinarysolutions.vsol.gui.Controller;
 import be.veterinarysolutions.vsol.main.Ctrl;
 import be.veterinarysolutions.vsol.main.Options;
 import com.jpro.webapi.WebAPI;
@@ -30,7 +31,7 @@ public class Frame extends Controller {
     // PRIVATE
 
     private void resize() {
-        gui.getViewer().resize();
+//        gui.getViewer().resize();
     }
 
     private void fillImagen() {
@@ -41,7 +42,7 @@ public class Frame extends Controller {
     }
 
     public void exit() {
-        gui.getCtrl().exit();
+        ctrl.exit();
     }
 
     private void  back() {
@@ -54,12 +55,13 @@ public class Frame extends Controller {
     }
 
     public void viewer() {
-        bg.setCenter(gui.getNodeViewer());
+//        bg.setCenter(gui.getNodeViewer());
     }
 
     // EVENTS
 
-    @FXML public void initialize() {
+    @Override
+    public void init() {
 //        lblVersion.setText(Ctrl.version);
 //
 //        bg.widthProperty().addListener((observable, oldValue, newValue) -> resize());
@@ -80,7 +82,7 @@ public class Frame extends Controller {
             String filename = ctrl.getImagen().mockCapture();
             if (filename != null) {
                 Picture pic = new Picture(filename);
-                gui.getViewer().addPic(pic);
+//                gui.getViewer().addPic(pic);
             }
         } else {
             ctrl.getImagen().capture();
@@ -102,5 +104,6 @@ public class Frame extends Controller {
     public double getMenuWidth() {
         return menu.widthProperty().doubleValue();
     }
+
 
 }

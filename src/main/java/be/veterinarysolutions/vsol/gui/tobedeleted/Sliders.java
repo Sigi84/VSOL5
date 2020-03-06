@@ -1,4 +1,4 @@
-package be.veterinarysolutions.vsol.gui;
+package be.veterinarysolutions.vsol.gui.tobedeleted;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,7 +7,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
-public class Sliders extends Controller {
+public class Sliders {
 
     @FXML private AnchorPane pane;
     @FXML private Slider sliderHistogram, sliderWeight, sliderLatitude, sliderContrast, sliderEdge, sliderNoise;
@@ -45,15 +45,15 @@ public class Sliders extends Controller {
 
     @FXML protected void sliderHistogramMouseReleased(MouseEvent e) {
         enableSliders();
-        gui.getViewer().histogramOptimization(sliderHistogram.getValue());
+//        gui.getViewer().histogramOptimization(sliderHistogram.getValue());
     }
 
     @FXML protected void btnUndoMouseClicked(MouseEvent e) {
-        gui.getViewer().undo();
+//        gui.getViewer().undo();
     }
 
     @FXML protected void btnRedoMouseClicked(MouseEvent e) {
-        gui.getViewer().redo();
+//        gui.getViewer().redo();
     }
 
     // GETTERS
@@ -91,8 +91,4 @@ public class Sliders extends Controller {
         return sliderNoise;
     }
 
-    @Override
-    public BorderPane getBorderPane() {
-        return null;
-    }
 }

@@ -14,7 +14,6 @@ public class Picture extends Layer {
     private Image img;
     private File file;
     private Rectangle rect;
-    private Vector<Drawing> drawings;
 
     // CONSTRUCTOR
 
@@ -23,7 +22,6 @@ public class Picture extends Layer {
         img = new Image("file:" + file.getAbsolutePath());
         reset();
         rect = new Rectangle(0, 0, img.getWidth(), img.getHeight());
-        drawings = new Vector<>();
     }
 
     public Picture(String filename) {
@@ -53,13 +51,9 @@ public class Picture extends Layer {
         return rect;
     }
 
-    public Vector<Drawing> getDrawings() {
-        return drawings;
-    }
-
     // SETTERS
 
-    public void setRect(double x, double y, double width, double height) {
-        rect = new Rectangle(x, y, width, height);
+    public void setRect(Rectangle rect) {
+        this.rect = rect;
     }
 }

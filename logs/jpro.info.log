@@ -1361,7 +1361,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:35)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:439)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:439)
 	... 68 common frames omitted
 2020-02-29 16:02:13,222 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
 2020-02-29 16:02:13,223 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
@@ -1454,7 +1454,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:35)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:439)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:439)
 	... 68 common frames omitted
 2020-02-29 16:02:50,414 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1816.0,46.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
 java.lang.reflect.InvocationTargetException: null
@@ -1540,7 +1540,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:35)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:439)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:439)
 	... 68 common frames omitted
 2020-02-29 16:05:22,997 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
 2020-02-29 16:05:23,124 [INFO] from com.jpro.activity in Thread-0 - Starting the server
@@ -1649,7 +1649,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:35)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:439)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:439)
 	... 68 common frames omitted
 2020-02-29 16:06:05,055 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
 2020-02-29 16:06:05,185 [INFO] from com.jpro.activity in Thread-0 - Starting the server
@@ -2032,9 +2032,9 @@ java.lang.ClassNotFoundException: be.veterinarysolutions.vsol.main.Main
 2020-02-29 16:14:23,073 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 973000793
 2020-02-29 16:14:50,004 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: KeyEventToken(KeyPressed,%,37,false,false,false,false) app: stage title: VSOL Dental
 java.lang.ArithmeticException: / by zero
-	at be.veterinarysolutions.vsol.gui.Viewer.selectPrevious(Viewer.java:352)
-	at be.veterinarysolutions.vsol.gui.KeyHandler.handle(KeyHandler.java:27)
-	at be.veterinarysolutions.vsol.gui.KeyHandler.handle(KeyHandler.java:8)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.selectPrevious(Viewer.java:352)
+	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:27)
+	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:8)
 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
@@ -2070,9 +2070,9 @@ java.lang.ArithmeticException: / by zero
 	at java.lang.Thread.run(Thread.java:748)
 2020-02-29 16:14:50,290 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: KeyEventToken(KeyPressed,',39,false,false,false,false) app: stage title: VSOL Dental
 java.lang.ArithmeticException: / by zero
-	at be.veterinarysolutions.vsol.gui.Viewer.selectNext(Viewer.java:328)
-	at be.veterinarysolutions.vsol.gui.KeyHandler.handle(KeyHandler.java:25)
-	at be.veterinarysolutions.vsol.gui.KeyHandler.handle(KeyHandler.java:8)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.selectNext(Viewer.java:328)
+	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:25)
+	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:8)
 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
@@ -3845,7 +3845,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:35)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:448)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:448)
 	... 70 common frames omitted
 2020-03-02 15:29:27,363 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
 2020-03-02 15:29:27,493 [INFO] from com.jpro.activity in Thread-0 - Starting the server
@@ -4173,7 +4173,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 70 common frames omitted
 2020-03-03 11:39:36,841 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
 2020-03-03 11:39:36,842 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
@@ -4267,7 +4267,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 70 common frames omitted
 2020-03-03 11:39:37,637 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 1528 userid: 323360473
 2020-03-03 11:40:10,673 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1788.0,35.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
@@ -4355,7 +4355,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:40:12,753 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
 2020-03-03 11:40:12,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
@@ -4492,7 +4492,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:41:04,072 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1797.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
 java.lang.reflect.InvocationTargetException: null
@@ -4579,7 +4579,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:41:07,170 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
 2020-03-03 11:41:07,285 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
@@ -4668,7 +4668,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:41:09,763 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1807.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
 java.lang.reflect.InvocationTargetException: null
@@ -4755,7 +4755,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:41:09,995 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1807.0,33.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
 java.lang.reflect.InvocationTargetException: null
@@ -4842,7 +4842,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 69 common frames omitted
 2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
 2020-03-03 11:41:43,624 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
@@ -4938,7 +4938,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 68 common frames omitted
 2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
 2020-03-03 11:42:13,925 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
@@ -5031,7 +5031,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 68 common frames omitted
 2020-03-03 11:42:34,100 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
 2020-03-03 11:42:34,216 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
@@ -5297,7 +5297,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 70 common frames omitted
 2020-03-03 11:58:50,584 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1817.0,27.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
 java.lang.reflect.InvocationTargetException: null
@@ -5385,7 +5385,7 @@ Caused by: java.lang.UnsupportedOperationException: null
 	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
 	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:38)
-	at be.veterinarysolutions.vsol.gui.Viewer.btnOpenMouseClicked(Viewer.java:449)
+	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.btnOpenMouseClicked(Viewer.java:449)
 	... 70 common frames omitted
 2020-03-03 11:58:50,799 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
 2020-03-03 11:58:50,848 [ERROR] from com.jpro.JS in JavaFX Application Thread - received msg: unexpected error: scala.scalajs.js.JavaScriptException: InvalidStateError: Failed to execute 'drawImage' on 'CanvasRenderingContext2D': The HTMLImageElement provided is in the 'broken' state.
@@ -5626,3 +5626,587 @@ Caused by: java.lang.AssertionError: assertion failed: Access to file:C:/Sandbox
 2020-03-04 15:58:29,688 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
 2020-03-04 15:58:30,829 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-285899155]
 2020-03-04 15:58:31,110 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 582 userid: 102636487
+2020-03-05 10:49:46,480 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-05 10:49:46,727 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-05 10:49:46,727 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-05 10:49:46,727 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-05 10:49:46,735 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-05 10:49:46,735 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-05 10:49:46,735 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-05 10:49:46,748 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-05 10:49:46,749 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-05 10:49:46,766 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-05 10:49:47,212 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-05 10:49:47,213 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-05 10:49:47,230 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-05 10:49:47,368 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Thu Mar 05 10:49:47 CET 2020
+2020-03-05 10:49:47,513 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-05 10:49:47,919 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-05 10:49:48,881 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2020-03-05 10:49:48,889 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2020-03-05 10:49:48,892 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-05 10:49:48,892 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2020-03-05 10:49:48,892 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2020-03-05 10:49:50,073 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-1280766041]
+2020-03-05 10:49:50,364 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 707191323
+2020-03-05 11:40:47,056 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2020-03-05 11:40:47,222 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-05 11:40:47,222 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-05 11:40:47,222 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-05 11:40:47,230 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-05 11:40:47,230 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-05 11:40:47,230 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-05 11:40:47,245 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-05 11:40:47,245 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-05 11:40:47,264 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-05 11:40:47,731 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-05 11:40:47,732 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-05 11:40:47,752 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-05 11:40:47,894 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Thu Mar 05 11:40:47 CET 2020
+2020-03-05 11:40:48,057 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-05 11:40:48,524 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-05 11:40:49,577 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-05 11:40:49,587 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-05 11:40:49,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-05 11:40:49,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2020-03-05 11:40:49,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-05 11:40:50,708 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#251556345]
+2020-03-05 11:40:51,025 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1257207271
+2020-03-05 11:40:51,089 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-2 - resource not available: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+2020-03-05 11:40:51,089 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-6 - resource not available: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+2020-03-05 11:40:51,089 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-11 - resource not available: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+2020-03-05 11:40:51,089 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-9 - resource not available: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+2020-03-05 11:40:52,045 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 11:40:52,045 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 11:40:52,046 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 11:40:52 CET 2020      
+2020-03-05 11:40:52,046 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.004 
+2020-03-05 11:40:52,046 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.007  
+2020-03-05 11:40:52,046 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 11:40:52,047 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 11:40:52,047 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 20792
+2020-03-05 11:40:52,047 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 3595
+2020-03-05 11:40:52,047 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 11:40:57,771 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 11:40:58,178 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 11:41:04,279 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-05 11:41:04,430 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-05 11:41:04,431 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-05 11:41:04,431 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-05 11:41:04,439 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-05 11:41:04,439 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-05 11:41:04,439 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-05 11:41:04,453 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-05 11:41:04,453 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-05 11:41:04,471 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-05 11:41:04,897 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-05 11:41:04,897 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-05 11:41:04,915 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-05 11:41:05,034 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Thu Mar 05 11:41:04 CET 2020
+2020-03-05 11:41:05,168 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-05 11:41:05,566 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-05 11:41:06,441 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-05 11:41:06,449 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-05 11:41:06,451 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-05 11:41:06,451 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2020-03-05 11:41:06,451 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-05 11:41:07,444 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#431548605]
+2020-03-05 11:41:07,725 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 905739780
+2020-03-05 11:42:44,511 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 11:42:44,511 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 11:42:44,512 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 11:42:44 CET 2020      
+2020-03-05 11:42:44,512 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.017 
+2020-03-05 11:42:44,512 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-05 11:42:44,513 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 11:42:44,513 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 11:42:44,513 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 1550113
+2020-03-05 11:42:44,513 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 323170
+2020-03-05 11:42:44,513 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:14:46,474 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2020-03-05 15:14:46,654 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-05 15:14:46,655 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-05 15:14:46,655 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-05 15:14:46,664 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-05 15:14:46,664 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-05 15:14:46,664 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-05 15:14:46,680 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-05 15:14:46,680 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-05 15:14:46,701 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-05 15:14:47,208 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-05 15:14:47,208 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-05 15:14:47,226 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-05 15:14:47,372 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Thu Mar 05 15:14:47 CET 2020
+2020-03-05 15:14:47,547 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-05 15:14:48,060 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-05 15:14:49,134 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-05 15:14:49,143 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-05 15:14:49,145 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-05 15:14:49,146 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2020-03-05 15:14:49,146 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-05 15:14:50,240 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-3383878]
+2020-03-05 15:14:50,562 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 712619964
+2020-03-05 15:16:26,531 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-05 15:16:26,532 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-05 15:16:26,532 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.166
+2020-03-05 15:16:26,532 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.184:8080
+2020-03-05 15:16:26,532 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-05 15:16:26,696 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-18-2-actorRefSource#1587248702]
+2020-03-05 15:16:26,787 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1832791628
+2020-03-05 15:16:30,502 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:16:30,502 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:16:30,502 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:16:30 CET 2020      
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:00.130 
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.243  
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 19256
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 3114
+2020-03-05 15:16:30,503 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:16:30,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-05 15:16:30,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-05 15:16:30,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.166
+2020-03-05 15:16:30,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.184:8080
+2020-03-05 15:16:30,589 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-05 15:16:30,736 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-25-2-actorRefSource#-1638277531]
+2020-03-05 15:16:30,816 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1677219736
+2020-03-05 15:16:36,782 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:16:36,884 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:17:35 CET 2020      
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:01.960 
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.030  
+2020-03-05 15:17:35,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:17:35,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:17:35,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 234629
+2020-03-05 15:17:35,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 64158
+2020-03-05 15:17:35,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:17:35,796 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - application requested: 0!default
+2020-03-05 15:17:35,797 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - Creating Application: 0!default
+2020-03-05 15:17:35,797 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - remoteAddress 192.168.1.166
+2020-03-05 15:17:35,797 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - host          192.168.1.184:8080
+2020-03-05 15:17:35,797 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - uri           /app/0!default
+2020-03-05 15:17:35,914 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,980.0,352.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-32-2-actorRefSource#764702735]
+2020-03-05 15:17:36,036 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 577366442
+2020-03-05 15:17:49,055 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:17:49 CET 2020      
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:00.908 
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.968  
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 72230
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 11559
+2020-03-05 15:17:49,056 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:17:49,117 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2020-03-05 15:17:49,117 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2020-03-05 15:17:49,118 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 192.168.1.166
+2020-03-05 15:17:49,118 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          192.168.1.184:8080
+2020-03-05 15:17:49,118 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2020-03-05 15:17:49,221 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,869.0,312.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-37-2-actorRefSource#1504383017]
+2020-03-05 15:17:49,291 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 33695510
+2020-03-05 15:17:58,411 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:17:58,513 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 15:18:02,192 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:18:02,292 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:18:31 CET 2020      
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:01.970 
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.016  
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 143001
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 32310
+2020-03-05 15:18:31,617 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:18:50,618 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:18:50,720 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 15:19:11,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-14 - application requested: 1266395131!default
+2020-03-05 15:19:11,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-14 - Creating Application: 1266395131!default
+2020-03-05 15:19:11,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-14 - remoteAddress 192.168.1.166
+2020-03-05 15:19:11,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-14 - host          192.168.1.184:8080
+2020-03-05 15:19:11,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-14 - uri           /app/1266395131!default
+2020-03-05 15:19:12,088 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(1266395131,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-41-2-actorRefSource#256826621]
+2020-03-05 15:19:12,129 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 129927861
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:19:29 CET 2020      
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:01.979 
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.008  
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 35128
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 8534
+2020-03-05 15:19:29,708 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:19:29,873 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - application requested: 0!default
+2020-03-05 15:19:29,873 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - Creating Application: 0!default
+2020-03-05 15:19:29,874 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - remoteAddress 192.168.1.166
+2020-03-05 15:19:29,874 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - host          192.168.1.184:8080
+2020-03-05 15:19:29,874 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - uri           /app/0!default
+2020-03-05 15:19:30,011 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-48-2-actorRefSource#-598332076]
+2020-03-05 15:19:30,200 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 2015803672
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 15:19:38 CET 2020      
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:00.255 
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.442  
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 20792
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 3637
+2020-03-05 15:19:38,695 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 15:19:38,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - application requested: 0!default
+2020-03-05 15:19:38,755 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - Creating Application: 0!default
+2020-03-05 15:19:38,755 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - remoteAddress 192.168.1.166
+2020-03-05 15:19:38,755 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - host          192.168.1.184:8080
+2020-03-05 15:19:38,755 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - uri           /app/0!default
+2020-03-05 15:19:38,854 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-52-2-actorRefSource#-765051754]
+2020-03-05 15:19:38,914 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 121230675
+2020-03-05 15:19:40,542 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:19:40,644 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 15:19:46,576 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 15:19:46,678 [WARN] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JPro prevent System.exit
+2020-03-05 17:06:30,786 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-05 17:06:31,053 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-05 17:06:31,053 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-05 17:06:31,054 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-05 17:06:31,061 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-05 17:06:31,061 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-05 17:06:31,061 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-05 17:06:31,075 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-05 17:06:31,075 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-05 17:06:31,093 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-05 17:06:31,518 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-05 17:06:31,519 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-05 17:06:31,537 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-05 17:06:31,682 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Thu Mar 05 17:06:31 CET 2020
+2020-03-05 17:06:31,838 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-05 17:06:32,249 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-05 17:06:33,231 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 0!default
+2020-03-05 17:06:33,240 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 0!default
+2020-03-05 17:06:33,242 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-05 17:06:33,242 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          localhost:8080
+2020-03-05 17:06:33,242 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/0!default
+2020-03-05 17:06:34,464 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-122086479]
+2020-03-05 17:06:34,750 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1643257540
+2020-03-05 17:07:15,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-05 17:07:15,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-05 17:07:15,935 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 192.168.1.166
+2020-03-05 17:07:15,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          192.168.1.184:8080
+2020-03-05 17:07:15,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-05 17:07:16,194 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-15-2-actorRefSource#1746662150]
+2020-03-05 17:07:16,363 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 287377127
+2020-03-05 17:07:40,827 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 17:07:40,827 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 17:07:40,827 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 17:07:40 CET 2020      
+2020-03-05 17:07:40,827 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.017 
+2020-03-05 17:07:40,827 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-05 17:07:40,828 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 17:07:40,828 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 17:07:40,828 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 989242
+2020-03-05 17:07:40,828 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 229294
+2020-03-05 17:07:40,828 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 17:07:58,582 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 17:07:58,582 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-05 17:07:58,582 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Thu Mar 05 17:07:58 CET 2020      
+2020-03-05 17:07:58,582 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:02.031 
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.055  
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 92242
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 15967
+2020-03-05 17:07:58,583 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-05 17:08:13,500 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-05 17:08:17,596 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-06 14:46:10,162 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-06 14:46:10,318 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-06 14:46:10,318 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-06 14:46:10,318 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-06 14:46:10,327 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-06 14:46:10,327 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-06 14:46:10,327 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-06 14:46:10,341 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-06 14:46:10,342 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-06 14:46:10,360 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-06 14:46:10,835 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-06 14:46:10,835 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-06 14:46:10,856 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-06 14:46:11,053 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Mar 06 14:46:10 CET 2020
+2020-03-06 14:46:11,200 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-06 14:46:11,636 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-06 14:46:12,557 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2020-03-06 14:46:12,565 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2020-03-06 14:46:12,567 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-06 14:46:12,567 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2020-03-06 14:46:12,567 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2020-03-06 14:46:13,893 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#165656295]
+2020-03-06 14:46:14,187 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1289600544
+2020-03-06 14:47:26,601 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2020-03-06 14:47:26,602 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2020-03-06 14:47:26,602 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 192.168.1.166
+2020-03-06 14:47:26,602 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          192.168.1.184:8080
+2020-03-06 14:47:26,602 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2020-03-06 14:47:26,771 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,412.0,769.0,true,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-16-2-actorRefSource#489076523]
+2020-03-06 14:47:26,864 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1639503872
+2020-03-06 14:47:27,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:47:27,716 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-06 14:47:27,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Mar 06 14:47:27 CET 2020      
+2020-03-06 14:47:27,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:00.002 
+2020-03-06 14:47:27,717 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.003  
+2020-03-06 14:47:27,718 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-06 14:47:27,719 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-06 14:47:27,719 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 19768
+2020-03-06 14:47:27,719 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 3287
+2020-03-06 14:47:27,719 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:47:33,052 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-06 14:47:53,885 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2020-03-06 14:47:53,885 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2020-03-06 14:47:53,886 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 192.168.1.195
+2020-03-06 14:47:53,886 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          192.168.1.184:8080
+2020-03-06 14:47:53,886 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2020-03-06 14:47:54,102 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,1920.0,1057.0,false,en,List(en, nl-NL, nl, en-US),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-27-2-actorRefSource#-880768369]
+2020-03-06 14:47:54,170 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 546689190
+2020-03-06 14:48:26,970 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1620.0,102.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:36)
+	at be.veterinarysolutions.vsol.gui.scenes.Study.btnOpenMouseClicked(Study.java:185)
+	... 69 common frames omitted
+2020-03-06 14:49:03,705 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: MouseEventToken(MouseReleased,1625.0,93.0,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: VSOL Dental
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:168)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:117)
+	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:98)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:39)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:57)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:525)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:509)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:502)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:326)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:326)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1787)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:396)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 29 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782)
+	... 58 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:269)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:213)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1524)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:413)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:348)
+	at be.veterinarysolutions.vsol.data.Picture.chooseFile(Picture.java:36)
+	at be.veterinarysolutions.vsol.gui.scenes.Study.btnOpenMouseClicked(Study.java:185)
+	... 69 common frames omitted
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Mar 06 14:49:58 CET 2020      
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.017 
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 1317880
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 319504
+2020-03-06 14:49:58,605 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:50:00,506 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2020-03-06 14:50:00,506 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2020-03-06 14:50:00,506 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-06 14:50:00,506 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2020-03-06 14:50:00,506 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2020-03-06 14:50:00,657 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1538.0,927.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-37-2-actorRefSource#-1312350613]
+2020-03-06 14:50:00,707 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1106277278
+2020-03-06 14:51:18,117 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2020-03-06 14:55:15,859 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:55:15,859 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-06 14:55:15,859 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Mar 06 14:55:15 CET 2020      
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : -00:00:00.736 
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 2938616
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 1003377
+2020-03-06 14:55:15,860 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Mar 06 14:56:18 CET 2020      
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.018 
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 2147944
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 768873
+2020-03-06 14:56:18,898 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 17:10:34,855 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2020-03-06 17:10:35,009 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2020-03-06 17:10:35,009 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-03-06 17:10:35,009 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Windows 10
+2020-03-06 17:10:35,017 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JPro: 2019.2.2
+2020-03-06 17:10:35,017 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - Java version: 11.0.6
+2020-03-06 17:10:35,017 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 11.0.6 Oracle Corporation
+2020-03-06 17:10:35,032 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - redirected OUT / ERR
+2020-03-06 17:10:35,032 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2020-03-06 17:10:35,051 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2020-03-06 17:10:35,481 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2020-03-06 17:10:35,481 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-06 17:10:35,500 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-03-06 17:10:35,698 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Mar 06 17:10:35 CET 2020
+2020-03-06 17:10:35,839 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2020-03-06 17:10:36,241 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-06 17:10:37,176 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2020-03-06 17:10:37,185 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2020-03-06 17:10:37,187 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-06 17:10:37,187 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2020-03-06 17:10:37,187 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2020-03-06 17:10:38,298 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#2038271420]
+2020-03-06 17:10:38,588 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 611 userid: 1723475694
+2020-03-06 17:11:04,440 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-03-06 17:11:04,440 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-03-06 17:11:04,440 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Mar 06 17:11:04 CET 2020      
+2020-03-06 17:11:04,440 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.016 
+2020-03-06 17:11:04,440 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-03-06 17:11:04,441 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-03-06 17:11:04,441 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-03-06 17:11:04,441 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 314124
+2020-03-06 17:11:04,441 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 105810
+2020-03-06 17:11:04,441 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 

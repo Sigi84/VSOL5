@@ -1,29 +1,22 @@
-package be.veterinarysolutions.vsol.gui;
+package be.veterinarysolutions.vsol.gui.tobedeleted;
 
 import be.veterinarysolutions.vsol.data.Picture;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.geometry.Point2D;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Test extends Controller implements Initializable {
+public class Test {
 
     @FXML private StackPane stackPane;
-    ResizableCanvas canvas;
+    ResizableCanvasOld canvas;
 
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
         Picture pic = new Picture("C:/Sandbox/small.jpg");
 
-        canvas = new ResizableCanvas(pic);
+        canvas = new ResizableCanvasOld(pic);
         canvas.widthProperty().bind(stackPane.widthProperty());
         canvas.heightProperty().bind(stackPane.heightProperty());
         stackPane.getChildren().add(canvas);
@@ -41,8 +34,4 @@ public class Test extends Controller implements Initializable {
 
     }
 
-    @Override
-    public BorderPane getBorderPane() {
-        return null;
-    }
 }

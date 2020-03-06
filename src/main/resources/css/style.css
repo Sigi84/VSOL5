@@ -1,4 +1,4 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* JavaFX CSS */
 
 Button {
 	-fx-graphic-text-gap: 10;
@@ -14,24 +14,32 @@ Button.mainmenu {
 }
 
 Button:hover {
-	-fx-background-color: #029ddf;
+	/*-fx-background-color: #029ddf;*/
 	-fx-cursor: "hand";
 }
 
-Button.exit:hover {
-	-fx-background-color: #be0000;
-}
+/*Button.exit:hover {*/
+/*	-fx-background-color: #be0000;*/
+/*}*/
 
 AnchorPane {
 	-fx-background-color: #333333;
 }
 
 StackPane {
-	-fx-background-color: #000000;
+	-fx-background-color: #fff;
+}
+
+StackPane.viewer {
+	-fx-background-color: #aaaaaa;
 }
 
 BorderPane {
 	-fx-background-color: black;
+}
+
+BorderPane.menu {
+	-fx-background-color: #ccc;
 }
 
 ScrollPane {
@@ -77,8 +85,20 @@ TextField {
 	-fx-background-color: #aaaaaa;
 }
 
-.red {
-	-fx-background-color: red;
+.olive {
+	-fx-background-color: olive;
+}
+
+.cyan {
+	-fx-background-color: cyan;
+}
+
+.orange {
+	-fx-background-color: orange;
+}
+
+.white {
+	-fx-background-color: white;
 }
 
 .studytitlearea {
