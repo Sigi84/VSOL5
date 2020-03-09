@@ -2,11 +2,13 @@ package be.veterinarysolutions.vsol.gui.canvases;
 
 import be.veterinarysolutions.vsol.data.Quadrant;
 import be.veterinarysolutions.vsol.data.Tooth;
+import be.veterinarysolutions.vsol.tools.Nr;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+import java.util.TreeSet;
 import java.util.Vector;
 
 public class QuadrantsCanvas extends ResizableCanvas {
@@ -27,11 +29,11 @@ public class QuadrantsCanvas extends ResizableCanvas {
         clear();
         drawCross();
 
-//        for (Quadrant quadrant : quadrants) {
-//            drawQuadrant(quadrant);
-//        }
+        for (Quadrant quadrant : quadrants) {
+            drawQuadrant(quadrant);
+        }
 
-        testDraw(quadrants.elementAt(0).getImg());
+//        testDraw(quadrants.elementAt(3).getImg());
     }
 
     private void drawQuadrant(Quadrant quadrant) {
@@ -64,7 +66,9 @@ public class QuadrantsCanvas extends ResizableCanvas {
         }
 
         for (Tooth tooth : quadrant.getTeeth()) {
-            if (tooth.isSelected()) {
+            if (tooth.isReady()) {
+                gg.drawImage(tooth.getImgOrange(), x, y, iw, ih);
+            } else if (tooth.isSelected()) {
                 gg.drawImage(tooth.getImgGreen(), x, y, iw, ih);
             }
         }
@@ -106,6 +110,38 @@ public class QuadrantsCanvas extends ResizableCanvas {
         gg.strokeLine(0, height / 2.0, width, height / 2.0);
     }
 
+    public void select(double x, double y) {
+        for (Quadrant quadrant : quadrants) {
+            Rectangle rect = quadrant.getRect();
+            if (rect.contains(x, y)) {
+                for (Tooth tooth : quadrant.getTeeth()) {
+                    if (tooth.contains(x - rect.getX(), y - rect.getY(), rect.getWidth(), rect.getHeight())) {
+//                        System.out.println(tooth.getName());
+                        tooth.setSelected(!tooth.isSelected());
+                    }
+                }
+
+            }
+        }
+    }
+
+    public void testSelect(boolean primary, double x, double y) {
+        if (primary)
+            System.out.println(Nr.fullPrecision(x / testWidth));
+        else
+            System.out.println(Nr.fullPrecision(y / testHeight));
+    }
+
+    public void selectAll(boolean selected) {
+        for (Quadrant quadrant : quadrants) {
+            for (Tooth tooth : quadrant.getTeeth()) {
+                tooth.setSelected(selected);
+            }
+        }
+    }
+
+    // GETTERS AND SETTERS
+
     public boolean isInner() {
         return inner;
     }
@@ -118,21 +154,23 @@ public class QuadrantsCanvas extends ResizableCanvas {
         this.inner = inner;
     }
 
-    public void select(double x, double y) {
-
-        System.out.println((x / testWidth) + "   " + (y / testHeight));
-
-//        for (Quadrant quadrant : quadrants) {
-//            Rectangle rect = quadrant.getRect();
-//            if (rect.contains(x, y)) {
-//                for (Tooth tooth : quadrant.getTeeth()) {
-//                    if (tooth.contains(x - rect.getX(), y - rect.getY(), rect.getWidth(), rect.getHeight())) {
-//                        System.out.println(tooth.getName());
-//                        tooth.setSelected(!tooth.isSelected());
-//                    }
-//                }
-//
-//            }
-//        }
+    public Vector<Quadrant> getQuadrants() {
+        return quadrants;
     }
+
+    public TreeSet<Tooth> getSelectedTeeth() {
+        TreeSet<Tooth> result = new TreeSet<>();
+
+        for (Quadrant quadrant : quadrants) {
+            for (Tooth tooth : quadrant.getTeeth()) {
+                if (tooth.isSelected()) {
+                    result.add(tooth);
+                }
+            }
+        }
+
+        return result;
+    }
+
+
 }

@@ -77,16 +77,16 @@ public class Frame extends Controller {
     @FXML protected void btnViewerMouseClicked(MouseEvent e) { viewer(); }
 
     @FXML protected void btnCameraMouseClicked(MouseEvent e) {
-        Imagen imagen = ctrl.getImagen();
-        if (Options.IMAGEN_MOCK_CAPTURE) {
-            String filename = ctrl.getImagen().mockCapture();
-            if (filename != null) {
-                Picture pic = new Picture(filename);
-//                gui.getViewer().addPic(pic);
-            }
-        } else {
-            ctrl.getImagen().capture();
-        }
+//        Imagen imagen = ctrl.getImagen();
+//        if (Options.IMAGEN_MOCK_CAPTURE) {
+//            String filename = ctrl.getImagen().mockCapture();
+//            if (filename != null) {
+//                Picture pic = new Picture(filename);
+////                gui.getViewer().addPic(pic);
+//            }
+//        } else {
+//            ctrl.getImagen().capture();
+//        }
     }
 
     // PUBLIC

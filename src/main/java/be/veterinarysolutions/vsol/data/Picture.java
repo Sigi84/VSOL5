@@ -28,6 +28,12 @@ public class Picture extends Layer {
         this(new File(filename));
     }
 
+    public Picture(Image img) {
+        this.img = img;
+        reset();
+        rect = new Rectangle(0, 0, img.getWidth(), img.getHeight());
+    }
+
     // STATIC
 
     public static Picture chooseFile(Gui gui) {

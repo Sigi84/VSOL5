@@ -44,10 +44,25 @@ BorderPane.menu {
 
 ScrollPane {
 	-fx-background-color: black;
+	-fx-block-increment: 1000;
+	/*-fx-min-width: 500;*/
 }
 
-VBox, HBox {
+.scroll-pane .scroll-bar:vertical {
+	-fx-unit-increment: 10 ;
+	-fx-block-increment: 50 ;
+}
+
+VBox {
 	-fx-background-color: black;
+	-fx-spacing: 10;
+	-fx-padding: 10 10 10 10;
+	-fx-alignment: TOP_CENTER;
+}
+
+HBox {
+	-fx-background-color: black;
+	-fx-spacing: 10;
 }
 
 Label {
@@ -65,6 +80,10 @@ Label.status {
 	-fx-padding: 10 10 10 10;
 }
 
+Label.large {
+	-fx-font-size: 20;
+}
+
 ImageView.logo {
 	-fx-padding: 50 50 50 50;
 }
@@ -79,6 +98,10 @@ TextField {
 
 .selected {
 	-fx-background-color: #66aaff;
+}
+
+.active {
+	-fx-background-color: #30eb3e;
 }
 
 .unselected {
@@ -102,6 +125,25 @@ TextField {
 }
 
 .studytitlearea {
-	-fx-background-color: #215a78;
+	-fx-padding: 0;
+}
+
+.darkgray {
 	-fx-background-color: #5e5e5e;
+}
+
+.unselectedborder {
+	-fx-border-color: white;
+	-fx-border-width: 1;
+}
+
+.selectedborder {
+	/*-fx-border-color: #66aaff;*/
+	-fx-border-color: orange;
+	-fx-border-width: 5;
+}
+
+.black-text {
+	-fx-background-color: transparant;
+	-fx-text-fill: black;
 }

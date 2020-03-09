@@ -4,51 +4,51 @@ import java.util.Vector;
 
 public class Canine {
 
-    public static Tooth get101() { return new Tooth("101", 0.2998, 0.3279, 0.0014, 0.0771); }
-    public static Tooth get102() { return new Tooth("102", 0.2635, 0.2916, 0.0114, 0.0900); }
-    public static Tooth get103() { return new Tooth("103", 0.2014, 0.2646, 0.0271, 0.1300); }
-    public static Tooth get104() { return new Tooth("104", 0.1311, 0.2529, 0.1157, 0.3543); }
-    public static Tooth get105() { return new Tooth("105", 0.1593, 0.1932, 0.3800, 0.4400); }
-    public static Tooth get106() { return new Tooth("106", 0.1241, 0.1733, 0.4557, 0.5386); }
-    public static Tooth get107() { return new Tooth("107", 0.0644, 0.1335, 0.5400, 0.6371); }
-    public static Tooth get108() { return new Tooth("108", 0.0035, 0.1148, 0.6500, 0.8043); }
-    public static Tooth get109() { return new Tooth("109", 0.0023, 0.1253, 0.8186, 0.9371); }
-    public static Tooth get110() { return new Tooth("110", 0.0433, 0.1405, 0.9329, 0.9943); }
+    public static Tooth get101() { return new Tooth("101", 0.9053, 0.9905, 0.0014, 0.0742); }
+    public static Tooth get102() { return new Tooth("102", 0.7739, 0.8840, 0.0114, 0.0942); }
+    public static Tooth get103() { return new Tooth("103", 0.5964, 0.7775, 0.0342, 0.1213); }
+    public static Tooth get104() { return new Tooth("104", 0.3337, 0.7668, 0.1184, 0.3566); }
+    public static Tooth get105() { return new Tooth("105", 0.4793, 0.5858, 0.3837, 0.4451); }
+    public static Tooth get106() { return new Tooth("106", 0.3834, 0.5148, 0.4593, 0.5407); }
+    public static Tooth get107() { return new Tooth("107", 0.2024, 0.3870, 0.5478, 0.6362); }
+    public static Tooth get108() { return new Tooth("108", 0.0178, 0.3479, 0.6476, 0.8046); }
+    public static Tooth get109() { return new Tooth("109", 0.0071, 0.3870, 0.8160, 0.9401); }
+    public static Tooth get110() { return new Tooth("110", 0.1385, 0.4225, 0.9372, 0.9943); }
 
-    public static Tooth get201() { return new Tooth("201", 0., 0., 0., 0.); }
-    public static Tooth get202() { return new Tooth("202", 0., 0., 0., 0.); }
-    public static Tooth get203() { return new Tooth("203", 0., 0., 0., 0.); }
-    public static Tooth get204() { return new Tooth("204", 0., 0., 0., 0.); }
-    public static Tooth get205() { return new Tooth("205", 0., 0., 0., 0.); }
-    public static Tooth get206() { return new Tooth("206", 0., 0., 0., 0.); }
-    public static Tooth get207() { return new Tooth("207", 0., 0., 0., 0.); }
-    public static Tooth get208() { return new Tooth("208", 0., 0., 0., 0.); }
-    public static Tooth get209() { return new Tooth("209", 0., 0., 0., 0.); }
-    public static Tooth get210() { return new Tooth("210", 0., 0., 0., 0.); }
+    public static Tooth get201() { return new Tooth("201", 0.0106, 0.0918, 0.0029, 0.0759); }
+    public static Tooth get202() { return new Tooth("202", 0.1200, 0.2294, 0.0100, 0.0913); }
+    public static Tooth get203() { return new Tooth("203", 0.2292, 0.4130, 0.0385, 0.1327); }
+    public static Tooth get204() { return new Tooth("204", 0.2224, 0.6601, 0.1198, 0.3609); }
+    public static Tooth get205() { return new Tooth("205", 0.4024, 0.5118, 0.3837, 0.4465); }
+    public static Tooth get206() { return new Tooth("206", 0.4871, 0.6213, 0.4593, 0.5407); }
+    public static Tooth get207() { return new Tooth("207", 0.6071, 0.7907, 0.5464, 0.6362); }
+    public static Tooth get208() { return new Tooth("208", 0.6424, 0.9778, 0.6534, 0.8031); }
+    public static Tooth get209() { return new Tooth("209", 0.6213, 0.9990, 0.8160, 0.9372); }
+    public static Tooth get210() { return new Tooth("210", 0.5718, 0.8578, 0.9330, 0.9957); }
 
-    public static Tooth get301() { return new Tooth("301", 0., 0., 0., 0.); }
-    public static Tooth get302() { return new Tooth("302", 0., 0., 0., 0.); }
-    public static Tooth get303() { return new Tooth("303", 0., 0., 0., 0.); }
-    public static Tooth get304() { return new Tooth("304", 0., 0., 0., 0.); }
-    public static Tooth get305() { return new Tooth("305", 0., 0., 0., 0.); }
-    public static Tooth get306() { return new Tooth("306", 0., 0., 0., 0.); }
-    public static Tooth get307() { return new Tooth("307", 0., 0., 0., 0.); }
-    public static Tooth get308() { return new Tooth("308", 0., 0., 0., 0.); }
-    public static Tooth get309() { return new Tooth("309", 0., 0., 0., 0.); }
-    public static Tooth get310() { return new Tooth("310", 0., 0., 0., 0.); }
-    public static Tooth get311() { return new Tooth("311", 0., 0., 0., 0.); }
+    public static Tooth get301() { return new Tooth("301", 0.0047, 0.1307, 0.9158, 0.9800); }
+    public static Tooth get302() { return new Tooth("302", 0.1540, 0.3033, 0.9116, 0.9786); }
+    public static Tooth get303() { return new Tooth("303", 0.3173, 0.4807, 0.8944, 0.9643); }
+    public static Tooth get304() { return new Tooth("304", 0.4620, 0.9426, 0.7718, 0.9971); }
+    public static Tooth get305() { return new Tooth("305", 0.4293, 0.5413, 0.6933, 0.7332); }
+    public static Tooth get306() { return new Tooth("306", 0.4387, 0.5413, 0.6091, 0.6719); }
+    public static Tooth get307() { return new Tooth("307", 0.4480, 0.5973, 0.5021, 0.5763); }
+    public static Tooth get308() { return new Tooth("308", 0.5413, 0.7000, 0.3738, 0.4665); }
+    public static Tooth get309() { return new Tooth("309", 0.6300, 0.9146, 0.1883, 0.3552); }
+    public static Tooth get310() { return new Tooth("310", 0.7840, 0.9753, 0.0842, 0.1541); }
+    public static Tooth get311() { return new Tooth("311", 0.8213, 0.9520, 0.0043, 0.0685); }
 
-    public static Tooth get401() { return new Tooth("401", 0., 0., 0., 0.); }
-    public static Tooth get402() { return new Tooth("402", 0., 0., 0., 0.); }
-    public static Tooth get403() { return new Tooth("403", 0., 0., 0., 0.); }
-    public static Tooth get404() { return new Tooth("404", 0., 0., 0., 0.); }
-    public static Tooth get405() { return new Tooth("405", 0., 0., 0., 0.); }
-    public static Tooth get406() { return new Tooth("406", 0., 0., 0., 0.); }
-    public static Tooth get407() { return new Tooth("407", 0., 0., 0., 0.); }
-    public static Tooth get408() { return new Tooth("408", 0., 0., 0., 0.); }
-    public static Tooth get409() { return new Tooth("409", 0., 0., 0., 0.); }
-    public static Tooth get410() { return new Tooth("410", 0., 0., 0., 0.); }
-    public static Tooth get411() { return new Tooth("411", 0., 0., 0., 0.); }
+    public static Tooth get401() { return new Tooth("401", 0.8668, 0.9867, 0.9187, 0.9800); }
+    public static Tooth get402() { return new Tooth("402", 0.6870, 0.8391, 0.9130, 0.9786); }
+    public static Tooth get403() { return new Tooth("403", 0.5210, 0.6870, 0.8973, 0.9658); }
+    public static Tooth get404() { return new Tooth("404", 0.0000, 0.5394, 0.7718, 0.9957); }
+    public static Tooth get405() { return new Tooth("405", 0.4518, 0.5625, 0.6919, 0.7318); }
+    public static Tooth get406() { return new Tooth("406", 0.4472, 0.5487, 0.6049, 0.6719); }
+    public static Tooth get407() { return new Tooth("407", 0.3873, 0.5256, 0.5007, 0.5792); }
+    public static Tooth get408() { return new Tooth("408", 0.2951, 0.4472, 0.3766, 0.4650); }
+    public static Tooth get409() { return new Tooth("409", 0.0968, 0.3642, 0.1869, 0.3538); }
+    public static Tooth get410() { return new Tooth("410", 0.0184, 0.1983, 0.0827, 0.1526); }
+    public static Tooth get411() { return new Tooth("411", 0.0369, 0.1752, 0.0014, 0.0713); }
 
     public static Vector<Tooth> getTeeth(boolean left, boolean top) {
         Vector<Tooth> result = new Vector<>();

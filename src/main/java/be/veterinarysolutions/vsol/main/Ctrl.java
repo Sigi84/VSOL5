@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class Ctrl {
 
-	public static final String version = "0.0.16";
-	public static final String versionDate = "2020-03-06";
-	public static final String versionTime = "20:20";
+	public static final String version = "0.0.17";
+	public static final String versionDate = "2020-03-09";
+	public static final String versionTime = "18:57";
 
 	private static final Logger logger = LogManager.getLogger();
 	private Database db;
@@ -24,8 +24,9 @@ public class Ctrl {
 
 		logger.info("Entered Ctrl.");
 
-//		db = new Database();
+		db = new Database();
 		imagen = new Imagen();
+		this.jpro = jpro;
 
 		try {
 			gui = new Gui(this, primaryStage);

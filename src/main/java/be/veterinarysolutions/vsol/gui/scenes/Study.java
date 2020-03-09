@@ -1,22 +1,36 @@
 package be.veterinarysolutions.vsol.gui.scenes;
 
-import be.veterinarysolutions.vsol.data.Canine;
+import be.veterinarysolutions.vsol.data.Menu;
 import be.veterinarysolutions.vsol.data.Picture;
+import be.veterinarysolutions.vsol.data.Quadrant;
 import be.veterinarysolutions.vsol.data.Tooth;
 import be.veterinarysolutions.vsol.gui.Controller;
+import be.veterinarysolutions.vsol.gui.MenuComp;
 import be.veterinarysolutions.vsol.gui.canvases.PictureCanvas;
 import be.veterinarysolutions.vsol.gui.canvases.QuadrantsCanvas;
 import be.veterinarysolutions.vsol.main.Options;
+import be.veterinarysolutions.vsol.tools.Bmp;
+import be.veterinarysolutions.vsol.tools.Bytes;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.PixelFormat;
+import javafx.scene.image.PixelWriter;
+import javafx.scene.image.WritableImage;
 import javafx.scene.input.*;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
+import java.awt.*;
 import java.io.File;
+import java.util.Vector;
 
 public class Study extends Controller {
 	@FXML private BorderPane viewerArea, canvasZone, controlZone;
-	@FXML private Button btnSelect, btnBrightness, btnMeasure;
+	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd;
+	@FXML private VBox vboxMenus;
+	@FXML private ScrollPane scrollMenus;
 
 	private PictureCanvas pictureCanvas = new PictureCanvas();
 	private QuadrantsCanvas quadrantsCanvas = new QuadrantsCanvas();
@@ -33,6 +47,8 @@ public class Study extends Controller {
 	public enum Mode { SELECT, BRIGHTNESS, MEASURE };
 	private Mode mode = Mode.SELECT;
 
+	private Vector<Menu> menus = new Vector<>();
+
 	@Override
 	public void init() {
 		pictureCanvas.widthProperty().bind(canvasZone.widthProperty());
@@ -41,13 +57,15 @@ public class Study extends Controller {
 		quadrantsCanvas.widthProperty().bind(canvasZone.widthProperty());
 		quadrantsCanvas.heightProperty().bind(canvasZone.heightProperty());
 
-		quadrantsCanvas.setInner(false);
+		quadrantsCanvas.setInner(true);
 		quadrantsCanvas.setScale(1.0);
 
 		canvasZone.getChildren().add(pictureCanvas);
 		canvasZone.getChildren().add(quadrantsCanvas);
 
 		fillMode(Mode.SELECT);
+		fillImagen();
+		drawQuadrants();
 	}
 
 
@@ -61,6 +79,72 @@ public class Study extends Controller {
 		pictureCanvas.getPics().add(pic);
 		pictureCanvas.draw();
 	}
+
+	private void addMenu() {
+		Menu menu = new Menu(quadrantsCanvas.getSelectedTeeth(), menus.size(), menus.size() == 0);
+		menus.add(menu);
+		quadrantsCanvas.selectAll(false);
+		drawQuadrants();
+		fillMenus();
+//		Platform.runLater(() -> scrollMenus.setVvalue(1.0));
+	}
+
+	public void fillMenus() {
+		vboxMenus.getChildren().clear();
+		int counter = 0;
+		for (Menu menu : menus) {
+			MenuComp comp = MenuComp.getInstance(ctrl, menu);
+			vboxMenus.getChildren().add(comp.getNode());
+		}
+	}
+
+	public void deleteMenu(Menu menu) {
+		Vector<Menu> menusNew = new Vector<>();
+		int counter = 0;
+		for (Menu temp : menus) {
+			if (temp.getNr() != menu.getNr()) {
+				menusNew.add(temp);
+				temp.setNr(counter++);
+			}
+		}
+		this.menus = menusNew;
+		fillMenus();
+	}
+
+	public void readyMenu(Menu menu) {
+		double scrollposition = scrollMenus.getVvalue();
+		for (Menu temp : menus) {
+			temp.setReady(temp.getNr() == menu.getNr());
+		}
+
+		fillMenus();
+		Platform.runLater(() -> scrollMenus.setVvalue(scrollposition));
+
+		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
+			for (Tooth tooth : quadrant.getTeeth()) {
+				tooth.setReady(false);
+			}
+		}
+
+		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
+			for (Tooth tooth : quadrant.getTeeth()) {
+				for (Tooth temp : menu.getTeeth()) {
+					if (tooth.getName().equals(temp.getName())) {
+						tooth.setReady(true);
+					}
+				}
+			}
+		}
+
+		drawQuadrants();
+	}
+
+
+
+
+
+
+
 
 	private void changeBrightness(double offset) {
 		for (Picture pic : pictureCanvas.getPics()) {
@@ -168,6 +252,23 @@ public class Study extends Controller {
 	public void deleteSelection() {
 		pictureCanvas.deleteSelection();
 		pictureCanvas.draw();
+	}
+
+	private void drawQuadrants() {
+		quadrantsCanvas.draw();
+		boolean selection = false;
+
+		outerloop:
+		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
+			for (Tooth tooth : quadrant.getTeeth()) {
+				if (tooth.isSelected()) {
+					selection = true;
+					break outerloop;
+				}
+			}
+		}
+
+		btnAdd.setDisable(!selection);
 	}
 
 
@@ -376,16 +477,60 @@ public class Study extends Controller {
 	}
 
 
+	@FXML protected void btnImgMouseClicked(MouseEvent e) {
+		byte[] pixels = ctrl.getImagen().getMockCapture();
+
+		double min = Bytes.MAX_16;
+		double max = 0.0;
+
+		int[] values = Bytes.get16BitBuffer(pixels, Bytes.LITTLE_ENDIAN);
+		for (int value : values) {
+			if (value < min) min = value;
+			if (value > max) max = value;
+		}
+
+//		System.out.println("MIN = " + min);
+//		System.out.println("MAX = " + max);
+
+		int[] rgb = new int[values.length];
+		for (int i = 0; i < rgb.length; i++) {
+			double fraction = (values[i] - min) / (max - min);
+			int current = (int) ( fraction * 255 );
+
+			Color color = new Color(current, current, current);
+			rgb[i] = color.getRGB();
+		}
+
+		WritableImage img = new WritableImage(1300, 1706);
+		PixelWriter writer = img.getPixelWriter();
+		writer.setPixels(0, 0, 1300, 1706, PixelFormat.getIntArgbInstance(), rgb, 0, 1300);
+
+		Picture pic = new Picture(img);
+
+		addPic(pic);
+	}
+
+
+	@FXML protected void btnAddMouseClicked(MouseEvent e) {
+		addMenu();
+	}
+
+
+	@FXML protected void btnSaveMouseClicked(MouseEvent e) {
+		Bmp.saveAsPng(pictureCanvas, Options.START_DIR + "snapshot");
+	}
+
+
 	@FXML protected void btnQuadrantMouseClicked(MouseEvent e) {
 		if (quadrantsCanvas.isInner()) {
 			quadrantsCanvas.setInner(false);
-			quadrantsCanvas.setScale(0.60);
+			quadrantsCanvas.setScale(0.75);
 		} else {
 			quadrantsCanvas.setInner(true);
-			quadrantsCanvas.setScale(0.90);
+			quadrantsCanvas.setScale(1.0);
 		}
 
-		quadrantsCanvas.draw();
+		drawQuadrants();
 	}
 
 
@@ -454,7 +599,13 @@ public class Study extends Controller {
 
 	@FXML protected void canvasZoneMouseClicked(MouseEvent e) {
 		quadrantsCanvas.select(e.getX(), e.getY());
-		quadrantsCanvas.draw();
+		drawQuadrants();
+
+//		if (e.getButton() == MouseButton.MIDDLE) {
+//			System.out.println();
+//		} else {
+//			quadrantsCanvas.testSelect(e.getButton() == MouseButton.PRIMARY, e.getX(), e.getY());
+//		}
 	}
 
 	@FXML protected void canvasZoneTouchMoved(TouchEvent e) {
@@ -606,6 +757,16 @@ public class Study extends Controller {
 //				btnVertebra.getStyleClass().add("selected");
 //				break;
 //		}
+	}
+
+	private void fillImagen() {
+		final String ACTIVE = "active";
+
+		btnImg.getStyleClass().removeAll(ACTIVE);
+
+		if (ctrl.getImagen().isOpen()) {
+			btnImg.getStyleClass().add(ACTIVE);
+		}
 	}
 
 }

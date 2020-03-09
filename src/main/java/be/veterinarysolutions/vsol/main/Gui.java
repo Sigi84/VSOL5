@@ -23,6 +23,7 @@ public class Gui {
 	private Home home;
 	private Settings settings;
 	private Study study;
+
 	private Controller activeScene;
 
 	public Gui(Ctrl ctrl, Stage primaryStage) throws IOException {
@@ -53,8 +54,6 @@ public class Gui {
 		study = loader.getController();
 		study.set(ctrl, this, node);
 
-
-
 		Scene scene = new Scene(frameRoot);
 		scene.setOnKeyPressed(new KeyPressedHandler(this));
 //		frame.getBorderPane().widthProperty().addListener((observableValue, oldValue, newValue) -> activeScene.resizeWidth(newValue.doubleValue()));
@@ -70,6 +69,8 @@ public class Gui {
 
 		primaryStage.setWidth(Args.width);
 		primaryStage.setHeight(Args.height);
+
+//		primaryStage.setMaximized(true);
 
 		primaryStage.setTitle("VSOL Dental"); // set window title
 

@@ -1,5 +1,11 @@
 package be.veterinarysolutions.vsol.tools;
 
+import javafx.embed.swing.SwingFXUtils;
+import javafx.scene.Node;
+import javafx.scene.SnapshotParameters;
+import javafx.scene.image.WritableImage;
+
+import javax.imageio.ImageIO;
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -86,7 +92,6 @@ public class Bmp {
     }
 
     public static byte[] read(String filename) {
-
         File file = new File(filename);
         long length = file.length();
 
@@ -105,6 +110,18 @@ public class Bmp {
         }
 
         return null;
+    }
+
+    public static final void saveAsPng(final Node NODE, final String FILE_NAME) {
+        final WritableImage SNAPSHOT = NODE.snapshot(new SnapshotParameters(), null);
+        final String        NAME     = FILE_NAME.replace("\\.[a-zA-Z]{3,4}", "");
+        final File          FILE     = new File(NAME + ".png");
+
+        try {
+            ImageIO.write(SwingFXUtils.fromFXImage(SNAPSHOT, null), "png", FILE);
+        } catch (IOException exception) {
+            // handle exception here
+        }
     }
 
     private static int getInt(byte[] byteArray) {

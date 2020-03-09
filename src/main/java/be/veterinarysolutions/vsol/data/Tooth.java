@@ -3,12 +3,12 @@ package be.veterinarysolutions.vsol.data;
 import be.veterinarysolutions.vsol.main.Options;
 import javafx.scene.image.Image;
 
-public class Tooth {
+public class Tooth implements Comparable<Tooth> {
 
     private String name;
     private double minX, maxX, minY, maxY;
-    private boolean selected = false;
-    private Image imgGreen;
+    private boolean selected = false, ready = false;
+    private Image imgGreen, imgOrange;
 
     public Tooth(String name, double minX, double maxX, double minY, double maxY) {
         this.name = name;
@@ -18,6 +18,7 @@ public class Tooth {
         this.maxY = maxY;
 
         imgGreen = new Image("file:" + Options.START_DIR + "canine/green/" + name + ".png");
+        imgOrange = new Image("file:" + Options.START_DIR + "canine/orange/" + name + ".png");
     }
 
     public String getName() {
@@ -61,12 +62,29 @@ public class Tooth {
         this.selected = selected;
     }
 
+    public boolean isReady() {
+        return ready;
+    }
+
+    public void setReady(boolean ready) {
+        this.ready = ready;
+    }
+
     @Override
     public String toString() {
-        return name + ":   X [" + minX + "," + maxX + "]   Y [" + minY + "," + maxY + "]";
+        return name;
     }
 
     public Image getImgGreen() {
         return imgGreen;
+    }
+
+    public Image getImgOrange() {
+        return imgOrange;
+    }
+
+    @Override
+    public int compareTo(Tooth o) {
+        return name.compareTo(o.name);
     }
 }

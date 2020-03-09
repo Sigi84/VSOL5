@@ -12,6 +12,10 @@ public class Nr {
 
     public static String euro(double value) { return "€ " + format(value, "###.00"); }
 
+    public static String fullPrecision(double value) {
+        return format(value, "0.0000");
+    }
+
     // PRIVATE
 
     private static String format(double value, String pattern) {
