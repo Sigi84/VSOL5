@@ -30,9 +30,9 @@
             </VBox>
          </top>
          <center>
-            <ScrollPane fx:id="scrollMenus" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+            <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" onScroll="#scrollPaneScroll" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
                <content>
-                  <VBox fx:id="vboxMenus" alignment="TOP_CENTER" />
+                  <VBox fx:id="vboxMenus" alignment="TOP_CENTER" onScroll="#vboxMenusScroll" />
                </content>
             </ScrollPane>
          </center></BorderPane>
@@ -241,7 +241,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btnAnimal" mnemonicParsing="false">
+                  <Button fx:id="btnAnimal" mnemonicParsing="false" onMouseClicked="#btnAnimalMouseClicked">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>

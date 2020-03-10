@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.gui.canvases;
 
+import be.veterinarysolutions.vsol.data.Menu;
 import be.veterinarysolutions.vsol.data.Quadrant;
 import be.veterinarysolutions.vsol.data.Tooth;
 import be.veterinarysolutions.vsol.tools.Nr;
@@ -66,10 +67,23 @@ public class QuadrantsCanvas extends ResizableCanvas {
         }
 
         for (Tooth tooth : quadrant.getTeeth()) {
-            if (tooth.isReady()) {
-                gg.drawImage(tooth.getImgOrange(), x, y, iw, ih);
-            } else if (tooth.isSelected()) {
-                gg.drawImage(tooth.getImgGreen(), x, y, iw, ih);
+            switch ( tooth.getStatus() ) {
+                case NONE:
+                    if (tooth.isSelected())
+                        gg.drawImage(tooth.getImgWhite(), x, y, iw, ih);
+                    break;
+                case ADDED:
+                    gg.drawImage(tooth.isSelected() ? tooth.getImgWhite() : tooth.getImgGray(), x, y, iw, ih);
+                    break;
+                case NEXT:
+                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightBlue() : tooth.getImgDarkBlue(), x, y, iw, ih);
+                    break;
+                case TAKEN:
+                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightGreen() : tooth.getImgDarkGreen(), x, y, iw, ih);
+                    break;
+                case FAILED:
+                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightRed() : tooth.getImgDarkRed(), x, y, iw, ih);
+                    break;
             }
         }
         gg.drawImage(img, x, y, iw, ih);
@@ -103,7 +117,7 @@ public class QuadrantsCanvas extends ResizableCanvas {
 
         gg.clearRect(0, 0, width, height);
 
-        gg.setStroke(Color.BLUE);
+        gg.setStroke(Color.LIGHTGRAY);
         gg.setLineWidth(1.0);
 
         gg.strokeLine(width / 2.0, 0, width / 2.0, height);
@@ -165,6 +179,41 @@ public class QuadrantsCanvas extends ResizableCanvas {
             for (Tooth tooth : quadrant.getTeeth()) {
                 if (tooth.isSelected()) {
                     result.add(tooth);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public Tooth getTooth(Tooth tooth) {
+        for (Quadrant quadrant : quadrants) {
+            for (Tooth temp : quadrant.getTeeth()) {
+                if (temp.getName().equals(tooth.getName())) {
+                    return temp;
+                }
+            }
+        }
+        return null;
+    }
+
+    public Vector<Tooth> getTeeth() {
+        Vector<Tooth> result = new Vector<>();
+        for (Quadrant quadrant : quadrants) {
+            for (Tooth tooth : quadrant.getTeeth()) {
+                result.add(tooth);
+            }
+        }
+        return result;
+    }
+
+    public Vector<Tooth> getTeeth(Menu menu) {
+        Vector<Tooth> result = new Vector<>();
+
+        for (Tooth tooth : getTeeth()) {
+            for (Tooth temp : menu.getTeeth()) {
+                if (temp.getName().equals(tooth.getName())) {
+                    result.add(temp);
                 }
             }
         }

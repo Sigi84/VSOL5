@@ -70,7 +70,8 @@ public class Gui {
 		primaryStage.setWidth(Args.width);
 		primaryStage.setHeight(Args.height);
 
-//		primaryStage.setMaximized(true);
+		if (Args.maximize)
+			primaryStage.setMaximized(true);
 
 		primaryStage.setTitle("VSOL Dental"); // set window title
 

@@ -10,6 +10,8 @@ public class Args {
     public static Integer
             x = null,  y = null,
             width = 1200, height = 800;
+    public static Boolean
+            maximize = false;
 
 
     public static void load(String[] commandlineArgs) {
@@ -19,18 +21,25 @@ public class Args {
                 String[] multi = arg.split(" ");
 
                 String[] subs = arg.split("=", -1);
-                if (subs.length != 2) break;
-                String key = subs[0];
-                String value = subs[1];
 
-                if (key.equals("x")) {
-                    x = getInt(value);
-                } else if (key.equals("y")) {
-                    y = getInt(value);
-                } else if (key.equals("width")) {
-                    width = getInt(value);
-                } else if (key.equals("height")) {
-                    height = getInt(value);
+                if (subs.length == 1) {
+                    String sub = subs[0];
+                    if (sub.equals("maximize")) {
+                        maximize = true;
+                    }
+                } else if (subs.length == 2) {
+                    String key = subs[0];
+                    String value = subs[1];
+
+                    if (key.equals("x")) {
+                        x = getInt(value);
+                    } else if (key.equals("y")) {
+                        y = getInt(value);
+                    } else if (key.equals("width")) {
+                        width = getInt(value);
+                    } else if (key.equals("height")) {
+                        height = getInt(value);
+                    }
                 }
             }
         }
@@ -45,5 +54,7 @@ public class Args {
         }
         return result;
     }
+
+
 
 }

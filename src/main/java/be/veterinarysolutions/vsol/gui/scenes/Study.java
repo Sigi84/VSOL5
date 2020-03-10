@@ -30,7 +30,7 @@ public class Study extends Controller {
 	@FXML private BorderPane viewerArea, canvasZone, controlZone;
 	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd;
 	@FXML private VBox vboxMenus;
-	@FXML private ScrollPane scrollMenus;
+	@FXML private ScrollPane scrollPane;
 
 	private PictureCanvas pictureCanvas = new PictureCanvas();
 	private QuadrantsCanvas quadrantsCanvas = new QuadrantsCanvas();
@@ -81,62 +81,151 @@ public class Study extends Controller {
 	}
 
 	private void addMenu() {
-		Menu menu = new Menu(quadrantsCanvas.getSelectedTeeth(), menus.size(), menus.size() == 0);
+		Menu menu = new Menu(quadrantsCanvas.getSelectedTeeth());
+
+		boolean hasNext = false;
+		for (Menu temp : menus) {
+			if (temp.getStatus() == Tooth.Status.NEXT) {
+				hasNext = true;
+				break;
+			}
+		}
+
+		if (!hasNext) {
+			menu.setStatus(Tooth.Status.NEXT);
+		} else {
+			menu.setStatus(Tooth.Status.ADDED);
+		}
 		menus.add(menu);
 		quadrantsCanvas.selectAll(false);
+
 		drawQuadrants();
 		fillMenus();
 //		Platform.runLater(() -> scrollMenus.setVvalue(1.0));
 	}
 
 	public void fillMenus() {
+		pictureCanvas.clear();
+		pictureCanvas.setMenu(null);
+
 		vboxMenus.getChildren().clear();
-		int counter = 0;
+
 		for (Menu menu : menus) {
 			MenuComp comp = MenuComp.getInstance(ctrl, menu);
 			vboxMenus.getChildren().add(comp.getNode());
+
+			if (menu.isSelected())
+				pictureCanvas.draw(menu);
 		}
 	}
 
 	public void deleteMenu(Menu menu) {
+		for (Tooth tooth : quadrantsCanvas.getTeeth(menu)) {
+			tooth.setStatus(Tooth.Status.NONE);
+			tooth.setSelected(false);
+		}
+
 		Vector<Menu> menusNew = new Vector<>();
-		int counter = 0;
 		for (Menu temp : menus) {
-			if (temp.getNr() != menu.getNr()) {
+			if (temp.getId() != menu.getId()) {
 				menusNew.add(temp);
-				temp.setNr(counter++);
 			}
 		}
 		this.menus = menusNew;
 		fillMenus();
 	}
 
-	public void readyMenu(Menu menu) {
-		double scrollposition = scrollMenus.getVvalue();
+	public int getIndex(Menu menu) {
+		int index = -1;
+
+		int counter  = 0;
 		for (Menu temp : menus) {
-			temp.setReady(temp.getNr() == menu.getNr());
+			if (temp.getId() == menu.getId()) {
+				index = counter;
+			}
+			counter++;
 		}
+
+		return index;
+	}
+
+	public void reorderMenu(Menu menu, int pos) {
+
+		Menu current = null;
+		Vector<Menu> menusNew = new Vector<>();
+
+//		int pos = 0;
+
+		int counter  = 0;
+		for (Menu temp : menus) {
+			if (temp.getId() == menu.getId()) {
+				current = temp;
+//				pos = counter;
+			} else {
+				menusNew.add(temp);
+			}
+			counter++;
+		}
+
+//		pos += offset;
+//		if (pos < 0)
+//			pos = 0;
+//		else if (pos > menusNew.size())
+//			pos = menusNew.size();
+
+		menusNew.add(pos, current);
+		menus = menusNew;
 
 		fillMenus();
-		Platform.runLater(() -> scrollMenus.setVvalue(scrollposition));
+	}
 
-		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
-			for (Tooth tooth : quadrant.getTeeth()) {
-				tooth.setReady(false);
+	public void selectMenu(Menu menu) {
+		boolean selected = menu.isSelected();
+
+		if (!selected) { // deselect everything first
+			for (Menu temp : menus) {
+				temp.setSelected(false);
+			}
+			menu.setSelected(true);
+			for (Tooth tooth : quadrantsCanvas.getSelectedTeeth()) {
+				tooth.setSelected(false);
 			}
 		}
 
-		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
-			for (Tooth tooth : quadrant.getTeeth()) {
-				for (Tooth temp : menu.getTeeth()) {
-					if (tooth.getName().equals(temp.getName())) {
-						tooth.setReady(true);
-					}
-				}
-			}
+		menu.setSelected(!selected);
+		for (Tooth tooth : menu.getTeeth()) {
+			quadrantsCanvas.getTooth(tooth).setSelected(!selected);
 		}
 
 		drawQuadrants();
+		fillMenus();
+
+
+//		double scrollposition = scrollMenus.getVvalue();
+//		for (Menu temp : menus) {
+//			temp.setReady(temp.getNr() == menu.getNr());
+//		}
+//
+//		fillMenus();
+//		Platform.runLater(() -> scrollMenus.setVvalue(scrollposition));
+//
+//		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
+//			for (Tooth tooth : quadrant.getTeeth()) {
+//				tooth.setReady(false);
+//			}
+//		}
+//
+//		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
+//			for (Tooth tooth : quadrant.getTeeth()) {
+//				for (Tooth temp : menu.getTeeth()) {
+//					if (tooth.getName().equals(temp.getName())) {
+//						tooth.setReady(true);
+//					}
+//				}
+//			}
+//		}
+//
+//		drawQuadrants();
 	}
 
 
@@ -270,8 +359,6 @@ public class Study extends Controller {
 
 		btnAdd.setDisable(!selection);
 	}
-
-
 
 
 
@@ -507,7 +594,24 @@ public class Study extends Controller {
 
 		Picture pic = new Picture(img);
 
-		addPic(pic);
+		boolean next = false;
+		for (Menu menu : menus) {
+			if (menu.getStatus() == Tooth.Status.NEXT) {
+				menu.setPic(pic);
+				menu.setStatus(Tooth.Status.TAKEN);
+				menu.setSelected(true);
+				next = true;
+			} else {
+				if (next) {
+					menu.setStatus(Tooth.Status.NEXT);
+				}
+				menu.setSelected(false);
+				next = false;
+			}
+		}
+
+		fillMenus();
+		drawQuadrants();
 	}
 
 
@@ -531,6 +635,11 @@ public class Study extends Controller {
 		}
 
 		drawQuadrants();
+	}
+
+
+	@FXML protected void btnAnimalMouseClicked(MouseEvent e) {
+
 	}
 
 
@@ -715,6 +824,17 @@ public class Study extends Controller {
 	}
 
 
+	@FXML protected void vboxMenusScroll(ScrollEvent e) {
+//		System.out.println("vbox " + e.getTotalDeltaY());
+//		e.consume();
+	}
+
+
+	@FXML protected void scrollPaneScroll(ScrollEvent e) {
+		scrollPane.setVvalue(scrollPane.getVvalue() * 2.0);
+
+		e.consume();
+	}
 
 	
 	private TouchPoint getFirstTouchPoint(TouchEvent e) {

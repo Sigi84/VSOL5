@@ -5667,3 +5667,943 @@ HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Closing VSOL5.
 VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Closing VSOL5.
+VSOL5 exited succesfully.
+Entered Ctrl.
+HHH000412: Hibernate Core {5.4.10.Final}
+Imagen device opened.
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Entered Ctrl.
+Couldn't open Imagen device.
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Entered Ctrl.
+Couldn't open Imagen device.
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+HHH000412: Hibernate Core {5.4.10.Final}
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+HHH000412: Hibernate Core {5.4.10.Final}
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/vsol]
+HHH10001001: Connection properties: {password=2b@UuphpLe_9uTs, user=root}
+HHH10001003: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Starting VSOL5 version 0.0.17
+Entered Ctrl.
+Couldn't open Imagen device.
+Closing VSOL5.
+VSOL5 exited succesfully.

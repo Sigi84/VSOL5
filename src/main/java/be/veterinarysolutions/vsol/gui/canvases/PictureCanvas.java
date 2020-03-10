@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.gui.canvases;
 
+import be.veterinarysolutions.vsol.data.Menu;
 import be.veterinarysolutions.vsol.data.Picture;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.effect.ColorAdjust;
@@ -11,18 +12,30 @@ import java.util.Vector;
 
 public class PictureCanvas extends ResizableCanvas {
 
+    private Menu menu;
+
     private Vector<Picture> pics = new Vector<>();
+
+    public void draw(Menu menu) {
+        this.menu = menu;
+        draw();
+    }
 
     public void draw() {
         clear();
 //        drawCross();
 
+        if (menu != null && menu.getPic() != null) {
+            menu.getPic().setSelected(true);
+            drawPic(menu.getPic(), true);
+        }
+
         for (Picture pic : pics) {
-            drawPic(pic);
+            drawPic(pic, false);
         }
     }
 
-    private void drawPic(Picture pic) {
+    private void drawPic(Picture pic, boolean menu) {
         GraphicsContext gg = getGraphicsContext2D();
 
         Image img = pic.getImg();
@@ -92,16 +105,17 @@ public class PictureCanvas extends ResizableCanvas {
         rect.setWidth(sq * pic.getZoom());
         rect.setHeight(sq * pic.getZoom());
 
-
-        if (pic.isSelected()) {
-            gg.setGlobalAlpha(1.0);
-        } else {
-            gg.setGlobalAlpha(0.3);
+        if (!menu) {
+            if (pic.isSelected()) {
+                gg.setGlobalAlpha(1.0);
+            } else {
+                gg.setGlobalAlpha(0.3);
+            }
         }
 
         gg.drawImage(img, x, y, iw, ih);
 
-        if (pic.isSelected()) {
+        if (!menu && pic.isSelected()) {
             ca = new ColorAdjust();
             gg.setEffect(ca);
 
@@ -130,8 +144,18 @@ public class PictureCanvas extends ResizableCanvas {
         gg.strokeLine(width, 0, 0, height);
     }
 
+
+
     public Vector<Picture> getPics() {
-        return pics;
+        Vector<Picture> result = new Vector<>();
+        if (menu != null && menu.getPic() != null) {
+            result.add(menu.getPic());
+        }
+        for (Picture pic : pics) {
+            result.add(pic);
+        }
+
+        return result;
     }
 
     public void deleteSelection() {
@@ -141,5 +165,9 @@ public class PictureCanvas extends ResizableCanvas {
                 temp.add(pic);
         }
         pics = temp;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 }

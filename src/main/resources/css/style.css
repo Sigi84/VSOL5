@@ -61,14 +61,14 @@ VBox {
 }
 
 HBox {
-	-fx-background-color: black;
+	/*-fx-background-color: black;*/
 	-fx-spacing: 10;
 }
 
 Label {
 	-fx-font-family: "Verdana";
-	-fx-background-color: black;
-	-fx-text-fill: #CCCCCC;
+	/*-fx-background-color: black;*/
+	-fx-text-fill: #888;
 	-fx-font-size: 14;
 }
 
@@ -94,6 +94,12 @@ TextField {
 	-fx-background-color: #eee;
 	-fx-padding: 10 10 10 10;
 	-fx-border-color: gray;
+}
+
+Line {
+	-fx-stroke-width: 1;
+	-fx-stroke: yellow;
+	-fx-stroke-line-cap: ROUND;
 }
 
 .selected {
@@ -122,6 +128,12 @@ TextField {
 
 .white {
 	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+
+.black {
+	-fx-background-color: black;
+	-fx-text-fill: white;
 }
 
 .studytitlearea {
@@ -132,18 +144,54 @@ TextField {
 	-fx-background-color: #5e5e5e;
 }
 
-.unselectedborder {
-	-fx-border-color: white;
-	-fx-border-width: 1;
-}
-
-.selectedborder {
-	/*-fx-border-color: #66aaff;*/
-	-fx-border-color: orange;
-	-fx-border-width: 5;
-}
-
 .black-text {
-	-fx-background-color: transparant;
 	-fx-text-fill: black;
+}
+
+.pointer {
+	-fx-cursor: hand;
+}
+
+.whiteborder {
+	-fx-border-width: 1;
+	-fx-border-style: solid;
+	-fx-border-color: white;
+}
+
+.reorderborder {
+	-fx-border-width: 1;
+	-fx-border-style: solid;
+	-fx-border-color: yellow;
+}
+
+.lightred {
+	-fx-background-color: #FFAAAA;
+}
+
+.darkred {
+	-fx-background-color: #880000;
+}
+
+.lightgreen {
+	-fx-background-color: #AAFFAA;
+}
+
+.darkgreen {
+	-fx-background-color: #008800;
+}
+
+.lightblue {
+	-fx-background-color: #AAAAFF;
+}
+
+.darkblue {
+	-fx-background-color: #000088;
+}
+
+.opaque {
+	-fx-opacity: 1.0;
+}
+
+.transparant {
+	-fx-opacity: 0.5;
 }

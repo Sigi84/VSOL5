@@ -13,7 +13,7 @@ public abstract class ResizableCanvas extends Canvas {
 
     public abstract void draw();
 
-    protected void clear() {
+    public void clear() {
         GraphicsContext gg = getGraphicsContext2D();
         gg.clearRect(0, 0, getWidth(), getHeight());
     }

@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.data;
 
+import be.veterinarysolutions.vsol.tools.Cal;
 import be.veterinarysolutions.vsol.tools.Str;
 
 import java.util.TreeSet;
@@ -7,13 +8,19 @@ import java.util.TreeSet;
 public class Menu {
 
     private TreeSet<Tooth> teeth = new TreeSet<>();
-    private int nr;
-    private boolean ready = false;
+    private long id;
+    private boolean selected;
+    private Tooth.Status status = Tooth.Status.NONE;
+    private Picture pic;
 
-    public Menu(TreeSet<Tooth> teeth, int nr, boolean ready) {
+    public Menu(TreeSet<Tooth> teeth) {
         this.teeth = teeth;
-        this.nr = nr;
-        this.ready = ready;
+        id = Cal.getId();
+    }
+
+    public Menu(Tooth tooth) {
+        teeth.add(tooth);
+        id = Cal.getId();
     }
 
     @Override
@@ -40,21 +47,37 @@ public class Menu {
         return teeth;
     }
 
-    public int getNr() {
-        return nr;
+    public long getId() {
+        return id;
     }
 
-    public void setNr(int nr) {
-        this.nr = nr;
+    public boolean isSelected() {
+        return selected;
     }
 
-    public boolean isReady() {
-        return ready;
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+        for (Tooth tooth : teeth) {
+            tooth.setSelected(selected);
+        }
     }
 
-    public void setReady(boolean ready) {
-        this.ready = ready;
+    public Tooth.Status getStatus() {
+        return status;
     }
 
+    public void setStatus(Tooth.Status status) {
+        this.status = status;
+        for (Tooth tooth : teeth) {
+            tooth.setStatus(status);
+        }
+    }
 
+    public Picture getPic() {
+        return pic;
+    }
+
+    public void setPic(Picture pic) {
+        this.pic = pic;
+    }
 }

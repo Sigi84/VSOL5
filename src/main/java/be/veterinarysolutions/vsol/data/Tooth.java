@@ -5,10 +5,13 @@ import javafx.scene.image.Image;
 
 public class Tooth implements Comparable<Tooth> {
 
+    public enum Status { NONE, ADDED, TAKEN, FAILED, NEXT }
+
     private String name;
     private double minX, maxX, minY, maxY;
-    private boolean selected = false, ready = false;
-    private Image imgGreen, imgOrange;
+    private boolean selected = false;
+    private Image imgWhite, imgGray, imgLightGreen, imgDarkGreen, imgLightRed, imgDarkRed, imgLightBlue, imgDarkBlue;
+    private Status status = Status.NONE;
 
     public Tooth(String name, double minX, double maxX, double minY, double maxY) {
         this.name = name;
@@ -17,8 +20,18 @@ public class Tooth implements Comparable<Tooth> {
         this.minY = minY;
         this.maxY = maxY;
 
-        imgGreen = new Image("file:" + Options.START_DIR + "canine/green/" + name + ".png");
-        imgOrange = new Image("file:" + Options.START_DIR + "canine/orange/" + name + ".png");
+        imgWhite = new Image("file:" + Options.START_DIR + "canine/white/" + name + ".png");
+        imgGray = new Image("file:" + Options.START_DIR + "canine/gray/" + name + ".png");
+
+        imgLightGreen = new Image("file:" + Options.START_DIR + "canine/green/light/" + name + ".png");
+        imgDarkGreen = new Image("file:" + Options.START_DIR + "canine/green/dark/" + name + ".png");
+
+        imgLightRed = new Image("file:" + Options.START_DIR + "canine/red/light/" + name + ".png");
+        imgDarkRed = new Image("file:" + Options.START_DIR + "canine/red/dark/" + name + ".png");
+
+        imgLightBlue = new Image("file:" + Options.START_DIR + "canine/blue/light/" + name + ".png");
+        imgDarkBlue = new Image("file:" + Options.START_DIR + "canine/blue/dark/" + name + ".png");
+
     }
 
     public String getName() {
@@ -62,25 +75,49 @@ public class Tooth implements Comparable<Tooth> {
         this.selected = selected;
     }
 
-    public boolean isReady() {
-        return ready;
-    }
-
-    public void setReady(boolean ready) {
-        this.ready = ready;
-    }
-
     @Override
     public String toString() {
         return name;
     }
 
-    public Image getImgGreen() {
-        return imgGreen;
+    public Image getImgWhite() {
+        return imgWhite;
     }
 
-    public Image getImgOrange() {
-        return imgOrange;
+    public Image getImgLightGreen() {
+        return imgLightGreen;
+    }
+
+    public Image getImgDarkGreen() {
+        return imgDarkGreen;
+    }
+
+    public Image getImgLightRed() {
+        return imgLightRed;
+    }
+
+    public Image getImgDarkRed() {
+        return imgDarkRed;
+    }
+
+    public Image getImgLightBlue() {
+        return imgLightBlue;
+    }
+
+    public Image getImgDarkBlue() {
+        return imgDarkBlue;
+    }
+
+    public Image getImgGray() {
+        return imgGray;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     @Override
