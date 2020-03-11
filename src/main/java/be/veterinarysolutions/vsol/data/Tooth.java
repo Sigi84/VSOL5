@@ -3,55 +3,40 @@ package be.veterinarysolutions.vsol.data;
 import be.veterinarysolutions.vsol.main.Options;
 import javafx.scene.image.Image;
 
-public class Tooth implements Comparable<Tooth> {
+import java.util.TreeSet;
+import java.util.Vector;
 
-    public enum Status { NONE, ADDED, TAKEN, FAILED, NEXT }
+public class Tooth implements Comparable<Tooth> {
 
     private String name;
     private double minX, maxX, minY, maxY;
     private boolean selected = false;
     private Image imgWhite, imgGray, imgLightGreen, imgDarkGreen, imgLightRed, imgDarkRed, imgLightBlue, imgDarkBlue;
-    private Status status = Status.NONE;
 
-    public Tooth(String name, double minX, double maxX, double minY, double maxY) {
+    private TreeSet<Menu> menus = new TreeSet<>();
+
+    public Tooth(String type, String name, double minX, double maxX, double minY, double maxY) {
         this.name = name;
         this.minX = minX;
         this.maxX = maxX;
         this.minY = minY;
         this.maxY = maxY;
 
-        imgWhite = new Image("file:" + Options.START_DIR + "canine/white/" + name + ".png");
-        imgGray = new Image("file:" + Options.START_DIR + "canine/gray/" + name + ".png");
+        imgWhite = new Image("file:" + Options.START_DIR + type + "/white/" + name + ".png");
+        imgGray = new Image("file:" + Options.START_DIR + type + "/gray/" + name + ".png");
 
-        imgLightGreen = new Image("file:" + Options.START_DIR + "canine/green/light/" + name + ".png");
-        imgDarkGreen = new Image("file:" + Options.START_DIR + "canine/green/dark/" + name + ".png");
+        imgLightGreen = new Image("file:" + Options.START_DIR + type + "/green/light/" + name + ".png");
+        imgDarkGreen = new Image("file:" + Options.START_DIR + type + "/green/dark/" + name + ".png");
 
-        imgLightRed = new Image("file:" + Options.START_DIR + "canine/red/light/" + name + ".png");
-        imgDarkRed = new Image("file:" + Options.START_DIR + "canine/red/dark/" + name + ".png");
+        imgLightRed = new Image("file:" + Options.START_DIR + type + "/red/light/" + name + ".png");
+        imgDarkRed = new Image("file:" + Options.START_DIR + type + "/red/dark/" + name + ".png");
 
-        imgLightBlue = new Image("file:" + Options.START_DIR + "canine/blue/light/" + name + ".png");
-        imgDarkBlue = new Image("file:" + Options.START_DIR + "canine/blue/dark/" + name + ".png");
-
+        imgLightBlue = new Image("file:" + Options.START_DIR + type + "/blue/light/" + name + ".png");
+        imgDarkBlue = new Image("file:" + Options.START_DIR + type + "/blue/dark/" + name + ".png");
     }
 
     public String getName() {
         return name;
-    }
-
-    public double getMinX() {
-        return minX;
-    }
-
-    public double getMaxX() {
-        return maxX;
-    }
-
-    public double getMinY() {
-        return minY;
-    }
-
-    public double getMaxY() {
-        return maxY;
     }
 
     public boolean contains(double x, double y, double width, double height) {
@@ -112,12 +97,24 @@ public class Tooth implements Comparable<Tooth> {
         return imgGray;
     }
 
-    public Status getStatus() {
-        return status;
+    public TreeSet<Menu> getMenus() {
+        return menus;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public Menu getTopMenu() {
+        Menu result = null;
+
+        for (Menu menu : menus) {
+            if (result == null) {
+                result = menu;
+            } else {
+                if (menu.getStatus().ordinal() > result.getStatus().ordinal()) {
+                    result = menu;
+                }
+            }
+        }
+
+        return result;
     }
 
     @Override

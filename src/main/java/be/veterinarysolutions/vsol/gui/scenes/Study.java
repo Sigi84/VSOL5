@@ -24,16 +24,17 @@ import javafx.scene.layout.VBox;
 
 import java.awt.*;
 import java.io.File;
+import java.util.TreeSet;
 import java.util.Vector;
 
 public class Study extends Controller {
 	@FXML private BorderPane viewerArea, canvasZone, controlZone;
-	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd;
+	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd, btnDelete, btnDog, btnCat;
 	@FXML private VBox vboxMenus;
 	@FXML private ScrollPane scrollPane;
 
 	private PictureCanvas pictureCanvas = new PictureCanvas();
-	private QuadrantsCanvas quadrantsCanvas = new QuadrantsCanvas();
+	private QuadrantsCanvas quadrantsCanvas = new QuadrantsCanvas(this);
 
 	private boolean multitouch = false;
 	private boolean mousePrimaryDown = false; // true when the primary mouse button is down
@@ -45,7 +46,10 @@ public class Study extends Controller {
 	private boolean mouseMoving = false, touchMoving = false, zooming = false, rotating = false;
 
 	public enum Mode { SELECT, BRIGHTNESS, MEASURE };
+	public enum Animal { CANINE, FELINE };
+
 	private Mode mode = Mode.SELECT;
+	private Animal animal = Animal.CANINE;
 
 	private Vector<Menu> menus = new Vector<>();
 
@@ -57,52 +61,24 @@ public class Study extends Controller {
 		quadrantsCanvas.widthProperty().bind(canvasZone.widthProperty());
 		quadrantsCanvas.heightProperty().bind(canvasZone.heightProperty());
 
+		fillAnimal(Animal.CANINE);
 		quadrantsCanvas.setInner(true);
-		quadrantsCanvas.setScale(1.0);
 
 		canvasZone.getChildren().add(pictureCanvas);
 		canvasZone.getChildren().add(quadrantsCanvas);
 
 		fillMode(Mode.SELECT);
-		fillImagen();
-		drawQuadrants();
-	}
 
+		btnImg.setDisable(!ctrl.getImagen().isOpen());
 
-
-
-	private void addPic(Picture pic) {
-		for (Picture temp : pictureCanvas.getPics()) {
-			temp.setSelected(false);
-		}
-		pic.setSelected(true);
-		pictureCanvas.getPics().add(pic);
-		pictureCanvas.draw();
-	}
-
-	private void addMenu() {
-		Menu menu = new Menu(quadrantsCanvas.getSelectedTeeth());
-
-		boolean hasNext = false;
-		for (Menu temp : menus) {
-			if (temp.getStatus() == Tooth.Status.NEXT) {
-				hasNext = true;
-				break;
-			}
-		}
-
-		if (!hasNext) {
-			menu.setStatus(Tooth.Status.NEXT);
-		} else {
-			menu.setStatus(Tooth.Status.ADDED);
-		}
-		menus.add(menu);
-		quadrantsCanvas.selectAll(false);
-
-		drawQuadrants();
 		fillMenus();
-//		Platform.runLater(() -> scrollMenus.setVvalue(1.0));
 	}
+
+
+
+
+
+	// MENUS
 
 	public void fillMenus() {
 		pictureCanvas.clear();
@@ -117,22 +93,26 @@ public class Study extends Controller {
 			if (menu.isSelected())
 				pictureCanvas.draw(menu);
 		}
+
+		Menu selectedMenu = getSelectedMenu();
+		btnDelete.setDisable(selectedMenu == null || selectedMenu.getStatus() == Menu.Status.TAKEN);
+
+		fillQuadrants();
 	}
 
-	public void deleteMenu(Menu menu) {
-		for (Tooth tooth : quadrantsCanvas.getTeeth(menu)) {
-			tooth.setStatus(Tooth.Status.NONE);
-			tooth.setSelected(false);
-		}
+	public void addMenu(Menu menu) {
+		addMenu(menu, -1);
+	}
 
-		Vector<Menu> menusNew = new Vector<>();
-		for (Menu temp : menus) {
-			if (temp.getId() != menu.getId()) {
-				menusNew.add(temp);
-			}
+	public void addMenu(Menu menu, int position) {
+		if (position == -1)
+			menus.add(menu);
+		else {
+			if (position > menus.size())
+				position = menus.size();
+			menus.add(position, menu);
 		}
-		this.menus = menusNew;
-		fillMenus();
+		quadrantsCanvas.selectAll(false);
 	}
 
 	public int getIndex(Menu menu) {
@@ -197,43 +177,66 @@ public class Study extends Controller {
 			quadrantsCanvas.getTooth(tooth).setSelected(!selected);
 		}
 
-		drawQuadrants();
 		fillMenus();
+	}
+
+	public void setNextMenu(int targetPos) {
+		// mark the next menu in the queue (incl rollaround) to be the next picture receiver
+		for (int i = 0; i < menus.size(); i++) {
+			int j = (targetPos + i) % menus.size();
+			Menu temp = menus.elementAt(j);
+			if (temp.getStatus() == Menu.Status.ADDED) {
+				temp.setStatus(Menu.Status.NEXT);
+				break;
+			}
+		}
+	}
+
+	public void setNextMenu(Menu menu) {
+		for (Menu temp : menus) {
+			if (temp.getId() == menu.getId()) {
+				menu.setStatus(Menu.Status.NEXT);
+			} else if (temp.getStatus() == Menu.Status.NEXT) {
+				temp.setStatus(Menu.Status.ADDED);
+			}
+		}
+	}
+
+	public Menu getSelectedMenu() {
+		Menu result = null;
+		for (Menu menu : menus) {
+			if (menu.isSelected()) {
+				result = menu;
+				break;
+			}
+		}
+		return result;
+	}
 
 
-//		double scrollposition = scrollMenus.getVvalue();
-//		for (Menu temp : menus) {
-//			temp.setReady(temp.getNr() == menu.getNr());
-//		}
-//
-//		fillMenus();
-//		Platform.runLater(() -> scrollMenus.setVvalue(scrollposition));
-//
-//		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
-//			for (Tooth tooth : quadrant.getTeeth()) {
-//				tooth.setReady(false);
-//			}
-//		}
-//
-//		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
-//			for (Tooth tooth : quadrant.getTeeth()) {
-//				for (Tooth temp : menu.getTeeth()) {
-//					if (tooth.getName().equals(temp.getName())) {
-//						tooth.setReady(true);
-//					}
-//				}
-//			}
-//		}
-//
-//		drawQuadrants();
+
+
+	// QUADRANTS CANVAS
+
+	private void fillQuadrants() {
+		quadrantsCanvas.draw();
+		btnAdd.setDisable(getSelectedMenu() != null || quadrantsCanvas.getSelectedTeeth().size() == 0);
 	}
 
 
 
 
 
+	// PICTURE CANVAS
 
-
+	private void addPic(Picture pic) {
+		for (Picture temp : pictureCanvas.getPics()) {
+			temp.setSelected(false);
+		}
+		pic.setSelected(true);
+		pictureCanvas.getPics().add(pic);
+		pictureCanvas.draw();
+	}
 
 	private void changeBrightness(double offset) {
 		for (Picture pic : pictureCanvas.getPics()) {
@@ -311,7 +314,6 @@ public class Study extends Controller {
 		pictureCanvas.draw();
 	}
 
-	// TODO: move this function over to PictureCanvas (= more logical and consistent with Q-Canvas.select())
 	private void select(double x, double y) {
 		boolean found = false;
 		for (Picture pic : pictureCanvas.getPics()) {
@@ -343,24 +345,21 @@ public class Study extends Controller {
 		pictureCanvas.draw();
 	}
 
-	private void drawQuadrants() {
-		quadrantsCanvas.draw();
-		boolean selection = false;
-
-		outerloop:
-		for (Quadrant quadrant : quadrantsCanvas.getQuadrants()) {
-			for (Tooth tooth : quadrant.getTeeth()) {
-				if (tooth.isSelected()) {
-					selection = true;
-					break outerloop;
-				}
+	private TouchPoint getFirstTouchPoint(TouchEvent e) {
+		for (TouchPoint p : e.getTouchPoints()) {
+			if (p.getId() == 1) {
+				return p;
 			}
 		}
-
-		btnAdd.setDisable(!selection);
+		return null;
 	}
 
 
+
+
+
+
+	// EVENTS
 
 	@FXML protected void btnBackMouseClicked(MouseEvent e) {
 		gui.showHome();
@@ -565,58 +564,94 @@ public class Study extends Controller {
 
 
 	@FXML protected void btnImgMouseClicked(MouseEvent e) {
-		byte[] pixels = ctrl.getImagen().getMockCapture();
+		Menu targetMenu = null;
+		int targetPos = -1;
 
-		double min = Bytes.MAX_16;
-		double max = 0.0;
-
-		int[] values = Bytes.get16BitBuffer(pixels, Bytes.LITTLE_ENDIAN);
-		for (int value : values) {
-			if (value < min) min = value;
-			if (value > max) max = value;
-		}
-
-//		System.out.println("MIN = " + min);
-//		System.out.println("MAX = " + max);
-
-		int[] rgb = new int[values.length];
-		for (int i = 0; i < rgb.length; i++) {
-			double fraction = (values[i] - min) / (max - min);
-			int current = (int) ( fraction * 255 );
-
-			Color color = new Color(current, current, current);
-			rgb[i] = color.getRGB();
-		}
-
-		WritableImage img = new WritableImage(1300, 1706);
-		PixelWriter writer = img.getPixelWriter();
-		writer.setPixels(0, 0, 1300, 1706, PixelFormat.getIntArgbInstance(), rgb, 0, 1300);
-
-		Picture pic = new Picture(img);
-
-		boolean next = false;
+		int counter = 0;
 		for (Menu menu : menus) {
-			if (menu.getStatus() == Tooth.Status.NEXT) {
-				menu.setPic(pic);
-				menu.setStatus(Tooth.Status.TAKEN);
-				menu.setSelected(true);
-				next = true;
-			} else {
-				if (next) {
-					menu.setStatus(Tooth.Status.NEXT);
-				}
-				menu.setSelected(false);
-				next = false;
+			menu.setSelected(false);
+			if (menu.getStatus() == Menu.Status.NEXT) {
+				targetMenu = menu;
+				targetPos = counter;
 			}
+			counter++;
+		}
+
+		if (targetMenu != null) {
+			quadrantsCanvas.setInner(false);
+
+			byte[] pixels = ctrl.getImagen().getMockCapture();
+
+			double min = Bytes.MAX_16;
+			double max = 0.0;
+
+			int[] values = Bytes.get16BitBuffer(pixels, Bytes.LITTLE_ENDIAN);
+			for (int value : values) {
+				if (value < min) min = value;
+				if (value > max) max = value;
+			}
+
+			int[] rgb = new int[values.length];
+			for (int i = 0; i < rgb.length; i++) {
+				double fraction = (values[i] - min) / (max - min);
+				int current = (int) ( fraction * 255 );
+
+				Color color = new Color(current, current, current);
+				rgb[i] = color.getRGB();
+			}
+
+			WritableImage img = new WritableImage(1300, 1706);
+			PixelWriter writer = img.getPixelWriter();
+			writer.setPixels(0, 0, 1300, 1706, PixelFormat.getIntArgbInstance(), rgb, 0, 1300);
+
+			Picture pic = new Picture(img);
+			targetMenu.setPic(pic);
+			targetMenu.setStatus(Menu.Status.TAKEN);
+			targetMenu.setSelected(true);
+
+			setNextMenu(targetPos);
 		}
 
 		fillMenus();
-		drawQuadrants();
 	}
 
 
 	@FXML protected void btnAddMouseClicked(MouseEvent e) {
-		addMenu();
+		TreeSet<Tooth> selection = quadrantsCanvas.getSelectedTeeth();
+		if (selection.size() == 0) return;
+
+		Menu menu = new Menu(selection);
+
+		boolean hasNext = false;
+		for (Menu temp : menus) {
+			if (temp.getStatus() == Menu.Status.NEXT) {
+				hasNext = true;
+				break;
+			}
+		}
+
+		if (!hasNext) {
+			menu.setStatus(Menu.Status.NEXT);
+		} else {
+			menu.setStatus(Menu.Status.ADDED);
+		}
+
+		addMenu(menu);
+		fillMenus();
+	}
+
+
+	@FXML protected void btnDeleteMouseClicked(MouseEvent e) {
+		Vector<Menu> menusNew = new Vector<>();
+		for (Menu menu : menus) {
+			if (menu.isSelected() && menu.getStatus() != Menu.Status.TAKEN) {
+				menu.selfDestruct();
+			} else {
+				menusNew.add(menu);
+			}
+		}
+		menus = menusNew;
+		fillMenus();
 	}
 
 
@@ -625,21 +660,30 @@ public class Study extends Controller {
 	}
 
 
+
+
+
 	@FXML protected void btnQuadrantMouseClicked(MouseEvent e) {
 		if (quadrantsCanvas.isInner()) {
 			quadrantsCanvas.setInner(false);
-			quadrantsCanvas.setScale(0.75);
 		} else {
 			quadrantsCanvas.setInner(true);
-			quadrantsCanvas.setScale(1.0);
 		}
 
-		drawQuadrants();
+		fillQuadrants();
 	}
 
 
-	@FXML protected void btnAnimalMouseClicked(MouseEvent e) {
+	@FXML protected void btnDogMouseClicked(MouseEvent e) {
+		fillAnimal(Animal.CANINE);
+		quadrantsCanvas.init(Animal.CANINE);
+		fillQuadrants();
+	}
 
+	@FXML protected void btnCatMouseClicked(MouseEvent e) {
+		fillAnimal(Animal.FELINE);
+		quadrantsCanvas.init(Animal.FELINE);
+		fillQuadrants();
 	}
 
 
@@ -708,7 +752,7 @@ public class Study extends Controller {
 
 	@FXML protected void canvasZoneMouseClicked(MouseEvent e) {
 		quadrantsCanvas.select(e.getX(), e.getY());
-		drawQuadrants();
+		fillQuadrants();
 
 //		if (e.getButton() == MouseButton.MIDDLE) {
 //			System.out.println();
@@ -836,15 +880,9 @@ public class Study extends Controller {
 		e.consume();
 	}
 
-	
-	private TouchPoint getFirstTouchPoint(TouchEvent e) {
-		for (TouchPoint p : e.getTouchPoints()) {
-			if (p.getId() == 1) {
-				return p;
-			}
-		}
-		return null;
-	}
+
+
+
 
 	private void fillMode(Mode mode) {
 		this.mode = mode;
@@ -864,29 +902,22 @@ public class Study extends Controller {
 				btnMeasure.getStyleClass().add(SELECTED);
 				break;
 		}
-
-
-		//		btnBrightness.getStyleClass().removeAll("selected");
-//		btnVertebra.getStyleClass().removeAll("selected");
-//
-//		switch (drawMode) {
-//			case BRIGHTNESS:
-//				btnBrightness.getStyleClass().add("selected");
-//				break;
-//			case VERTEBRA:
-//				btnVertebra.getStyleClass().add("selected");
-//				break;
-//		}
 	}
 
-	private void fillImagen() {
-		final String ACTIVE = "active";
+	private void fillAnimal(Animal animal) {
+		this.animal = animal;
+		final String SELECTED = "selected";
+		btnDog.getStyleClass().removeAll(SELECTED);
+		btnCat.getStyleClass().removeAll(SELECTED);
 
-		btnImg.getStyleClass().removeAll(ACTIVE);
-
-		if (ctrl.getImagen().isOpen()) {
-			btnImg.getStyleClass().add(ACTIVE);
+		switch (animal) {
+			case CANINE:
+				btnDog.getStyleClass().add(SELECTED);
+				break;
+			case FELINE:
+				btnCat.getStyleClass().add(SELECTED);
+				break;
 		}
-	}
 
+	}
 }

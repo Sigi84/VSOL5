@@ -18,6 +18,11 @@ Button:hover {
 	-fx-cursor: "hand";
 }
 
+Button:disabled {
+	/*-fx-background-color: #029ddf;*/
+	-fx-cursor: "arrow";
+}
+
 /*Button.exit:hover {*/
 /*	-fx-background-color: #be0000;*/
 /*}*/
@@ -34,9 +39,9 @@ StackPane.viewer {
 	-fx-background-color: #aaaaaa;
 }
 
-BorderPane {
-	-fx-background-color: black;
-}
+/*BorderPane {*/
+/*	-fx-background-color: black;*/
+/*}*/
 
 BorderPane.menu {
 	-fx-background-color: #ccc;
@@ -107,7 +112,7 @@ Line {
 }
 
 .active {
-	-fx-background-color: #30eb3e;
+	-fx-background-color: #000088;
 }
 
 .unselected {
@@ -128,7 +133,7 @@ Line {
 
 .white {
 	-fx-background-color: white;
-	-fx-text-fill: black;
+	/*-fx-text-fill: black;*/
 }
 
 .black {
@@ -136,7 +141,7 @@ Line {
 	-fx-text-fill: white;
 }
 
-.studytitlearea {
+.nopadding {
 	-fx-padding: 0;
 }
 
@@ -194,4 +199,12 @@ Line {
 
 .transparant {
 	-fx-opacity: 0.5;
+}
+
+.padding {
+	-fx-padding: 10 10 10 10;
+}
+
+.bgwhite {
+	-fx-background-color: white;
 }

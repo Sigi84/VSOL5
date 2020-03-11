@@ -2,9 +2,9 @@ package be.veterinarysolutions.vsol.data;
 
 import java.util.Vector;
 
-public class Canine {
+public class Feline {
 
-    private static String type = "canine";
+    private static String type = "feline";
 
     public static Tooth get101() { return new Tooth(type, "101", 0.9053, 0.9905, 0.0014, 0.0742); }
     public static Tooth get102() { return new Tooth(type, "102", 0.7739, 0.8840, 0.0114, 0.0942); }
@@ -15,7 +15,6 @@ public class Canine {
     public static Tooth get107() { return new Tooth(type, "107", 0.2024, 0.3870, 0.5478, 0.6362); }
     public static Tooth get108() { return new Tooth(type, "108", 0.0178, 0.3479, 0.6476, 0.8046); }
     public static Tooth get109() { return new Tooth(type, "109", 0.0071, 0.3870, 0.8160, 0.9401); }
-    public static Tooth get110() { return new Tooth(type, "110", 0.1385, 0.4225, 0.9372, 0.9943); }
 
     public static Tooth get201() { return new Tooth(type, "201", 0.0106, 0.0918, 0.0029, 0.0759); }
     public static Tooth get202() { return new Tooth(type, "202", 0.1200, 0.2294, 0.0100, 0.0913); }
@@ -26,7 +25,6 @@ public class Canine {
     public static Tooth get207() { return new Tooth(type, "207", 0.6071, 0.7907, 0.5464, 0.6362); }
     public static Tooth get208() { return new Tooth(type, "208", 0.6424, 0.9778, 0.6534, 0.8031); }
     public static Tooth get209() { return new Tooth(type, "209", 0.6213, 0.9990, 0.8160, 0.9372); }
-    public static Tooth get210() { return new Tooth(type, "210", 0.5718, 0.8578, 0.9330, 0.9957); }
 
     public static Tooth get301() { return new Tooth(type, "301", 0.0047, 0.1307, 0.9158, 0.9800); }
     public static Tooth get302() { return new Tooth(type, "302", 0.1540, 0.3033, 0.9116, 0.9786); }
@@ -37,8 +35,6 @@ public class Canine {
     public static Tooth get307() { return new Tooth(type, "307", 0.4480, 0.5973, 0.5021, 0.5763); }
     public static Tooth get308() { return new Tooth(type, "308", 0.5413, 0.7000, 0.3738, 0.4665); }
     public static Tooth get309() { return new Tooth(type, "309", 0.6300, 0.9146, 0.1883, 0.3552); }
-    public static Tooth get310() { return new Tooth(type, "310", 0.7840, 0.9753, 0.0842, 0.1541); }
-    public static Tooth get311() { return new Tooth(type, "311", 0.8213, 0.9520, 0.0043, 0.0685); }
 
     public static Tooth get401() { return new Tooth(type, "401", 0.8668, 0.9867, 0.9187, 0.9800); }
     public static Tooth get402() { return new Tooth(type, "402", 0.6870, 0.8391, 0.9130, 0.9786); }
@@ -49,8 +45,6 @@ public class Canine {
     public static Tooth get407() { return new Tooth(type, "407", 0.3873, 0.5256, 0.5007, 0.5792); }
     public static Tooth get408() { return new Tooth(type, "408", 0.2951, 0.4472, 0.3766, 0.4650); }
     public static Tooth get409() { return new Tooth(type, "409", 0.0968, 0.3642, 0.1869, 0.3538); }
-    public static Tooth get410() { return new Tooth(type, "410", 0.0184, 0.1983, 0.0827, 0.1526); }
-    public static Tooth get411() { return new Tooth(type, "411", 0.0369, 0.1752, 0.0014, 0.0713); }
 
     public static Vector<Tooth> getTeeth(boolean left, boolean top) {
         Vector<Tooth> result = new Vector<>();
@@ -65,7 +59,6 @@ public class Canine {
             result.add(get107());
             result.add(get108());
             result.add(get109());
-            result.add(get110());
         } else if (!left && top) { // Q2
             result.add(get201());
             result.add(get202());
@@ -76,7 +69,6 @@ public class Canine {
             result.add(get207());
             result.add(get208());
             result.add(get209());
-            result.add(get210());
         } else if (!left && !top) { // Q3
             result.add(get301());
             result.add(get302());
@@ -87,8 +79,6 @@ public class Canine {
             result.add(get307());
             result.add(get308());
             result.add(get309());
-            result.add(get310());
-            result.add(get311());
         } else if (left && !top) { // Q4
             result.add(get401());
             result.add(get402());
@@ -99,8 +89,6 @@ public class Canine {
             result.add(get407());
             result.add(get408());
             result.add(get409());
-            result.add(get410());
-            result.add(get411());
         }
 
 

@@ -18,4 +18,9 @@ public class Options {
     public static int IMAGEN_STOP_TRESHOLD = 437;
     public static double IMAGEN_INTEGRATION_TIME = 100.0;
 
+    // Quadrants Settings
+    public static final double QUADRANTS_OUTER_SCALE = 0.75;
+    public static final double QUADRANTS_INNER_SCALE = 1.00;
+    public static final boolean DRAW_EMPTY_OUTER = false;
+
 }

@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.data;
 
+import be.veterinarysolutions.vsol.gui.scenes.Study;
 import be.veterinarysolutions.vsol.main.Options;
 import javafx.scene.image.Image;
 import javafx.scene.shape.Rectangle;
@@ -13,15 +14,22 @@ public class Quadrant {
     private Vector<Tooth> teeth = new Vector<>();
     private Rectangle rect;
 
-    public Quadrant(String name, boolean left, boolean top) {
+    public Quadrant(Study.Animal animal, String name, boolean left, boolean top) {
         this.name = name;
         this.left = left;
         this.top = top;
 
-        img = new Image("file:" + Options.START_DIR + "canine/" + name + ".png");
-        teeth = Canine.getTeeth(left, top);
+        switch (animal) {
+            case CANINE:
+                img = new Image("file:" + Options.START_DIR + "canine/" + name + ".png");
+                teeth = Canine.getTeeth(left, top);
+                break;
+            case FELINE:
+                img = new Image("file:" + Options.START_DIR + "feline/" + name + ".png");
+                teeth = Feline.getTeeth(left, top);
+                break;
+        }
     }
-
 
     public Image getImg() {
         return img;

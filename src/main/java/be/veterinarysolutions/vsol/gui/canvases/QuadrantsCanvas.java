@@ -3,6 +3,8 @@ package be.veterinarysolutions.vsol.gui.canvases;
 import be.veterinarysolutions.vsol.data.Menu;
 import be.veterinarysolutions.vsol.data.Quadrant;
 import be.veterinarysolutions.vsol.data.Tooth;
+import be.veterinarysolutions.vsol.gui.scenes.Study;
+import be.veterinarysolutions.vsol.main.Options;
 import be.veterinarysolutions.vsol.tools.Nr;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
@@ -14,21 +16,31 @@ import java.util.Vector;
 
 public class QuadrantsCanvas extends ResizableCanvas {
 
+    private Study study;
     private double scale = 1.0;
     private boolean inner = true;
 
     private Vector<Quadrant> quadrants = new Vector<>();
 
-    public QuadrantsCanvas() {
-        quadrants.add(new Quadrant("Q1", true, true));
-        quadrants.add(new Quadrant("Q2", false, true));
-        quadrants.add(new Quadrant("Q3", false, false));
-        quadrants.add(new Quadrant("Q4", true, false));
+    public QuadrantsCanvas(Study study) {
+        this.study = study;
+
+        init(Study.Animal.CANINE);
+    }
+
+    public void init(Study.Animal animal) {
+        quadrants.clear();
+        quadrants.add(new Quadrant(animal, "Q1", true, true));
+        quadrants.add(new Quadrant(animal, "Q2", false, true));
+        quadrants.add(new Quadrant(animal, "Q3", false, false));
+        quadrants.add(new Quadrant(animal, "Q4", true, false));
     }
 
     public void draw() {
         clear();
-        drawCross();
+
+        if (inner)
+            drawCross();
 
         for (Quadrant quadrant : quadrants) {
             drawQuadrant(quadrant);
@@ -66,27 +78,35 @@ public class QuadrantsCanvas extends ResizableCanvas {
                 y += ch - ih;
         }
 
+        boolean found = false;
         for (Tooth tooth : quadrant.getTeeth()) {
-            switch ( tooth.getStatus() ) {
-                case NONE:
-                    if (tooth.isSelected())
-                        gg.drawImage(tooth.getImgWhite(), x, y, iw, ih);
-                    break;
-                case ADDED:
-                    gg.drawImage(tooth.isSelected() ? tooth.getImgWhite() : tooth.getImgGray(), x, y, iw, ih);
-                    break;
-                case NEXT:
-                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightBlue() : tooth.getImgDarkBlue(), x, y, iw, ih);
-                    break;
-                case TAKEN:
-                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightGreen() : tooth.getImgDarkGreen(), x, y, iw, ih);
-                    break;
-                case FAILED:
-                    gg.drawImage(tooth.isSelected() ? tooth.getImgLightRed() : tooth.getImgDarkRed(), x, y, iw, ih);
-                    break;
+            if (tooth.getTopMenu() == null) {
+                if (tooth.isSelected()) {
+                    gg.drawImage(tooth.getImgWhite(), x, y, iw, ih);
+                    found = true;
+                }
+            } else {
+                found = true;
+                switch (tooth.getTopMenu().getStatus()) {
+                    case ADDED:
+                        gg.drawImage(tooth.isSelected() ? tooth.getImgWhite() : tooth.getImgGray(), x, y, iw, ih);
+                        break;
+                    case NEXT:
+                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightBlue() : tooth.getImgDarkBlue(), x, y, iw, ih);
+                        break;
+                    case TAKEN:
+                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightGreen() : tooth.getImgDarkGreen(), x, y, iw, ih);
+                        break;
+                    case FAILED:
+                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightRed() : tooth.getImgDarkRed(), x, y, iw, ih);
+                        break;
+                }
             }
         }
-        gg.drawImage(img, x, y, iw, ih);
+
+        if (found || inner || Options.DRAW_EMPTY_OUTER) {
+            gg.drawImage(img, x, y, iw, ih);
+        }
         quadrant.setRect(new Rectangle(x, y, iw, ih));
     }
 
@@ -118,6 +138,7 @@ public class QuadrantsCanvas extends ResizableCanvas {
         gg.clearRect(0, 0, width, height);
 
         gg.setStroke(Color.LIGHTGRAY);
+        gg.setLineDashes(5.0);
         gg.setLineWidth(1.0);
 
         gg.strokeLine(width / 2.0, 0, width / 2.0, height);
@@ -125,13 +146,22 @@ public class QuadrantsCanvas extends ResizableCanvas {
     }
 
     public void select(double x, double y) {
+        outerloop:
         for (Quadrant quadrant : quadrants) {
             Rectangle rect = quadrant.getRect();
             if (rect.contains(x, y)) {
                 for (Tooth tooth : quadrant.getTeeth()) {
                     if (tooth.contains(x - rect.getX(), y - rect.getY(), rect.getWidth(), rect.getHeight())) {
-//                        System.out.println(tooth.getName());
-                        tooth.setSelected(!tooth.isSelected());
+                        if (inner) {
+                            tooth.setSelected(!tooth.isSelected());
+                        } else {
+                            Menu menu = tooth.getTopMenu();
+                            if (menu != null) {
+                                study.selectMenu(menu);
+                                study.fillMenus();
+                            }
+                        }
+                        break outerloop; // stop looking once a detection is made
                     }
                 }
 
@@ -166,6 +196,11 @@ public class QuadrantsCanvas extends ResizableCanvas {
 
     public void setInner(boolean inner) {
         this.inner = inner;
+        if (inner) {
+            setScale(Options.QUADRANTS_INNER_SCALE);
+        } else {
+            setScale(Options.QUADRANTS_OUTER_SCALE);
+        }
     }
 
     public Vector<Quadrant> getQuadrants() {

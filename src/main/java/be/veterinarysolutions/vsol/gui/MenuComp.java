@@ -1,19 +1,17 @@
 package be.veterinarysolutions.vsol.gui;
 
 import be.veterinarysolutions.vsol.data.Menu;
+import be.veterinarysolutions.vsol.data.Tooth;
 import be.veterinarysolutions.vsol.main.Ctrl;
-import be.veterinarysolutions.vsol.main.Gui;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.MouseDragEvent;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
 
 import java.io.IOException;
 
@@ -21,6 +19,8 @@ public class MenuComp extends Controller {
 
     @FXML private BorderPane borderPane;
     @FXML private Label lblName;
+    @FXML private Button btn1, btn2;
+    @FXML private ImageView ico2;
 
     private Menu menu;
 
@@ -40,15 +40,19 @@ public class MenuComp extends Controller {
             comp.lblName.setText(menu.toString());
 
             switch (menu.getStatus()) {
-                case NONE: // shouldn't be NONE
                 case ADDED:
-                    if (menu.isSelected())
-                        comp.borderPane.getStyleClass().add("white");
+                    comp.btn2.setDisable(true);
+                    if (menu.isSelected()) {
+                        comp.borderPane.getStyleClass().add("bgwhite");
+                    }
                     break;
                 case NEXT:
+                    comp.btn1.setDisable(true);
+                    comp.btn2.setDisable(true);
                     comp.borderPane.getStyleClass().add(menu.isSelected() ? "lightblue" : "darkblue");
                     break;
                 case TAKEN:
+                    comp.btn1.setDisable(true);
                     comp.borderPane.getStyleClass().add(menu.isSelected() ? "lightgreen" : "darkgreen");
                     break;
                 case FAILED:
@@ -63,15 +67,37 @@ public class MenuComp extends Controller {
 
 
     @FXML protected void lblNameMouseClicked(MouseEvent e) {
-
-    }
-
-    @FXML protected void btnDeleteMouseClicked(MouseEvent e) {
-        gui.getStudy().deleteMenu(menu);
-    }
-
-    @FXML protected void borderPaneMouseClicked(MouseEvent e) {
         gui.getStudy().selectMenu(menu);
+    }
+
+    @FXML protected void btn1MouseClicked(MouseEvent e) {
+        switch (menu.getStatus()) {
+            case ADDED:
+                gui.getStudy().setNextMenu(menu);
+                gui.getStudy().fillMenus();
+                break;
+            case FAILED:
+                Menu copy = new Menu(menu.getTeeth());
+//                copy.setStatus(Tooth.Status.ADDED);
+                int position = gui.getStudy().getIndex(menu) + 1;
+                gui.getStudy().addMenu(copy, position);
+                gui.getStudy().setNextMenu(copy);
+                gui.getStudy().fillMenus();
+                break;
+        }
+    }
+
+    @FXML protected void btn2MouseClicked(MouseEvent e) {
+        switch (menu.getStatus()) {
+            case TAKEN:
+                menu.setStatus(Menu.Status.FAILED);
+                gui.getStudy().fillMenus();
+                break;
+            case FAILED:
+                menu.setStatus(Menu.Status.TAKEN);
+                gui.getStudy().fillMenus();
+                break;
+        }
     }
 
     @FXML protected void grabberMousePressed(MouseEvent e) {
