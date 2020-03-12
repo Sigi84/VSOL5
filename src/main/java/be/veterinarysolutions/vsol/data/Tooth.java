@@ -11,7 +11,7 @@ public class Tooth implements Comparable<Tooth> {
     private String name;
     private double minX, maxX, minY, maxY;
     private boolean selected = false;
-    private Image imgWhite, imgGray, imgLightGreen, imgDarkGreen, imgLightRed, imgDarkRed, imgLightBlue, imgDarkBlue;
+    private Image imgWhite, imgGray, imgGreen, imgRed, imgBlue;
 
     private TreeSet<Menu> menus = new TreeSet<>();
 
@@ -25,14 +25,9 @@ public class Tooth implements Comparable<Tooth> {
         imgWhite = new Image("file:" + Options.START_DIR + type + "/white/" + name + ".png");
         imgGray = new Image("file:" + Options.START_DIR + type + "/gray/" + name + ".png");
 
-        imgLightGreen = new Image("file:" + Options.START_DIR + type + "/green/light/" + name + ".png");
-        imgDarkGreen = new Image("file:" + Options.START_DIR + type + "/green/dark/" + name + ".png");
-
-        imgLightRed = new Image("file:" + Options.START_DIR + type + "/red/light/" + name + ".png");
-        imgDarkRed = new Image("file:" + Options.START_DIR + type + "/red/dark/" + name + ".png");
-
-        imgLightBlue = new Image("file:" + Options.START_DIR + type + "/blue/light/" + name + ".png");
-        imgDarkBlue = new Image("file:" + Options.START_DIR + type + "/blue/dark/" + name + ".png");
+        imgGreen = new Image("file:" + Options.START_DIR + type + "/green/dark/" + name + ".png");
+        imgRed = new Image("file:" + Options.START_DIR + type + "/red/dark/" + name + ".png");
+        imgBlue = new Image("file:" + Options.START_DIR + type + "/blue/dark/" + name + ".png");
     }
 
     public String getName() {
@@ -69,28 +64,16 @@ public class Tooth implements Comparable<Tooth> {
         return imgWhite;
     }
 
-    public Image getImgLightGreen() {
-        return imgLightGreen;
+    public Image getImgGreen() {
+        return imgGreen;
     }
 
-    public Image getImgDarkGreen() {
-        return imgDarkGreen;
+    public Image getImgRed() {
+        return imgRed;
     }
 
-    public Image getImgLightRed() {
-        return imgLightRed;
-    }
-
-    public Image getImgDarkRed() {
-        return imgDarkRed;
-    }
-
-    public Image getImgLightBlue() {
-        return imgLightBlue;
-    }
-
-    public Image getImgDarkBlue() {
-        return imgDarkBlue;
+    public Image getImgBlue() {
+        return imgBlue;
     }
 
     public Image getImgGray() {
@@ -101,20 +84,24 @@ public class Tooth implements Comparable<Tooth> {
         return menus;
     }
 
+    // TODO
     public Menu getTopMenu() {
-        Menu result = null;
+        if (menus == null || menus.isEmpty())
+            return null;
 
-        for (Menu menu : menus) {
-            if (result == null) {
-                result = menu;
-            } else {
-                if (menu.getStatus().ordinal() > result.getStatus().ordinal()) {
-                    result = menu;
-                }
-            }
-        }
+        return menus.first();
 
-        return result;
+//        Menu result = null;
+//
+//        for (Menu menu : menus) {
+//            if (result == null) {
+//                result = menu;
+//            } else {
+//                if (menu.getStatus().ordinal() > result.getStatus().ordinal()) {
+//                    result = menu;
+//                }
+//            }
+//        }
     }
 
     @Override

@@ -15,7 +15,7 @@
    <right>
       <BorderPane BorderPane.alignment="CENTER">
          <center>
-            <BorderPane fx:id="menuArea" styleClass="studytitlearea">
+            <BorderPane fx:id="menuArea">
                <top>
                   <HBox alignment="CENTER" BorderPane.alignment="CENTER">
                      <children>
@@ -24,15 +24,6 @@
                               <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../ico/add.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                        <Button fx:id="btnDelete" mnemonicParsing="false" onMouseClicked="#btnDeleteMouseClicked">
-                           <graphic>
-                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@../ico/delete.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -50,17 +41,26 @@
                      </children>
                      <styleClass>
                         <String fx:value="padding" />
-                        <String fx:value="black" />
+                        <String fx:value="darkgray" />
                      </styleClass>
                   </HBox>
                </top>
                <center>
-                  <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" onScroll="#scrollPaneScroll" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+                  <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" onScroll="#scrollPaneScroll" styleClass="darkgray" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
                      <content>
-                        <VBox fx:id="vboxMenus" alignment="TOP_CENTER" onScroll="#vboxMenusScroll" />
+                        <VBox fx:id="vboxMenus" alignment="TOP_CENTER" onScroll="#vboxMenusScroll">
+                           <styleClass>
+                              <String fx:value="darkgray" />
+                              <String fx:value="spacing5" />
+                           </styleClass>
+                        </VBox>
                      </content>
                   </ScrollPane>
                </center>
+               <styleClass>
+                  <String fx:value="studytitlearea" />
+                  <String fx:value="darkgray" />
+               </styleClass>
             </BorderPane>
          </center>
          <right>

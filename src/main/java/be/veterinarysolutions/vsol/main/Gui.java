@@ -55,7 +55,8 @@ public class Gui {
 		study.set(ctrl, this, node);
 
 		Scene scene = new Scene(frameRoot);
-		scene.setOnKeyPressed(new KeyPressedHandler(this));
+
+		scene.setOnKeyReleased(new KeyReleasedHandler(this));
 //		frame.getBorderPane().widthProperty().addListener((observableValue, oldValue, newValue) -> activeScene.resizeWidth(newValue.doubleValue()));
 //		frame.getBorderPane().heightProperty().addListener((observableValue, oldValue, newValue) -> activeScene.resizeHeight(newValue.doubleValue()));
 		primaryStage.setScene(scene);

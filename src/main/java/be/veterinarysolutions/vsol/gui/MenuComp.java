@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class MenuComp extends Controller {
 
-    @FXML private BorderPane borderPane;
+    @FXML private BorderPane borderPane, thumbnail;
     @FXML private Label lblName;
     @FXML private Button btn1, btn2;
     @FXML private ImageView ico2;
@@ -39,26 +39,32 @@ public class MenuComp extends Controller {
             comp.menu = menu;
             comp.lblName.setText(menu.toString());
 
-            switch (menu.getStatus()) {
-                case ADDED:
-                    comp.btn2.setDisable(true);
-                    if (menu.isSelected()) {
-                        comp.borderPane.getStyleClass().add("bgwhite");
-                    }
-                    break;
-                case NEXT:
-                    comp.btn1.setDisable(true);
-                    comp.btn2.setDisable(true);
-                    comp.borderPane.getStyleClass().add(menu.isSelected() ? "lightblue" : "darkblue");
-                    break;
-                case TAKEN:
-                    comp.btn1.setDisable(true);
-                    comp.borderPane.getStyleClass().add(menu.isSelected() ? "lightgreen" : "darkgreen");
-                    break;
-                case FAILED:
-                    comp.borderPane.getStyleClass().add(menu.isSelected() ? "lightred" : "darkred");
-                    break;
+            comp.btn1.setDisable(menu.hasPic() && !menu.isDeleted());
+            comp.btn2.setDisable(!menu.hasPic());
+
+            if (menu.isNext()) {
+                comp.borderPane.getStyleClass().add("green");
+                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "greenborder");
+            } else if (menu.isDeleted()) {
+                comp.borderPane.getStyleClass().add("red");
+                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "redborder");
+            } else if (menu.hasPic()) {
+//                comp.borderPane.getStyleClass().add("blue");
+//                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "blueborder");
+                comp.borderPane.getStyleClass().add("black");
+                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "blackborder");
+            } else {
+//                comp.borderPane.getStyleClass().add("blue"); (redundant)
+                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "blackborder");
             }
+
+            if (menu.hasPic()) {
+                ImageView imageView = new ImageView(menu.getPic().getImg());
+                imageView.setPreserveRatio(true);
+                imageView.setFitHeight(60);
+                comp.thumbnail.setCenter(imageView);
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -71,33 +77,13 @@ public class MenuComp extends Controller {
     }
 
     @FXML protected void btn1MouseClicked(MouseEvent e) {
-        switch (menu.getStatus()) {
-            case ADDED:
-                gui.getStudy().setNextMenu(menu);
-                gui.getStudy().fillMenus();
-                break;
-            case FAILED:
-                Menu copy = new Menu(menu.getTeeth());
-//                copy.setStatus(Tooth.Status.ADDED);
-                int position = gui.getStudy().getIndex(menu) + 1;
-                gui.getStudy().addMenu(copy, position);
-                gui.getStudy().setNextMenu(copy);
-                gui.getStudy().fillMenus();
-                break;
-        }
+        gui.getStudy().deleteMenu(menu);
+        gui.getStudy().fillMenus();
     }
 
     @FXML protected void btn2MouseClicked(MouseEvent e) {
-        switch (menu.getStatus()) {
-            case TAKEN:
-                menu.setStatus(Menu.Status.FAILED);
-                gui.getStudy().fillMenus();
-                break;
-            case FAILED:
-                menu.setStatus(Menu.Status.TAKEN);
-                gui.getStudy().fillMenus();
-                break;
-        }
+        menu.setDeleted(!menu.isDeleted());
+        gui.getStudy().fillMenus();
     }
 
     @FXML protected void grabberMousePressed(MouseEvent e) {

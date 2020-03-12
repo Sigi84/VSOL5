@@ -80,27 +80,29 @@ public class QuadrantsCanvas extends ResizableCanvas {
 
         boolean found = false;
         for (Tooth tooth : quadrant.getTeeth()) {
-            if (tooth.getTopMenu() == null) {
+            Menu menu = tooth.getTopMenu();
+
+
+            if (menu == null) {
                 if (tooth.isSelected()) {
                     gg.drawImage(tooth.getImgWhite(), x, y, iw, ih);
                     found = true;
                 }
             } else {
                 found = true;
-                switch (tooth.getTopMenu().getStatus()) {
-                    case ADDED:
-                        gg.drawImage(tooth.isSelected() ? tooth.getImgWhite() : tooth.getImgGray(), x, y, iw, ih);
-                        break;
-                    case NEXT:
-                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightBlue() : tooth.getImgDarkBlue(), x, y, iw, ih);
-                        break;
-                    case TAKEN:
-                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightGreen() : tooth.getImgDarkGreen(), x, y, iw, ih);
-                        break;
-                    case FAILED:
-                        gg.drawImage(tooth.isSelected() ? tooth.getImgLightRed() : tooth.getImgDarkRed(), x, y, iw, ih);
-                        break;
+
+                if (tooth.isSelected()) {
+                    gg.drawImage(tooth.getImgWhite(), x, y, iw, ih);
+                } else if (menu.isNext()) {
+                    gg.drawImage(tooth.getImgGreen(), x, y, iw, ih);
+                } else if (menu.isDeleted()) {
+                    gg.drawImage(tooth.getImgRed(), x, y, iw, ih);
+                } else if (menu.hasPic()) {
+                    gg.drawImage(tooth.getImgBlue(), x, y, iw, ih);
+                } else {
+                    gg.drawImage(tooth.getImgGray(), x, y, iw, ih);
                 }
+
             }
         }
 

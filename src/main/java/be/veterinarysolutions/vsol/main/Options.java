@@ -10,6 +10,8 @@ public class Options {
     public static final double ZOOM_STEP_SMALL = 0.05;
     public static final double TRANSLATION_STEP = 10.0;
 
+    public static boolean AUTO_DELETE_ON_RETAKE = true;
+
     // Imagen Settings
     public static boolean IMAGEN_MOCK_CAPTURE = true;
     public static long IMAGEN_PRODUCT_ID = 0x4400;

@@ -146,7 +146,7 @@ Line {
 }
 
 .darkgray {
-	-fx-background-color: #5e5e5e;
+	-fx-background-color: #222;
 }
 
 .black-text {
@@ -158,9 +158,21 @@ Line {
 }
 
 .whiteborder {
-	-fx-border-width: 1;
+	-fx-border-width: 3;
 	-fx-border-style: solid;
 	-fx-border-color: white;
+}
+
+.blackborder {
+	-fx-border-width: 3;
+	-fx-border-style: solid;
+	-fx-border-color: black;
+}
+
+.grayborder {
+	-fx-border-width: 3;
+	-fx-border-style: solid;
+	-fx-border-color: #888888;
 }
 
 .reorderborder {
@@ -169,28 +181,34 @@ Line {
 	-fx-border-color: yellow;
 }
 
-.lightred {
-	-fx-background-color: #FFAAAA;
-}
-
-.darkred {
+.red {
 	-fx-background-color: #880000;
 }
 
-.lightgreen {
-	-fx-background-color: #AAFFAA;
-}
-
-.darkgreen {
+.green {
 	-fx-background-color: #008800;
 }
 
-.lightblue {
-	-fx-background-color: #AAAAFF;
+.blue {
+	-fx-background-color: #000088;
 }
 
-.darkblue {
-	-fx-background-color: #000088;
+.redborder {
+	-fx-border-width: 3;
+	-fx-border-style: solid;
+	-fx-border-color: #880000;
+}
+
+.greenborder {
+	-fx-border-width: 3;
+	-fx-border-style: solid;
+	-fx-border-color: #008800;
+}
+
+.blueborder {
+	-fx-border-width: 3;
+	-fx-border-style: solid;
+	-fx-border-color: #000088;
 }
 
 .opaque {
@@ -207,4 +225,8 @@ Line {
 
 .bgwhite {
 	-fx-background-color: white;
+}
+
+.spacing5 {
+	-fx-spacing: 5;
 }

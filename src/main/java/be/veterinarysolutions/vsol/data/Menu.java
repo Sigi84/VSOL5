@@ -7,12 +7,9 @@ import java.util.TreeSet;
 
 public class Menu implements Comparable<Menu> {
 
-    public enum Status { ADDED, NEXT, FAILED, TAKEN  }
-
     private TreeSet<Tooth> teeth = new TreeSet<>();
     private long id;
-    private boolean selected;
-    private Status status = Status.ADDED;
+    private boolean selected, next, deleted;
     private Picture pic;
 
     public Menu(TreeSet<Tooth> teeth) {
@@ -23,10 +20,13 @@ public class Menu implements Comparable<Menu> {
         id = Cal.getId();
     }
 
-    public void selfDestruct() {
-        setSelected(false);
-        setStatus(Status.ADDED);
+    public Menu(long id, Tooth tooth) {
+        teeth.add(tooth);
+        tooth.getMenus().add(this);
+        this.id = id;
+    }
 
+    public void selfDestruct() {
         for (Tooth tooth : teeth) {
             tooth.setSelected(false);
             tooth.getMenus().remove(this);
@@ -51,12 +51,24 @@ public class Menu implements Comparable<Menu> {
         this.selected = selected;
     }
 
-    public Status getStatus() {
-        return status;
+    public boolean isNext() {
+        return next;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setNext(boolean next) {
+        this.next = next;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    public boolean hasPic() {
+        return pic != null;
     }
 
     public Picture getPic() {
@@ -103,6 +115,6 @@ public class Menu implements Comparable<Menu> {
 
     @Override
     public int compareTo(Menu o) {
-        return o.status.compareTo(status);
+        return Long.compare(id, o.id);
     }
 }

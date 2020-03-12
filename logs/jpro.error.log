@@ -1300,8 +1300,8 @@ java.lang.ClassNotFoundException: be.veterinarysolutions.vsol.main.Main
 2020-02-29 16:14:50,004 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: KeyEventToken(KeyPressed,%,37,false,false,false,false) app: stage title: VSOL Dental
 java.lang.ArithmeticException: / by zero
 	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.selectPrevious(Viewer.java:352)
-	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:27)
-	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:8)
+	at be.veterinarysolutions.vsol.gui.KeyReleasedHandler.handle(KeyHandler.java:27)
+	at be.veterinarysolutions.vsol.gui.KeyReleasedHandler.handle(KeyHandler.java:8)
 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
@@ -1338,8 +1338,8 @@ java.lang.ArithmeticException: / by zero
 2020-02-29 16:14:50,290 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Error while processing the input: KeyEventToken(KeyPressed,',39,false,false,false,false) app: stage title: VSOL Dental
 java.lang.ArithmeticException: / by zero
 	at be.veterinarysolutions.vsol.gui.tobedeleted.ViewerOld.selectNext(Viewer.java:328)
-	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:25)
-	at be.veterinarysolutions.vsol.gui.KeyPressedHandler.handle(KeyHandler.java:8)
+	at be.veterinarysolutions.vsol.gui.KeyReleasedHandler.handle(KeyHandler.java:25)
+	at be.veterinarysolutions.vsol.gui.KeyReleasedHandler.handle(KeyHandler.java:8)
 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)

@@ -11,6 +11,7 @@ import be.veterinarysolutions.vsol.gui.canvases.QuadrantsCanvas;
 import be.veterinarysolutions.vsol.main.Options;
 import be.veterinarysolutions.vsol.tools.Bmp;
 import be.veterinarysolutions.vsol.tools.Bytes;
+import be.veterinarysolutions.vsol.tools.Cal;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -24,12 +25,13 @@ import javafx.scene.layout.VBox;
 
 import java.awt.*;
 import java.io.File;
+import java.util.Collection;
 import java.util.TreeSet;
 import java.util.Vector;
 
 public class Study extends Controller {
 	@FXML private BorderPane viewerArea, canvasZone, controlZone;
-	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd, btnDelete, btnDog, btnCat;
+	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd, btnDog, btnCat;
 	@FXML private VBox vboxMenus;
 	@FXML private ScrollPane scrollPane;
 
@@ -93,9 +95,6 @@ public class Study extends Controller {
 			if (menu.isSelected())
 				pictureCanvas.draw(menu);
 		}
-
-		Menu selectedMenu = getSelectedMenu();
-		btnDelete.setDisable(selectedMenu == null || selectedMenu.getStatus() == Menu.Status.TAKEN);
 
 		fillQuadrants();
 	}
@@ -162,22 +161,42 @@ public class Study extends Controller {
 	public void selectMenu(Menu menu) {
 		boolean selected = menu.isSelected();
 
-		if (!selected) { // deselect everything first
-			for (Menu temp : menus) {
-				temp.setSelected(false);
+		if (selected) {
+			if (!menu.isNext()) {
+				setNextMenu(menu);
+			} else {
+				menu.setSelected(false);
+				for (Tooth tooth : menu.getTeeth()) {
+					quadrantsCanvas.getTooth(tooth).setSelected(false);
+				}
 			}
-			menu.setSelected(true);
-			for (Tooth tooth : quadrantsCanvas.getSelectedTeeth()) {
-				tooth.setSelected(false);
-			}
-		}
+		} else {
+			if (menu.hasPic()) {
+				deselectAllMenus();
 
-		menu.setSelected(!selected);
-		for (Tooth tooth : menu.getTeeth()) {
-			quadrantsCanvas.getTooth(tooth).setSelected(!selected);
+				menu.setSelected(true);
+				for (Tooth tooth : menu.getTeeth()) {
+					quadrantsCanvas.getTooth(tooth).setSelected(true);
+				}
+			} else {
+				setNextMenu(menu);
+			}
+
+
+
+
 		}
 
 		fillMenus();
+	}
+
+	private void deselectAllMenus() {
+		for (Menu temp : menus) {
+			temp.setSelected(false);
+		}
+		for (Tooth tooth : quadrantsCanvas.getSelectedTeeth()) {
+			tooth.setSelected(false);
+		}
 	}
 
 	public void setNextMenu(int targetPos) {
@@ -185,8 +204,8 @@ public class Study extends Controller {
 		for (int i = 0; i < menus.size(); i++) {
 			int j = (targetPos + i) % menus.size();
 			Menu temp = menus.elementAt(j);
-			if (temp.getStatus() == Menu.Status.ADDED) {
-				temp.setStatus(Menu.Status.NEXT);
+			if (!temp.hasPic()) {
+				temp.setNext(true);
 				break;
 			}
 		}
@@ -195,9 +214,9 @@ public class Study extends Controller {
 	public void setNextMenu(Menu menu) {
 		for (Menu temp : menus) {
 			if (temp.getId() == menu.getId()) {
-				menu.setStatus(Menu.Status.NEXT);
-			} else if (temp.getStatus() == Menu.Status.NEXT) {
-				temp.setStatus(Menu.Status.ADDED);
+				menu.setNext(true);
+			} else if (temp.isNext()) {
+				temp.setNext(false);
 			}
 		}
 	}
@@ -211,6 +230,83 @@ public class Study extends Controller {
 			}
 		}
 		return result;
+	}
+
+	public void deleteMenu(Menu menu) {
+		if (menu == null) return;
+		if (menu.hasPic() && !menu.isDeleted()) return;
+		menu.selfDestruct();
+
+		Vector<Menu> menusNew = new Vector<>();
+		for (Menu temp : menus) {
+			if (temp.getId() != menu.getId())
+				menusNew.add(temp);
+		}
+		menus = menusNew;
+	}
+
+	public void cycleMenus(boolean up) {
+		if (menus.size() == 0) return;
+
+		int posNext = -1;
+		int posSelected = -1;
+		Menu firstUntaken = null;
+
+		int counter = 0;
+		for (Menu menu : menus) {
+			if (firstUntaken == null && !menu.hasPic()) {
+				firstUntaken = menu;
+			}
+			if (menu.isNext() && posNext == -1) {
+				posNext = counter;
+//				break;
+			} else if (menu.isSelected() && posSelected == -1) {
+				posSelected = counter;
+			}
+			counter++;
+		}
+
+		if (posNext == -1) { // there is no Next
+			if (firstUntaken == null) { // there is no available Next (all pictures are taken)
+				if (posSelected == -1) { // there is no Selected
+					menus.firstElement().setSelected(true);
+				} else {
+					Menu current = menus.elementAt(posSelected);
+					if (up) {
+						posSelected = (posSelected + menus.size() - 1) % menus.size();
+					} else {
+						posSelected = (posSelected + 1) % menus.size();
+					}
+					Menu next = menus.elementAt(posSelected);
+
+					current.setSelected(false);
+					next.setSelected(true);
+				}
+			} else {
+				firstUntaken.setNext(true);
+			}
+		} else {
+			Menu current = menus.elementAt(posNext);
+			if (up) {
+				posNext = (posNext + menus.size() - 1) % menus.size();
+			} else {
+				posNext = (posNext + 1) % menus.size();
+			}
+			Menu next = menus.elementAt(posNext);
+
+			current.setNext(false);
+			next.setNext(true);
+			if (current.isSelected()) {
+				current.setSelected(false);
+				next.setSelected(true);
+			}
+		}
+
+
+
+
+
+		fillMenus();
 	}
 
 
@@ -563,14 +659,15 @@ public class Study extends Controller {
 	}
 
 
-	@FXML protected void btnImgMouseClicked(MouseEvent e) {
+	@FXML
+	public void btnImgMouseClicked(MouseEvent e) {
 		Menu targetMenu = null;
 		int targetPos = -1;
 
 		int counter = 0;
 		for (Menu menu : menus) {
 			menu.setSelected(false);
-			if (menu.getStatus() == Menu.Status.NEXT) {
+			if (menu.isNext()) {
 				targetMenu = menu;
 				targetPos = counter;
 			}
@@ -605,10 +702,23 @@ public class Study extends Controller {
 			writer.setPixels(0, 0, 1300, 1706, PixelFormat.getIntArgbInstance(), rgb, 0, 1300);
 
 			Picture pic = new Picture(img);
-			targetMenu.setPic(pic);
-			targetMenu.setStatus(Menu.Status.TAKEN);
-			targetMenu.setSelected(true);
 
+			if (targetMenu.hasPic()) {
+				if (Options.AUTO_DELETE_ON_RETAKE)
+					targetMenu.setDeleted(true);
+
+				Menu copy = new Menu(targetMenu.getTeeth());
+				copy.setPic(pic);
+				copy.setSelected(true);
+
+				int position = getIndex(targetMenu) + 1;
+				addMenu(copy, position);
+			} else {
+				targetMenu.setPic(pic);
+				targetMenu.setSelected(true);
+			}
+
+			targetMenu.setNext(false);
 			setNextMenu(targetPos);
 		}
 
@@ -624,36 +734,19 @@ public class Study extends Controller {
 
 		boolean hasNext = false;
 		for (Menu temp : menus) {
-			if (temp.getStatus() == Menu.Status.NEXT) {
+			if (temp.isNext()) {
 				hasNext = true;
 				break;
 			}
 		}
 
 		if (!hasNext) {
-			menu.setStatus(Menu.Status.NEXT);
-		} else {
-			menu.setStatus(Menu.Status.ADDED);
+			menu.setNext(true);
 		}
 
 		addMenu(menu);
 		fillMenus();
 	}
-
-
-	@FXML protected void btnDeleteMouseClicked(MouseEvent e) {
-		Vector<Menu> menusNew = new Vector<>();
-		for (Menu menu : menus) {
-			if (menu.isSelected() && menu.getStatus() != Menu.Status.TAKEN) {
-				menu.selfDestruct();
-			} else {
-				menusNew.add(menu);
-			}
-		}
-		menus = menusNew;
-		fillMenus();
-	}
-
 
 	@FXML protected void btnSaveMouseClicked(MouseEvent e) {
 		Bmp.saveAsPng(pictureCanvas, Options.START_DIR + "snapshot");
@@ -667,6 +760,8 @@ public class Study extends Controller {
 		if (quadrantsCanvas.isInner()) {
 			quadrantsCanvas.setInner(false);
 		} else {
+			deselectAllMenus();
+			fillMenus();
 			quadrantsCanvas.setInner(true);
 		}
 
@@ -918,6 +1013,24 @@ public class Study extends Controller {
 				btnCat.getStyleClass().add(SELECTED);
 				break;
 		}
+	}
 
+	public void clearMenus() {
+		for (Menu menu : menus) {
+			menu.selfDestruct();
+		}
+		menus.clear();
+	}
+
+	public void addRandomMenus() {
+		long id = Cal.getId();
+		int counter = 0;
+		for (Tooth tooth : quadrantsCanvas.getTeeth()) {
+			if (Math.random() < 0.25) {
+				Menu menu = new Menu(id + counter++, tooth);
+				addMenu(menu);
+			}
+		}
+		fillMenus();
 	}
 }

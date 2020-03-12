@@ -2804,3 +2804,309 @@
 2020-03-10 13:21:33,225 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - zipped         : 34122
 2020-03-10 13:21:33,225 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - 
 2020-03-10 13:23:08,532 [INFO] in scala-execution-context-global-76 - [info] c.j.i.c.InstanceImpl - closing window!
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-12 10:24:29,477 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-12 10:24:29,498 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-12 10:24:29,690 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Mar 12 10:24:29 CET 2020
+2020-03-12 10:24:29,850 [INFO] in scala-execution-context-global-41 - [info] play.api.Play - Application started (Prod)
+2020-03-12 10:24:30,358 [INFO] in scala-execution-context-global-41 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-12 10:24:30,947 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-12 10:24:30,957 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-12 10:24:30,958 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 192.168.1.175
+2020-03-12 10:24:30,959 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          192.168.1.184:8080
+2020-03-12 10:24:30,959 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-12 10:24:31,216 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-12 10:24:31,216 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-12 10:24:31,216 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-12 10:24:31,216 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          localhost:8080
+2020-03-12 10:24:31,216 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-12 10:24:31,588 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 10:24:31,790 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: 0
+2020-03-12 10:24:31,791 [INFO] in scala-execution-context-global-41 - Imagen device opened.
+2020-03-12 10:24:33,424 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-7-2-actorRefSource#-1708879303]
+2020-03-12 10:24:33,427 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 10:24:33,435 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: -1
+2020-03-12 10:24:33,435 [INFO] in scala-execution-context-global-41 - Couldn't open Imagen device.
+2020-03-12 10:24:34,630 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-13-2-actorRefSource#317677711]
+2020-03-12 10:24:34,958 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 339037056
+2020-03-12 10:24:34,975 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 580606272
+2020-03-12 10:24:36,631 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@290c2697
+2020-03-12 10:24:36,631 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@54dc733b
+2020-03-12 10:24:43,879 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@6730808a
+2020-03-12 10:24:43,879 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@38828f3c
+2020-03-12 10:24:48,140 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@540119ae
+2020-03-12 10:24:48,140 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@61a6d6ce
+2020-03-12 10:24:50,635 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@6574948c
+2020-03-12 10:24:50,636 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@53f9115b
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-12 10:27:19,358 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-12 10:27:19,375 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-12 10:27:19,516 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Mar 12 10:27:19 CET 2020
+2020-03-12 10:27:19,662 [INFO] in scala-execution-context-global-41 - [info] play.api.Play - Application started (Prod)
+2020-03-12 10:27:20,071 [INFO] in scala-execution-context-global-41 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-12 10:27:20,959 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-12 10:27:20,968 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-12 10:27:20,970 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-12 10:27:20,970 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          localhost:8080
+2020-03-12 10:27:20,970 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-12 10:27:21,543 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 10:27:21,741 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: 0
+2020-03-12 10:27:21,742 [INFO] in scala-execution-context-global-41 - Imagen device opened.
+2020-03-12 10:27:23,413 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#887062424]
+2020-03-12 10:27:23,715 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 108906793
+2020-03-12 10:27:43,363 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 1886027886!default
+2020-03-12 10:27:43,364 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 1886027886!default
+2020-03-12 10:27:43,364 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 192.168.1.175
+2020-03-12 10:27:43,364 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          192.168.1.184:8080
+2020-03-12 10:27:43,364 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/1886027886!default
+2020-03-12 10:27:43,401 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 10:27:43,412 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: -1
+2020-03-12 10:27:43,412 [INFO] in scala-execution-context-global-41 - Couldn't open Imagen device.
+2020-03-12 10:27:44,607 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByID(1886027886,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-12-2-actorRefSource#-586935430]
+2020-03-12 10:27:44,668 [INFO] in scala-execution-context-global-55 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 1582391106
+2020-03-12 10:30:16,832 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@6b3076cc
+2020-03-12 10:30:16,832 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3c97ed29
+2020-03-12 10:30:35,222 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@5b1081fb
+2020-03-12 10:30:35,222 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2b83f4eb
+2020-03-12 10:30:35,662 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@682365c1
+2020-03-12 10:30:35,662 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@392b1afd
+2020-03-12 10:30:36,204 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2b9788a1
+2020-03-12 10:30:36,204 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@18c501b4
+2020-03-12 10:30:37,460 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2eb8f1da
+2020-03-12 10:30:37,460 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2f2f9670
+2020-03-12 10:30:38,916 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@109376c8
+2020-03-12 10:30:38,917 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@1c8badc3
+2020-03-12 10:30:39,306 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@154fa388
+2020-03-12 10:30:39,307 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@43904de3
+2020-03-12 10:30:40,274 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@266f0562
+2020-03-12 10:30:40,274 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@2be624d4
+2020-03-12 10:30:41,390 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@69de3692
+2020-03-12 10:30:41,390 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@45aa914a
+2020-03-12 10:30:41,695 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@bd08876
+2020-03-12 10:30:41,695 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2c6b3e4b
+2020-03-12 10:30:42,084 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@16b3df8b
+2020-03-12 10:30:42,084 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2339992c
+2020-03-12 10:30:43,260 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@69776a17
+2020-03-12 10:30:43,260 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@47793903
+2020-03-12 10:30:44,135 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@40ceafce
+2020-03-12 10:30:44,135 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@5bfb3a9d
+2020-03-12 10:30:44,745 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7c293e36
+2020-03-12 10:30:44,746 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@2d5723f8
+2020-03-12 10:30:45,067 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2eca0f85
+2020-03-12 10:30:45,067 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@7bdcee2f
+2020-03-12 10:30:46,032 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@15bc079a
+2020-03-12 10:30:46,033 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@227d5b89
+2020-03-12 10:30:47,660 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@215c967
+2020-03-12 10:30:47,660 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@4587d49a
+2020-03-12 10:30:47,982 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@45da2bd2
+2020-03-12 10:30:47,982 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@128a0eb4
+2020-03-12 10:30:49,049 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@1117896b
+2020-03-12 10:30:49,049 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@53efbe6a
+2020-03-12 10:30:49,388 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@5cd5e12c
+2020-03-12 10:30:49,388 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@46c067cd
+2020-03-12 10:30:50,420 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3643825
+2020-03-12 10:30:50,421 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@25caaad5
+2020-03-12 10:30:53,676 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7eec85e0
+2020-03-12 10:30:53,677 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3674bfc0
+2020-03-12 10:30:55,562 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@1764028
+2020-03-12 10:30:55,563 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@1461fd65
+2020-03-12 10:31:24,652 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@47d96600
+2020-03-12 10:31:24,652 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@5c41d2c7
+2020-03-12 10:31:26,096 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7df7cd1c
+2020-03-12 10:31:26,096 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@40ba8657
+2020-03-12 10:31:28,056 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@605e1360
+2020-03-12 10:31:28,057 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@5f8b4905
+2020-03-12 10:31:47,180 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@244a21af
+2020-03-12 10:31:47,180 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@27cc29be
+2020-03-12 10:31:48,193 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@7a13a111
+2020-03-12 10:31:48,193 [INFO] in scala-execution-context-global-55 - Unsupported Object: [D@781075d7
+2020-03-12 10:32:15,404 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@30a1a448
+2020-03-12 10:32:15,404 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@5912aec8
+2020-03-12 10:32:20,709 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@89659d7
+2020-03-12 10:32:20,710 [INFO] in scala-execution-context-global-69 - Unsupported Object: [D@2ba04e27
+2020-03-12 11:50:06,612 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-12 11:50:06,612 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-03-12 11:50:06,612 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - startTime      : Thu Mar 12 11:50:06 CET 2020      
+2020-03-12 11:50:06,612 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - averageLatency : -00:00:03.003 
+2020-03-12 11:50:06,612 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-03-12 11:50:06,613 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-03-12 11:50:06,613 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-03-12 11:50:06,613 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - raw            : 3935477
+2020-03-12 11:50:06,613 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - zipped         : 1657253
+2020-03-12 11:50:06,613 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-12 11:51:03,910 [INFO] in scala-execution-context-global-69 - [info] c.jpro - application requested: 0!default
+2020-03-12 11:51:03,911 [INFO] in scala-execution-context-global-69 - [info] c.jpro - Creating Application: 0!default
+2020-03-12 11:51:03,911 [INFO] in scala-execution-context-global-69 - [info] c.jpro - remoteAddress 192.168.1.175
+2020-03-12 11:51:03,911 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          192.168.1.184:8080
+2020-03-12 11:51:03,911 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-12 11:51:04,073 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 11:51:04,081 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: -1
+2020-03-12 11:51:04,081 [INFO] in scala-execution-context-global-41 - Couldn't open Imagen device.
+2020-03-12 11:51:05,428 [INFO] in scala-execution-context-global-69 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-23-2-actorRefSource#-1288681564]
+2020-03-12 11:51:05,485 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 71141654
+2020-03-12 11:53:31,059 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@fc938d0
+2020-03-12 11:53:31,059 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@585b5daf
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - Warning: Quantum will not submit render jobs, nothing should draw
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - finished init!
+2020-03-12 11:53:48,738 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.Initializer$ - JavaFX version: 11.0.3.4-jpro+0-2019-12-20-085014
+2020-03-12 11:53:48,754 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-03-12 11:53:48,937 [INFO] in scala-execution-context-global-41 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Thu Mar 12 11:53:48 CET 2020
+2020-03-12 11:53:49,097 [INFO] in scala-execution-context-global-41 - [info] play.api.Play - Application started (Prod)
+2020-03-12 11:53:49,520 [INFO] in scala-execution-context-global-41 - [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2020-03-12 11:53:50,399 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 0!default
+2020-03-12 11:53:50,407 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 0!default
+2020-03-12 11:53:50,409 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-12 11:53:50,409 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          localhost:8080
+2020-03-12 11:53:50,410 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/0!default
+2020-03-12 11:53:50,564 [INFO] in scala-execution-context-global-41 - [info] c.jpro - application requested: 672981534!default
+2020-03-12 11:53:50,564 [INFO] in scala-execution-context-global-41 - [info] c.jpro - Creating Application: 672981534!default
+2020-03-12 11:53:50,564 [INFO] in scala-execution-context-global-41 - [info] c.jpro - remoteAddress 192.168.1.175
+2020-03-12 11:53:50,564 [INFO] in scala-execution-context-global-41 - [info] c.jpro - host          192.168.1.184:8080
+2020-03-12 11:53:50,564 [INFO] in scala-execution-context-global-41 - [info] c.jpro - uri           /app/672981534!default
+2020-03-12 11:53:50,981 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 11:53:51,036 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: -1
+2020-03-12 11:53:51,037 [INFO] in scala-execution-context-global-41 - Couldn't open Imagen device.
+2020-03-12 11:53:52,606 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-413482217]
+2020-03-12 11:53:52,610 [INFO] in scala-execution-context-global-41 - Entered Ctrl.
+2020-03-12 11:53:52,617 [INFO] in scala-execution-context-global-41 - Imagen Device Handle: -1
+2020-03-12 11:53:52,617 [INFO] in scala-execution-context-global-41 - Couldn't open Imagen device.
+2020-03-12 11:53:53,802 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByID(672981534,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://192.168.1.184:8080/,http://192.168.1.184:8080/app/default,1920.0,937.0,false,nl-NL,List(nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#144625512]
+2020-03-12 11:53:54,100 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 610058972
+2020-03-12 11:53:54,100 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 1423523325
+2020-03-12 11:54:08,639 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@14e5eeb3
+2020-03-12 11:54:08,640 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@233160aa
+2020-03-12 11:54:22,577 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@19ab0622
+2020-03-12 11:54:22,578 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@142a51d3
+2020-03-12 11:54:23,407 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@6bed34f4
+2020-03-12 11:54:23,408 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@66c4c271
+2020-03-12 11:54:23,797 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@269e73
+2020-03-12 11:54:23,797 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@5f8fdae1
+2020-03-12 11:54:24,731 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7d236b24
+2020-03-12 11:54:24,731 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@980dbfe
+2020-03-12 11:54:38,207 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@179d6e68
+2020-03-12 11:54:38,208 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@1f288102
+2020-03-12 11:54:39,462 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@338d0df
+2020-03-12 11:54:39,462 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@7e22531e
+2020-03-12 11:54:58,445 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@37aaf215
+2020-03-12 11:54:58,446 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@2e856f42
+2020-03-12 11:54:59,393 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@43a0bc90
+2020-03-12 11:54:59,394 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@75b19c48
+2020-03-12 11:54:59,852 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@5755ac9a
+2020-03-12 11:54:59,852 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@64e1d3dc
+2020-03-12 11:55:00,530 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@5d5405f9
+2020-03-12 11:55:00,530 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@4e70ac65
+2020-03-12 11:55:00,869 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@75cd79a
+2020-03-12 11:55:00,869 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7410bd75
+2020-03-12 11:55:01,951 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@762a96cf
+2020-03-12 11:55:01,951 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3e9cf89f
+2020-03-12 11:55:03,141 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@ec65d8a
+2020-03-12 11:55:03,141 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@269c3295
+2020-03-12 11:55:03,344 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@47b86f2b
+2020-03-12 11:55:03,344 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@20f2c0d0
+2020-03-12 11:55:03,599 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@6e7abcd7
+2020-03-12 11:55:03,599 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@5046d726
+2020-03-12 11:55:04,545 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@726f4750
+2020-03-12 11:55:04,546 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@35be2e53
+2020-03-12 11:55:05,276 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@6f24ddca
+2020-03-12 11:55:05,276 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@421104fe
+2020-03-12 11:55:06,290 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@67059664
+2020-03-12 11:55:06,290 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3b642aab
+2020-03-12 11:55:07,022 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@32d63f9a
+2020-03-12 11:55:07,022 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@4cb791ca
+2020-03-12 11:55:07,854 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@137e821b
+2020-03-12 11:55:07,854 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@775e42c7
+2020-03-12 11:55:10,159 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@1de17667
+2020-03-12 11:55:10,159 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@5f3e949f
+2020-03-12 11:55:11,241 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@3e7576b7
+2020-03-12 11:55:11,241 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@39795d5d
+2020-03-12 11:55:24,854 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@1c539f8c
+2020-03-12 11:55:24,855 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@1389915f
+2020-03-12 11:55:26,183 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@4c09e6f2
+2020-03-12 11:55:26,183 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@35efab7f
+2020-03-12 11:55:26,704 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@426c7c43
+2020-03-12 11:55:26,704 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@7fe2ae3c
+2020-03-12 11:55:27,989 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3830b750
+2020-03-12 11:55:27,989 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@e994f2c
+2020-03-12 11:55:28,714 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@5bf3dd1a
+2020-03-12 11:55:28,715 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@1af6f995
+2020-03-12 12:12:02,383 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@5c3e515
+2020-03-12 12:12:02,384 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@5f332d72
+2020-03-12 12:12:05,635 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@7af00bb6
+2020-03-12 12:12:05,635 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@3dcdc406
+2020-03-12 12:12:14,001 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@4350a048
+2020-03-12 12:12:14,001 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@7c5d6d19
+2020-03-12 12:18:22,141 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@2021ef60
+2020-03-12 12:18:22,141 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@7766eb00
+2020-03-12 12:25:25,246 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@26b6300f
+2020-03-12 12:25:25,247 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@138c7e2d
+2020-03-12 12:25:28,145 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@5038aa62
+2020-03-12 12:25:28,145 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@7cb3a9f4
+2020-03-12 12:25:33,558 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@2392e3bf
+2020-03-12 12:25:33,558 [INFO] in scala-execution-context-global-41 - Unsupported Object: [D@708b2878
+2020-03-12 12:25:42,249 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@379995fd
+2020-03-12 12:25:42,249 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@cbd8cd4
+2020-03-12 12:25:43,443 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@461ea843
+2020-03-12 12:25:43,444 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@6234e8ce
+2020-03-12 12:25:46,921 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@1e3a2127
+2020-03-12 12:25:46,921 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@5952790d
+2020-03-12 12:25:47,988 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@352a6d03
+2020-03-12 12:25:47,988 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@1c7f0424
+2020-03-12 12:25:49,332 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@eb20fe5
+2020-03-12 12:25:49,332 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@11e0f44b
+2020-03-12 12:25:49,881 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@2c9bfd06
+2020-03-12 12:25:49,881 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@52ca4be4
+2020-03-12 12:25:50,437 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@315afba0
+2020-03-12 12:25:50,437 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@7d3c7d41
+2020-03-12 12:25:50,939 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@70138fe3
+2020-03-12 12:25:50,940 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@8baa1ec
+2020-03-12 12:26:00,110 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@13952ce0
+2020-03-12 12:26:00,110 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@3cca5a96
+2020-03-12 12:26:01,126 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@6e777359
+2020-03-12 12:26:01,126 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@13ffc85f
+2020-03-12 12:26:02,011 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@2c43f3ea
+2020-03-12 12:26:02,011 [INFO] in scala-execution-context-global-66 - Unsupported Object: [D@108db417
+2020-03-12 12:26:15,168 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@190a4eea
+2020-03-12 12:26:15,169 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@7dda3492
+2020-03-12 12:26:16,234 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@12a8ece2
+2020-03-12 12:26:16,234 [INFO] in scala-execution-context-global-54 - Unsupported Object: [D@67c1967
+2020-03-12 13:31:07,730 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-12 13:31:07,730 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-03-12 13:31:07,731 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - startTime      : Thu Mar 12 13:31:07 CET 2020      
+2020-03-12 13:31:07,731 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.017 
+2020-03-12 13:31:07,731 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-03-12 13:31:07,732 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-03-12 13:31:07,732 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-03-12 13:31:07,732 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - raw            : 1533204
+2020-03-12 13:31:07,732 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - zipped         : 717499
+2020-03-12 13:31:07,732 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-12 13:31:07,744 [INFO] in scala-execution-context-global-54 - [info] c.jpro - application requested: 1927586483!default
+2020-03-12 13:31:07,744 [INFO] in scala-execution-context-global-54 - [info] c.jpro - Creating Application: 1927586483!default
+2020-03-12 13:31:07,745 [INFO] in scala-execution-context-global-54 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-03-12 13:31:07,745 [INFO] in scala-execution-context-global-54 - [info] c.jpro - host          localhost:8080
+2020-03-12 13:31:07,745 [INFO] in scala-execution-context-global-54 - [info] c.jpro - uri           /app/1927586483!default
+2020-03-12 13:31:07,778 [INFO] in scala-execution-context-global-54 - Entered Ctrl.
+2020-03-12 13:31:07,786 [INFO] in scala-execution-context-global-54 - Imagen Device Handle: -1
+2020-03-12 13:31:07,786 [INFO] in scala-execution-context-global-54 - Couldn't open Imagen device.
+2020-03-12 13:31:09,072 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByID(1927586483,Some(AppByMain(default,be.veterinarysolutions.vsol.main.Main,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/default,1920.0,1097.0,false,nl-BE,List(nl-BE, en-BE, nl-NL, nl, en-US, en),Map())out: Actor[akka://application/system/StreamSupervisor-0/flow-24-2-actorRefSource#-1187397379]
+2020-03-12 13:31:09,126 [INFO] in scala-execution-context-global-41 - [info] com.jpro.JS - received msg: new MainID: 611 userid: 865777380
+2020-03-12 13:31:12,264 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - 
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - startTime      : Thu Mar 12 13:31:12 CET 2020      
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-54 - [info] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.018 
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.001  
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-41 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-03-12 13:31:12,265 [INFO] in scala-execution-context-global-66 - [info] c.j.i.s.ViewInfo$ - raw            : 25052
+2020-03-12 13:31:12,266 [INFO] in scala-execution-context-global-66 - [info] c.j.i.s.ViewInfo$ - zipped         : 5624
+2020-03-12 13:31:12,266 [INFO] in scala-execution-context-global-66 - [info] c.j.i.s.ViewInfo$ - 

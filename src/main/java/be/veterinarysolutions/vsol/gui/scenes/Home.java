@@ -1,5 +1,6 @@
 package be.veterinarysolutions.vsol.gui.scenes;
 
+import be.veterinarysolutions.vsol.data.Menu;
 import be.veterinarysolutions.vsol.gui.Controller;
 import be.veterinarysolutions.vsol.main.Ctrl;
 import com.jpro.webapi.WebAPI;
@@ -24,10 +25,13 @@ public class Home extends Controller {
 	}
 
 	@FXML protected void btnNewMouseClicked(MouseEvent e) {
+		gui.getStudy().clearMenus();
 		gui.showStudy();
 	}
 
 	@FXML protected void btnImportMouseClicked(MouseEvent e) {
+		gui.getStudy().clearMenus();
+		gui.getStudy().addRandomMenus();
 		gui.showStudy();
 	}
 
