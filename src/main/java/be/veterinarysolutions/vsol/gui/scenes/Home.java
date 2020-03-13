@@ -1,8 +1,10 @@
 package be.veterinarysolutions.vsol.gui.scenes;
 
 import be.veterinarysolutions.vsol.data.Menu;
+import be.veterinarysolutions.vsol.data.Picture;
 import be.veterinarysolutions.vsol.gui.Controller;
 import be.veterinarysolutions.vsol.main.Ctrl;
+import be.veterinarysolutions.vsol.main.Options;
 import com.jpro.webapi.WebAPI;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,13 +27,25 @@ public class Home extends Controller {
 	}
 
 	@FXML protected void btnNewMouseClicked(MouseEvent e) {
+		gui.getStudy().fillMode(Study.Mode.SELECT);
 		gui.getStudy().clearMenus();
+		gui.getStudy().fillMenus();
 		gui.showStudy();
 	}
 
 	@FXML protected void btnImportMouseClicked(MouseEvent e) {
+		gui.getStudy().fillMode(Study.Mode.SELECT);
 		gui.getStudy().clearMenus();
 		gui.getStudy().addRandomMenus();
+		gui.showStudy();
+	}
+
+	@FXML protected void btnImportEmptyMouseClicked(MouseEvent e) {
+		gui.getStudy().fillMode(Study.Mode.MEASURE);
+		gui.getStudy().clearMenus();
+		gui.getStudy().getQuadrantsCanvas().setInner(false);
+		Picture pic = new Picture(Options.START_DIR + "dog.jpg");
+		gui.getStudy().addPic(pic);
 		gui.showStudy();
 	}
 

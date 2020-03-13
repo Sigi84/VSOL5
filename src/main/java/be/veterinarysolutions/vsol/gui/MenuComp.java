@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -42,6 +43,10 @@ public class MenuComp extends Controller {
             comp.btn1.setDisable(menu.hasPic() && !menu.isDeleted());
             comp.btn2.setDisable(!menu.hasPic());
 
+            if (menu.isDeleted()) {
+                comp.ico2.setImage(new Image("file:src/main/resources/ico/check.png"));
+            }
+
             if (menu.isNext()) {
                 comp.borderPane.getStyleClass().add("green");
                 comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "greenborder");
@@ -49,8 +54,6 @@ public class MenuComp extends Controller {
                 comp.borderPane.getStyleClass().add("red");
                 comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "redborder");
             } else if (menu.hasPic()) {
-//                comp.borderPane.getStyleClass().add("blue");
-//                comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "blueborder");
                 comp.borderPane.getStyleClass().add("black");
                 comp.borderPane.getStyleClass().add(menu.isSelected() ? "whiteborder" : "blackborder");
             } else {

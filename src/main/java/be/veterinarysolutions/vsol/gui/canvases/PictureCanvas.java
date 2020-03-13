@@ -6,7 +6,9 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.StrokeLineCap;
 
 import java.util.Vector;
 
@@ -122,6 +124,31 @@ public class PictureCanvas extends ResizableCanvas {
             gg.setLineWidth(5.0);
             gg.setStroke(Color.RED);
             gg.strokeRect(x, y, iw, ih);
+
+            Line line0 = pic.getLine0();
+            if (line0 != null) {
+                gg.setStroke(Color.RED);
+                gg.setLineWidth(3.0);
+                gg.setLineCap(StrokeLineCap.ROUND);
+                gg.strokeLine(line0.getStartX(), line0.getStartY(), line0.getEndX(), line0.getEndY());
+            }
+
+            Line line1 = pic.getLine1();
+            if (line1 != null) {
+                gg.setStroke(Color.RED);
+                gg.setLineWidth(3.0);
+                gg.setLineCap(StrokeLineCap.ROUND);
+                gg.strokeLine(line1.getStartX(), line1.getStartY(), line1.getEndX(), line1.getEndY());
+            }
+
+            Line line2 = pic.getLine2();
+            if (line2 != null) {
+                gg.setStroke(Color.BLUE);
+                gg.setLineWidth(3.0);
+                gg.setLineCap(StrokeLineCap.ROUND);
+                gg.strokeLine(line2.getStartX(), line2.getStartY(), line2.getEndX(), line2.getEndY());
+            }
+
         }
 
         pic.setRect(rect);
@@ -147,15 +174,25 @@ public class PictureCanvas extends ResizableCanvas {
 
 
     public Vector<Picture> getPics() {
-        Vector<Picture> result = new Vector<>();
-        if (menu != null && menu.getPic() != null) {
-            result.add(menu.getPic());
-        }
-        for (Picture pic : pics) {
-            result.add(pic);
-        }
+        return pics;
+//        Vector<Picture> result = new Vector<>();
+//        if (menu != null && menu.getPic() != null) {
+//            result.add(menu.getPic());
+//        }
+//        for (Picture pic : pics) {
+//            result.add(pic);
+//        }
+//
+//        return result;
+    }
 
-        return result;
+    public Picture getSelectedPic() {
+        for (Picture pic : pics) {
+            if (pic.isSelected()) {
+                return pic;
+            }
+        }
+        return null;
     }
 
     public void deleteSelection() {

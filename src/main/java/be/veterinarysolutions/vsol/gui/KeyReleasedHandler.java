@@ -22,8 +22,9 @@ public class KeyReleasedHandler implements EventHandler<KeyEvent> {
         if (e.getCode() == KeyCode.A) {
             study.selectAll();
         } else if (e.getCode() == KeyCode.DELETE) {
-            study.deleteMenu(study.getSelectedMenu());
-            study.fillMenus();
+            study.deleteSelection();
+//            study.deleteMenu(study.getSelectedMenu());
+//            study.fillMenus();
         } else if (e.getCode() == KeyCode.UP) {
             study.cycleMenus(true);
         } else if (e.getCode() == KeyCode.DOWN) {

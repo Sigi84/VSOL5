@@ -34,6 +34,7 @@ public class Study extends Controller {
 	@FXML private Button btnSelect, btnBrightness, btnMeasure, btnImg, btnAdd, btnDog, btnCat;
 	@FXML private VBox vboxMenus;
 	@FXML private ScrollPane scrollPane;
+	private Button btnAdd2 = new Button("Add");
 
 	private PictureCanvas pictureCanvas = new PictureCanvas();
 	private QuadrantsCanvas quadrantsCanvas = new QuadrantsCanvas(this);
@@ -68,6 +69,11 @@ public class Study extends Controller {
 
 		canvasZone.getChildren().add(pictureCanvas);
 		canvasZone.getChildren().add(quadrantsCanvas);
+
+//		btnAdd2.setText("Add");
+//		btnAdd2.setOnMouseClicked(this::btnAddMouseClicked);
+//		canvasZone.setCenter(btnAdd2);
+
 
 		fillMode(Mode.SELECT);
 
@@ -162,13 +168,14 @@ public class Study extends Controller {
 		boolean selected = menu.isSelected();
 
 		if (selected) {
-			if (!menu.isNext()) {
-				setNextMenu(menu);
-			} else {
+			if (menu.isNext()) {
 				menu.setSelected(false);
+				menu.setNext(false);
 				for (Tooth tooth : menu.getTeeth()) {
 					quadrantsCanvas.getTooth(tooth).setSelected(false);
 				}
+			} else {
+				setNextMenu(menu);
 			}
 		} else {
 			if (menu.hasPic()) {
@@ -317,6 +324,9 @@ public class Study extends Controller {
 	private void fillQuadrants() {
 		quadrantsCanvas.draw();
 		btnAdd.setDisable(getSelectedMenu() != null || quadrantsCanvas.getSelectedTeeth().size() == 0);
+
+		btnAdd2.setVisible(quadrantsCanvas.isInner());
+		btnAdd2.setDisable(btnAdd.isDisable());
 	}
 
 
@@ -325,7 +335,7 @@ public class Study extends Controller {
 
 	// PICTURE CANVAS
 
-	private void addPic(Picture pic) {
+	public void addPic(Picture pic) {
 		for (Picture temp : pictureCanvas.getPics()) {
 			temp.setSelected(false);
 		}
@@ -475,7 +485,7 @@ public class Study extends Controller {
 			if (pic == null) return;
 			addPic(pic);
 		} else {
-			Picture pic = new Picture(Options.START_DIR + "1.jpg");
+			Picture pic = new Picture(Options.START_DIR + "dog.jpg");
 			addPic(pic);
 		}
 	}
@@ -811,10 +821,15 @@ public class Study extends Controller {
 				}
 				break;
 			case MEASURE:
-				break;
+				if (mousePrimaryDown) {
+					Picture pic = pictureCanvas.getSelectedPic();
+					if (pic != null) {
+						pic.endLine(e.getX(), e.getY());
+						pictureCanvas.draw();
+					}
+					break;
+				}
 		}
-
-
 	}
 
 	@FXML protected void canvasZoneMousePressed(MouseEvent e) {
@@ -828,6 +843,14 @@ public class Study extends Controller {
 		} else if (e.getButton() == MouseButton.SECONDARY) {
 			mouseSecondaryDown = true;
 		}
+
+		if (e.getButton() == MouseButton.PRIMARY && mode == Mode.MEASURE) {
+			Picture pic = pictureCanvas.getSelectedPic();
+			if (pic != null) {
+				pic.startLine(e.getX(), e.getY());
+				pictureCanvas.draw();
+			}
+		}
 	}
 
 	@FXML protected void canvasZoneMouseReleased(MouseEvent e) {
@@ -837,12 +860,27 @@ public class Study extends Controller {
 			select(e.getX(), e.getY());
 		}
 
+		if (e.getButton() == MouseButton.SECONDARY && mode == Mode.MEASURE) {
+			Picture pic = pictureCanvas.getSelectedPic();
+			if (pic != null) {
+				pic.cycleLineMode();
+			}
+		}
+
 		mousex = 0.0;
 		mousey = 0.0;
 		mouseMoving = false;
 
 		mousePrimaryDown = false;
 		mouseSecondaryDown = false;
+
+//		if (mode == Mode.MEASURE) {
+//			Picture pic = pictureCanvas.getSelectedPic();
+//			if (pic != null) {
+//				pic.getLine1().setStartX(e.getX());
+//				pic.getLine1().setStartY(e.getY());
+//			}
+//		}
 	}
 
 	@FXML protected void canvasZoneMouseClicked(MouseEvent e) {
@@ -877,6 +915,12 @@ public class Study extends Controller {
 			if (mode == Mode.BRIGHTNESS) {
 				changeContrast(offsetx / 1000.0);
 				changeBrightness(offsety / 1000.0);
+			} else if (mode == Mode.MEASURE) {
+				Picture pic = pictureCanvas.getSelectedPic();
+				if (pic != null) {
+					pic.endLine(e.getTouchPoint().getX(), e.getTouchPoint().getY());
+					pictureCanvas.draw();
+				}
 			}
 		}
 	}
@@ -886,6 +930,14 @@ public class Study extends Controller {
 			TouchPoint p = e.getTouchPoint();
 			touchx = p.getX();
 			touchy = p.getY();
+
+			if (mode == Mode.MEASURE) {
+				Picture pic = pictureCanvas.getSelectedPic();
+				if (pic != null) {
+					pic.startLine(e.getTouchPoint().getX(), e.getTouchPoint().getY());
+					pictureCanvas.draw();
+				}
+			}
 		} else {
 			multitouch = true;
 		}
@@ -893,7 +945,7 @@ public class Study extends Controller {
 
 	@FXML protected void canvasZoneTouchReleased(TouchEvent e) {
 		if (e.getTouchCount() == 1) { // only do this on release of the last touch point
-			if (!touchMoving && !rotating && !zooming) {
+			if (!touchMoving && !rotating && !zooming  && (mode == Mode.SELECT || mode == Mode.BRIGHTNESS)) {
 				select(touchx, touchy);
 			}
 
@@ -979,7 +1031,7 @@ public class Study extends Controller {
 
 
 
-	private void fillMode(Mode mode) {
+	public void fillMode(Mode mode) {
 		this.mode = mode;
 		final String SELECTED = "selected";
 		btnSelect.getStyleClass().removeAll(SELECTED);
@@ -1020,6 +1072,7 @@ public class Study extends Controller {
 			menu.selfDestruct();
 		}
 		menus.clear();
+		quadrantsCanvas.clear();
 	}
 
 	public void addRandomMenus() {
@@ -1032,5 +1085,9 @@ public class Study extends Controller {
 			}
 		}
 		fillMenus();
+	}
+
+	public QuadrantsCanvas getQuadrantsCanvas() {
+		return quadrantsCanvas;
 	}
 }
